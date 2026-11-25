@@ -103,13 +103,17 @@ function srcHeroi(h) {
 function srcFundo(id) {
   return url(matchMedia('(max-width: 860px)').matches ? (img(id, 'fundo_m') || img(id, 'fundo')) : img(id, 'fundo'));
 }
+// URLs já baixadas E decodificadas: a troca usa essa lista em vez de "adivinhar" o cache pelo .complete
+// (que no Android/iOS às vezes dá falso mesmo com a imagem pronta e escondia o personagem à toa)
+const prontas = new Set();
 function preCarregar(u) {
   return new Promise(ok => {
     if (!u) return ok();
     const i = new Image();
-    i.onload = i.onerror = () => ok();
+    const fim = () => { prontas.add(u); ok(); };
     i.src = u;
-    if (i.decode) i.decode().then(ok, ok);
+    if (i.decode) i.decode().then(fim, () => ok());   // espera o decode, não só o download
+    else { i.onload = fim; i.onerror = () => ok(); }
   });
 }
 // cenário em SVG que o CSS põe no rodapé de alguns temas (ver --campo em main.css)
@@ -169,7 +173,7 @@ function carregarImg(el, src, { srcset = '', sizes = '', placeholder = '', depoi
   const pre = new Image();
   if (srcset) { pre.sizes = sizes; pre.srcset = srcset; }
   pre.src = src;
-  const emCache = pre.complete && pre.naturalWidth;
+  const emCache = (pre.complete && pre.naturalWidth) || (!srcset && prontas.has(src));
   if (placeholder) { el.src = placeholder; el.classList.remove('carregando'); }   // miniatura já em cache
   else { if (sumirJa && !emCache) el.style.transition = 'none'; el.classList.add('carregando'); }
   let feito = false;
@@ -284,7 +288,15 @@ async function trocarTema(id, { origem, falar = true } = {}) {
       // sem isso a página nova aparecia dentro do círculo ainda com as cores do tema ANTIGO, que iam mudando
       // por até 0,6 s (mistura dos dois temas) e redesenhando a tela inteira a cada quadro em plena animação.
       // A própria revelação já é a transição; fora dela (navegador sem suporte) o fade de cor continua igual.
-      const vt = transicao = document.startViewTransition(() => { raiz.classList.add('sem-transicao', 'revelando'); pintar(id); });
+      const vt = transicao = document.startViewTransition(() => {
+        raiz.classList.add('sem-transicao', 'revelando');
+        pintar(id);
+        // a foto da página nova só é tirada com o personagem já decodificado no elemento de verdade
+        // (normalmente instantâneo, pois foi pré-carregado; teto curto para nunca segurar a tela)
+        const pi = $('#personagem-img');
+        if (pi.classList.contains('carregando') || !pi.decode) return;
+        return Promise.race([pi.decode().catch(() => {}), new Promise(ok => setTimeout(ok, 250))]);
+      });
       vt.updateCallbackDone.finally(() => requestAnimationFrame(() => requestAnimationFrame(() => {
         if (transicao === vt || !transicao) raiz.classList.remove('sem-transicao');
       })));

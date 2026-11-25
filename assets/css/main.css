@@ -424,7 +424,7 @@ html.revelando .hero-letras { animation-play-state: paused; }
 html.preparando .btn-tema-rosto { animation: carregandoTema .8s ease-in-out infinite alternate; }
 @keyframes carregandoTema { to { opacity: .35; } }
 /* durante a troca o personagem não "respira" nem entra de novo por cima da revelação */
-::view-transition-group(root) { animation-duration: .85s; }
+::view-transition-group(root) { animation-duration: .9s; }
 
 
 /* ---------- emblema kanji (marca) ---------- */
