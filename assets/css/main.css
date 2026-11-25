@@ -166,12 +166,16 @@ header, main, footer { position: relative; z-index: 2; }
 .hero-nome {
   margin: 0; font-family: var(--f-display); font-weight: 800; line-height: .86;
   font-size: clamp(4.4rem, 2rem + 12vw, 13rem); letter-spacing: -.035em;
+  /* o brilho em volta das letras fica aqui (mesma sombra de antes, no contorno das mesmas letras) */
+  filter: drop-shadow(0 10px 40px color-mix(in srgb, var(--acc) 35%, transparent));
 }
 .hero-letras {
   display: inline-block; background: linear-gradient(100deg, var(--ink) 20%, var(--acc) 55%, var(--acc2) 90%);
   -webkit-background-clip: text; background-clip: text; color: transparent;
   background-size: 200% 100%; animation: brilho 8s ease-in-out infinite alternate;
-  filter: drop-shadow(0 10px 40px color-mix(in srgb, var(--acc) 35%, transparent));
+  /* camada própria: o reflexo que passa pelas letras repinta só o texto, e não a página nem a sombra
+     desfocada (antes, no celular, título + sombra de 120 px reais + página eram redesenhados a cada quadro) */
+  will-change: transform;
 }
 @keyframes brilho { to { background-position: 100% 0; } }
 .hero-papel { font-size: clamp(1.15rem, 1rem + .7vw, 1.6rem); font-weight: 500; margin: 1.4rem 0 .6rem; max-width: 32ch; }
@@ -352,6 +356,7 @@ dialog { color: var(--ink); }
 .roster-lista { list-style: none; margin: 0; padding: 0 1.5rem 1.5rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(46%, 200px), 1fr)); gap: 1rem; }
 .roster-item button {
   --c: #fff; --c2: #000; --cb: #111;
+  contain: layout style;   /* cada card calcula o próprio layout: abrir a janela não recalcula a página toda */
   position: relative; width: 100%; aspect-ratio: 3 / 4; padding: 0; border: 2px solid transparent; border-radius: 20px; overflow: hidden; cursor: pointer;
   background: radial-gradient(120% 80% at 50% 100%, color-mix(in srgb, var(--c) 55%, var(--cb)), var(--cb) 70%);
   transition: transform .35s cubic-bezier(.2,.8,.2,1), border-color .3s, box-shadow .3s;
@@ -559,9 +564,10 @@ dialog.dialog-compat { position: fixed; inset: 0; margin: auto; z-index: 150; bo
 /* ---------- troca de personagem no celular: cortina (ver cortina() em app.js) ---------- */
 .cortina { position: fixed; inset: 0; z-index: 150; pointer-events: none; overflow: hidden; will-change: opacity; contain: strict; }
 .cortina[hidden] { display: none; }
-.cortina-circ { position: absolute; border-radius: 50%; transform: scale(.001); will-change: transform; }
+.cortina-circ { position: absolute; inset: 0; clip-path: circle(0 at 0 0); }
 .cortina-kanji {
-  position: absolute; left: 50%; top: 50%; translate: -50% -50%; opacity: 0; will-change: transform, opacity;
+  /* centralizado pelo próprio bloco (sem translate em %): assim a animação de escala roda na GPU */
+  position: absolute; inset: 0; display: grid; place-items: center; opacity: 0; will-change: transform, opacity;
   font-family: 'Noto Serif JP', 'Yu Mincho', 'Hiragino Mincho ProN', serif; font-weight: 900; line-height: 1;
   font-size: min(40vw, 30vh, 260px);
 }

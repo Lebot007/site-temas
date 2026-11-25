@@ -4,11 +4,21 @@
 
 const KEY = 'lebot:qualidade';
 
+// Criar um contexto WebGL só para testar custa caro no celular (centenas de ms no carregamento) e o contexto
+// de teste ficava vivo ao lado do das partículas. Agora: testa uma vez, libera o contexto na hora e lembra
+// do "sim" (um "não" não é guardado, para não prender o aparelho no modo sem animação por uma falha passageira).
 function webglOk() {
+  try { if (localStorage.getItem('lebot:webgl') === '1') return true; } catch {}
+  let ok = false;
   try {
     const c = document.createElement('canvas');
-    return !!(c.getContext('webgl') || c.getContext('experimental-webgl'));
-  } catch { return false; }
+    const gl = c.getContext('webgl') || c.getContext('experimental-webgl');
+    ok = !!gl;
+    const ext = gl && gl.getExtension('WEBGL_lose_context');
+    if (ext) ext.loseContext();
+  } catch {}
+  if (ok) { try { localStorage.setItem('lebot:webgl', '1'); } catch {} }
+  return ok;
 }
 
 export function detectar() {
@@ -49,10 +59,14 @@ export const PRESETS = {
 // ocupado(): enquanto devolver true (ex.: troca de personagem), a medição é descartada — a queda de quadros
 // natural da troca não pode ser confundida com aparelho fraco e rebaixar os efeitos no meio do uso.
 export function vigiarFps(rebaixar, ocupado = () => false) {
-  let quadros = 0, inicio = performance.now(), ruins = 0, ativo = true;
+  let quadros = 0, inicio = performance.now(), ruins = 0, ativo = true, ant = 0;
   function tick(t) {
     if (!ativo) return;
-    if (ocupado()) { quadros = 0; inicio = t; requestAnimationFrame(tick); return; }
+    // pausa longa entre quadros = a aba estava em segundo plano (troca de app no celular). Antes isso era
+    // contado como "FPS baixo" e, na segunda vez, o site rebaixava a qualidade sozinho sem motivo.
+    const pausa = ant && t - ant > 250;
+    ant = t;
+    if (ocupado() || pausa) { quadros = 0; inicio = t; requestAnimationFrame(tick); return; }
     quadros++;
     const dt = t - inicio;
     if (dt > 2000) {

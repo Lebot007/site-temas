@@ -40,7 +40,7 @@ void main(){
   gl_Position = vec4(p.x / uAspect * 1.4 / z * 2.0, p.y * 1.4 / z * 2.0, 0.0, 1.0);
   float pulse = 1.0 + uPulse * 0.6 * step(0.7, s);
   gl_PointSize = uSize * uDpr * (0.45 + s) * pulse * (4.0 / z);
-  vSeed = s; vDepth = clamp((z - 1.2) / 4.0, 0.0, 1.0); vRot = s * 6.283 + t * (s - 0.5);
+  vSeed = s; vDepth = clamp((z - 1.2) / 4.0, 0.0, 1.0); vRot = mod(s * 6.283 + t * (s - 0.5), 6.2832);
 }`;
 
 const FS = `
@@ -85,10 +85,32 @@ export class Atmosfera {
     this.dprMax = 2;
     this.mouse = [0, 0]; this.alvo = [0, 0];
     this.scroll = 0; this.pulso = 0;
-    this.on = false;
+    this.on = false; this.oculto = false; this.perdido = false; this.raf = 0;
     const gl = canvas.getContext('webgl', { alpha: true, antialias: false, premultipliedAlpha: false, powerPreference: 'low-power' });
     if (!gl) return;
     this.gl = gl;
+    this.loop = this.loop.bind(this);
+    this.redim = this.redim.bind(this);
+    this.montar();
+    this.t0 = performance.now();
+    addEventListener('resize', this.redim, { passive: true });
+    // um único laço de quadros: antes, cada volta do segundo plano agendava outro laço sem cancelar o que
+    // estava pendente, e as partículas passavam a ser desenhadas 2x, 3x, 4x... por quadro (pesava cada vez mais)
+    document.addEventListener('visibilitychange', () => { if (!document.hidden && this.on) this.agendar(); });
+    // Android perde o contexto WebGL com frequência (memória, segundo plano): antes as partículas sumiam de vez
+    canvas.addEventListener('webglcontextlost', e => { e.preventDefault(); this.voltar = this.perdido ? this.voltar : this.on; this.perdido = true; this.on = false; cancelAnimationFrame(this.raf); });
+    canvas.addEventListener('webglcontextrestored', () => {
+      this.perdido = false;
+      try { this.montar(); } catch { return; }
+      if (this.preset) this.tema(this.preset);
+      this.c.width = 0; this.redim();
+      if (this.voltar) this.iniciar();
+    });
+    this.redim();
+  }
+
+  montar() {
+    const gl = this.gl;
     const sh = (t, src) => { const s = gl.createShader(t); gl.shaderSource(s, src); gl.compileShader(s); if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) throw new Error(gl.getShaderInfoLog(s)); return s; };
     const pr = gl.createProgram();
     gl.attachShader(pr, sh(gl.VERTEX_SHADER, VS));
@@ -109,14 +131,9 @@ export class Atmosfera {
     for (const n of ['uTime', 'uMode', 'uSpeed', 'uSize', 'uAspect', 'uDpr', 'uMouse', 'uScroll', 'uPulse', 'uShape', 'uAlpha', 'uC1', 'uC2'])
       this.u[n] = gl.getUniformLocation(pr, n);
     gl.enable(gl.BLEND);
-    this.t0 = performance.now();
-    this.loop = this.loop.bind(this);
-    this.redim = this.redim.bind(this);
-    addEventListener('resize', this.redim, { passive: true });
-    document.addEventListener('visibilitychange', () => { if (!document.hidden && this.on) requestAnimationFrame(this.loop); });
-    canvas.addEventListener('webglcontextlost', e => { e.preventDefault(); this.on = false; });
-    this.redim();
   }
+
+  agendar() { cancelAnimationFrame(this.raf); this.raf = requestAnimationFrame(this.loop); }
 
   get ok() { return !!this.gl; }
 
@@ -137,18 +154,20 @@ export class Atmosfera {
     if (!this.gl) return;
     const dpr = Math.min(devicePixelRatio || 1, this.dprMax);
     const w = innerWidth, h = innerHeight;
-    this.c.width = Math.round(w * dpr); this.c.height = Math.round(h * dpr);
+    const cw = Math.round(w * dpr), ch = Math.round(h * dpr);
+    if (this.c.width !== cw || this.c.height !== ch) { this.c.width = cw; this.c.height = ch; }
     this.gl.viewport(0, 0, this.c.width, this.c.height);
     this.gl.uniform1f(this.u.uAspect, w / h > 1 ? w / h : 1);
     this.gl.uniform1f(this.u.uDpr, dpr);
     if (this.preset) this.qtd = Math.round(Math.min(this.max, this.preset.qtd * this.fator));
   }
 
-  iniciar() { if (this.gl && !this.on) { this.on = true; requestAnimationFrame(this.loop); } }
-  parar() { this.on = false; if (this.gl) { this.gl.clearColor(0, 0, 0, 0); this.gl.clear(this.gl.COLOR_BUFFER_BIT); } }
+  iniciar() { if (this.gl && !this.on && !this.perdido) { this.on = true; this.agendar(); } }
+  parar() { this.on = false; cancelAnimationFrame(this.raf); if (this.gl && !this.perdido) { this.gl.clearColor(0, 0, 0, 0); this.gl.clear(this.gl.COLOR_BUFFER_BIT); } }
 
   loop(t) {
     if (!this.on || document.hidden) return;
+    if (this.oculto) { this.raf = requestAnimationFrame(this.loop); return; }
     const gl = this.gl;
     this.mouse[0] += (this.alvo[0] - this.mouse[0]) * 0.05;
     this.mouse[1] += (this.alvo[1] - this.mouse[1]) * 0.05;
@@ -159,6 +178,6 @@ export class Atmosfera {
     gl.uniform1f(this.u.uPulse, this.pulso);
     gl.clearColor(0, 0, 0, 0); gl.clear(gl.COLOR_BUFFER_BIT);
     if (this.qtd > 0) gl.drawArrays(gl.POINTS, 0, this.qtd);
-    requestAnimationFrame(this.loop);
+    this.raf = requestAnimationFrame(this.loop);
   }
 }

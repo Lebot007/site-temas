@@ -3,6 +3,7 @@ import { PERFIS } from './perfis.js';
 import { Voz } from './voice.js';
 import { Atmosfera } from './fx.js';
 import { detectar, salvarNivel, PRESETS, vigiarFps } from './perf.js';
+import { GLIFOS } from './glifos.js';
 
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
@@ -12,6 +13,7 @@ const NIVEIS = ['alto', 'medio', 'baixo', 'zero'];
 const ehMouse = matchMedia('(hover: hover) and (pointer: fine)');
 
 let IMGS = {};
+const temaValido = id => typeof id === 'string' && Object.prototype.hasOwnProperty.call(TEMAS, id);
 
 // navegadores sem <dialog> (iOS < 15.4, TVs antigas): comportamento equivalente simples
 for (const d of document.querySelectorAll('dialog')) {
@@ -34,8 +36,8 @@ function aplicarQualidade(nivel) {
   raiz.toggleAttribute('data-leve', nivel === 'baixo' || nivel === 'zero');
   if (nivel === 'zero') { fx && fx.parar(); return; }
   if (!fx) {
-    fx = new Atmosfera($('#atmosfera'));
-    if (!fx.ok) { fx = null; return; }
+    try { fx = new Atmosfera($('#atmosfera')); } catch { fx = null; }
+    if (!fx || !fx.ok) { fx = null; return; }
   }
   fx.qualidade(p.particulas, p.dpr);
   if (temaAtual) fx.tema(TEMAS[temaAtual].fx);
@@ -76,9 +78,12 @@ function facesDaFonte(google) {
   });
 }
 function carregarFonte(t) {
-  const href = `https://fonts.googleapis.com/css2?family=${t.fontes.google}&display=swap`;
+  // &text=: o Google manda só os caracteres que o site usa (mesma fonte, mesmo desenho). Antes vinham ~1 MB de
+  // fontes e 150 KB de CSS (as fontes japonesas Zen trazem milhares de glifos que o site nunca mostra).
+  const href = `https://fonts.googleapis.com/css2?family=${t.fontes.google}&text=${encodeURIComponent(GLIFOS)}&display=swap`;
   if (fontesProntas.has(href)) return fontesProntas.get(href);
-  let link = [...document.querySelectorAll('link[rel="stylesheet"]')].find(l => l.href === href);
+  const igual = (a, b) => { try { return decodeURIComponent(a) === decodeURIComponent(b); } catch { return a === b; } };
+  let link = [...document.querySelectorAll('link[rel="stylesheet"]')].find(l => igual(l.href, href));
   const css = new Promise(ok => {
     if (link && link.sheet) return ok();
     if (!link) { link = Object.assign(document.createElement('link'), { rel: 'stylesheet', href }); document.head.append(link); }
@@ -106,11 +111,12 @@ function srcFundo(id) {
 // URLs já baixadas E decodificadas: a troca usa essa lista em vez de "adivinhar" o cache pelo .complete
 // (que no Android/iOS às vezes dá falso mesmo com a imagem pronta e escondia o personagem à toa)
 const prontas = new Set();
+const vivas = [];   // referências às últimas imagens pré-carregadas (limite pequeno: memória do celular)
 function preCarregar(u) {
   return new Promise(ok => {
     if (!u) return ok();
     const i = new Image();
-    const fim = () => { prontas.add(u); ok(); };
+    const fim = () => { prontas.add(u); vivas.push(i); if (vivas.length > 8) vivas.shift(); ok(); };
     i.src = u;
     if (i.decode) i.decode().then(fim, () => ok());   // espera o decode, não só o download
     else { i.onload = fim; i.onerror = () => ok(); }
@@ -126,6 +132,7 @@ function prepararTema(id) {
     h && preCarregar(srcHeroi(h)),
     preCarregar(srcFundo(id)),
     preCarregar(url(img(id, 'rosto'))),
+    preCarregar(url(img(id, 'alt') && img(id, 'alt').m)),
     preCarregar(CAMPO[id] && url(CAMPO[id])),   // o campo (trigo/flores) só era baixado depois da troca e "surgia" no meio da revelação
   ]);
   return Promise.race([tudo, new Promise(ok => setTimeout(ok, 1800))]);
@@ -140,13 +147,14 @@ function favicon(t) {
 }
 
 /* ---------------- aviso rápido (ex.: "copiado") ---------------- */
-let timerAviso = null;
+let timerAviso = null, timerAviso2 = null;
 function avisar(txt) {
   const a = $('#aviso');
   a.textContent = txt; a.hidden = false;
   a.classList.remove('sai'); void a.offsetWidth; a.classList.add('entra');
   clearTimeout(timerAviso);
-  timerAviso = setTimeout(() => { a.classList.add('sai'); setTimeout(() => { a.hidden = true; }, 300); }, 2200);
+  clearTimeout(timerAviso2);
+  timerAviso = setTimeout(() => { a.classList.add('sai'); timerAviso2 = setTimeout(() => { a.hidden = true; }, 300); }, 2200);
 }
 
 async function copiar(txt) {
@@ -196,8 +204,20 @@ function carregarImg(el, src, { srcset = '', sizes = '', placeholder = '', depoi
 function img(id, k) { const d = IMGS[id]; return d && d[k]; }
 function url(rel) { return rel ? BASE + rel : ''; }
 
+// replay da animação de entrada do personagem. Antes: remove a classe, lê offsetWidth (força o navegador a
+// recalcular o layout da página inteira na hora — no celular, logo depois da troca de tema, era a etapa mais
+// pesada) e põe a classe de volta. Agora reinicia a mesma animação CSS pelo relógio dela, sem layout forçado.
+function entrarPersonagem(palco, pi) {
+  if (!palco.classList.contains('entrando')) { palco.classList.add('entrando'); return; }
+  const anims = pi.getAnimations ? pi.getAnimations().filter(a => a.animationName === 'entrar' || a.animationName === 'respirar') : [];
+  if (!anims.length) { palco.classList.remove('entrando'); requestAnimationFrame(() => palco.classList.add('entrando')); return; }
+  for (const a of anims) { a.currentTime = 0; a.play(); }
+}
+
 function pintar(id) {
   const t = TEMAS[id];
+  const lb = $('#lightbox');
+  if (aberto(lb)) lb.close();
   const c = t.cores;
   const st = raiz.style;
   st.setProperty('--bg', c.bg); st.setProperty('--bg2', c.bg2); st.setProperty('--ink', c.ink);
@@ -228,7 +248,7 @@ function pintar(id) {
     pi.width = h.w; pi.height = h.h;
     carregarImg(pi, srcHeroi(h), {
       sumirJa: true,
-      depois: () => { palco.classList.remove('entrando'); void palco.offsetWidth; palco.classList.add('entrando'); },
+      depois: () => entrarPersonagem(palco, pi),
     });
   }
   palco.setAttribute('aria-label', `Ouvir uma frase de ${t.nome}`);
@@ -237,6 +257,7 @@ function pintar(id) {
   carregarImg($('.btn-tema-rosto'), rosto);
   carregarImg($('.dialogo-rosto'), rosto);
   $('.btn-tema-nome').textContent = curto;
+  $('#btn-tema').setAttribute('aria-label', `Trocar personagem (atual: ${t.nome})`);   // no celular o botão só mostra o rosto
   $('.dialogo-nome').textContent = t.nome;
   $('.convite-nome').textContent = curto;
   const f = srcFundo(id);
@@ -266,38 +287,65 @@ function cortina(id, origem, simples) {
   let x = W - 40, y = 32;
   if (origem) { const r = origem.getBoundingClientRect(); if (r.width) { x = r.left + r.width / 2; y = r.top + r.height / 2; } }
   const R = Math.ceil(Math.hypot(Math.max(x, W - x), Math.max(y, H - y))) + 8;
-  Object.assign(circ.style, { width: `${2 * R}px`, height: `${2 * R}px`, left: `${x - R}px`, top: `${y - R}px`,
-    background: `radial-gradient(closest-side, ${c.bg2}, ${c.bg})` });
+  // O círculo é um RECORTE (clip-path) num elemento do tamanho da tela, e não mais um disco de 2R x 2R
+  // aumentado com scale: no S24 (tela ~3,5x) aquele disco virava uma textura de ~7000 px de lado, acima do
+  // limite de muitas GPUs de celular — o navegador picotava a camada e pedaços chegavam atrasados (glitch).
+  // Mesmo visual: mesmo gradiente (centro bg2 -> borda bg, raio R) e mesmo crescimento a partir do botão.
+  circ.style.background = `radial-gradient(circle ${R}px at ${x}px ${y}px, ${c.bg2}, ${c.bg})`;
+  circ.dataset.r = R;
   k.textContent = t.kanji; k.style.color = c.acc;
   el.hidden = false;
+  const em = (r, op = 1) => ({ clipPath: `circle(${r}px at ${x}px ${y}px)`, opacity: op });
   const cobre = simples
-    ? circ.animate([{ opacity: 0, transform: 'scale(1)' }, { opacity: 1, transform: 'scale(1)' }], { duration: 260, easing: 'ease-out', fill: 'both' })
-    : circ.animate([{ transform: 'scale(0.001)' }, { transform: 'scale(1)' }], { duration: 520, easing: 'cubic-bezier(.65,0,.3,1)', fill: 'both' });
+    ? circ.animate([em(R, 0), em(R, 1)], { duration: 260, easing: 'ease-out', fill: 'both' })
+    : circ.animate([em(0), em(R)], { duration: 520, easing: 'cubic-bezier(.65,0,.3,1)', fill: 'both' });
   if (!simples) k.animate([{ opacity: 0, transform: 'scale(.75)' }, { opacity: 1, transform: 'scale(1)' }], { duration: 380, delay: 240, easing: 'cubic-bezier(.2,.9,.2,1)', fill: 'both' });
   const espera = ms => new Promise(ok => setTimeout(ok, ms));
   // 2 quadros (página nova desenhada); com teto, porque em aba de fundo o navegador para de desenhar quadros
   const quadro = () => Promise.race([new Promise(ok => requestAnimationFrame(() => requestAnimationFrame(ok))), espera(120)]);
-  const finished = cobre.finished.catch(() => {}).then(async () => {
-    raiz.classList.add('sem-transicao');      // as cores trocam de uma vez por baixo da cortina
-    pintar(id);
-    const pi = $('#personagem-img');
-    await Promise.race([pi.decode ? pi.decode().catch(() => {}) : null, espera(350)]);
-    await quadro();
-    raiz.classList.remove('sem-transicao');
-    await quadro();                            // a página nova já está desenhada antes de a cortina abrir
-    const abre = el.animate([{ opacity: 1 }, { opacity: 0 }], { duration: simples ? 320 : 420, easing: 'cubic-bezier(.3,0,.2,1)', fill: 'forwards' });
-    if (!simples) k.animate([{ transform: 'scale(1)' }, { transform: 'scale(1.3)' }], { duration: 420, easing: 'cubic-bezier(.4,0,.6,1)', fill: 'forwards' });
-    await abre.finished.catch(() => {});
-    el.hidden = true;
-    el.getAnimations({ subtree: true }).forEach(a => a.cancel());
+  // No celular a página nova (tela 3x) leva alguns quadros para ser pintada por inteiro; abrir a cortina antes
+  // mostrava pedaços ainda sendo desenhados. Espera no mínimo 200 ms E os quadros voltarem ao ritmo normal
+  // (3 seguidos abaixo de 25 ms), com teto de 700 ms.
+  const assentar = () => new Promise(ok => {
+    const t0 = performance.now(); let ant = null, bons = 0;
+    const passo = t => {
+      if (ant !== null) bons = t - ant < 25 ? bons + 1 : 0;
+      ant = t;
+      const dt = performance.now() - t0;
+      if ((bons >= 3 && dt >= 200) || dt > 700) ok(); else requestAnimationFrame(passo);
+    };
+    requestAnimationFrame(passo);
+    setTimeout(ok, 900);                       // aba em segundo plano não entrega quadros
   });
-  return { finished };
+  const finished = cobre.finished.catch(() => {}).then(async () => {
+    try {
+      // as cores trocam de uma vez por baixo da cortina; o brilho do título fica parado até ela abrir
+      raiz.classList.add('sem-transicao', 'revelando');
+      if (fx) fx.oculto = true;               // partículas não precisam ser desenhadas com a tela coberta
+      pintar(id);
+      const pi = $('#personagem-img');
+      await Promise.race([pi.decode ? pi.decode().catch(() => {}) : null, espera(350)]);
+      await quadro();
+      raiz.classList.remove('sem-transicao');
+      await assentar();                        // a página nova já está pintada antes de a cortina abrir
+    } finally {
+      if (fx) fx.oculto = false;
+      raiz.classList.remove('sem-transicao', 'revelando');
+      entrarPersonagem($('#palco-btn'), $('#personagem-img'));   // a entrada acontece à vista, não sob a cortina
+      const abre = el.animate([{ opacity: 1 }, { opacity: 0 }], { duration: simples ? 320 : 420, easing: 'cubic-bezier(.3,0,.2,1)', fill: 'forwards' });
+      if (!simples) k.animate([{ transform: 'scale(1)' }, { transform: 'scale(1.3)' }], { duration: 420, easing: 'cubic-bezier(.4,0,.6,1)', fill: 'forwards' });
+      await abre.finished.catch(() => {});
+      el.hidden = true;
+      el.getAnimations({ subtree: true }).forEach(a => a.cancel());
+    }
+  });
+  return { finished: finished.catch(() => {}) };
 }
 let secaoAtual = null;   // seção que está no meio da tela (ver iniciarReacoes)
 // troca em andamento (+ 2,5 s depois, enquanto imagens/fontes assentam): o vigia de FPS não mede nesse período
 let trocando = false, calmaAte = 0;
 async function trocarTema(id, { origem, falar = true } = {}) {
-  if (!TEMAS[id]) id = 'gojo';
+  if (!temaValido(id)) id = 'gojo';
   const primeira = temaAtual === null;
   if (id === temaAtual) return;
   const lb = $('#lightbox');
@@ -379,7 +427,11 @@ function montarPerfil(id) {
   }));
   const alt = img(id, 'alt');
   const fi = $('.ficha-retrato img');
-  if (alt) { fi.alt = TEMAS[id].nome; fi.classList.toggle('foto', !!alt.foto); carregarImg(fi, url(alt.m)); }
+  if (alt) {
+    fi.alt = TEMAS[id].nome; fi.classList.toggle('foto', !!alt.foto);
+    if (alt.w && alt.h) { fi.width = alt.w; fi.height = alt.h; }   // proporção conhecida antes de baixar
+    carregarImg(fi, url(alt.m));
+  }
 
   const lista = $('#frases-lista');
   lista.replaceChildren(...p.frases.map(({ k, t: textoBase }) => {
@@ -705,7 +757,7 @@ function legenda(texto) {
   $('.dialogo-texto').textContent = texto;
   box.classList.remove('saindo'); box.hidden = false;
   clearTimeout(timerSumir);
-  timerSumir = setTimeout(() => { box.classList.add('saindo'); setTimeout(() => { box.hidden = true; }, 300); }, 3200);
+  timerSumir = setTimeout(() => { box.classList.add('saindo'); setTimeout(() => { if (box.classList.contains('saindo')) box.hidden = true; }, 300); }, 3200);
 }
 
 function avisarVozDesligada(el) {
@@ -715,7 +767,7 @@ function avisarVozDesligada(el) {
   $('.dialogo-texto').textContent = 'Ligue a voz no botão do topo para ouvir o personagem.';
   box.classList.remove('saindo'); box.hidden = false;
   clearTimeout(timerSumir);
-  timerSumir = setTimeout(() => { box.classList.add('saindo'); setTimeout(() => box.hidden = true, 300); }, 2600);
+  timerSumir = setTimeout(() => { box.classList.add('saindo'); setTimeout(() => { if (box.classList.contains('saindo')) box.hidden = true; }, 300); }, 2600);
 }
 
 /* ---------------- personagem em 3D seguindo o mouse / giroscópio ---------------- */
@@ -776,7 +828,7 @@ async function iniciar() {
   montarRoster();
   let inicial = 'gojo';
   try { inicial = new URLSearchParams(location.search).get('p') || localStorage.getItem('lebot:tema') || 'gojo'; } catch {}
-  trocarTema(TEMAS[inicial] ? inicial : 'gojo');
+  trocarTema(temaValido(inicial) ? inicial : 'gojo');
   iniciarDialogo();
   iniciarBotaoVoz();
   iniciarReacoes();
@@ -795,6 +847,15 @@ async function iniciar() {
   // com a página já pronta, baixa aos poucos as fontes dos outros personagens (são pequenas),
   // para a troca nunca ter que esperar/trocar fonte no meio da animação. Respeita a economia de dados.
   if (!(navigator.connection && navigator.connection.saveData)) {
+    // as 10 imagens da janela "Escolha seu guia" também são baixadas e decodificadas com o aparelho ocioso:
+    // antes eram buscadas na hora em que a janela abria, e no celular a abertura engasgava
+    const ocioso = fn => (window.requestIdleCallback ? requestIdleCallback(fn, { timeout: 4000 }) : setTimeout(fn, 1500));
+    setTimeout(() => ocioso(() => {
+      for (const im of $$('#roster-lista img')) {
+        const pre = new Image(); pre.decoding = 'async'; pre.src = im.src;
+        if (pre.decode) pre.decode().catch(() => {});
+      }
+    }), 3500);
     const fila = Object.keys(TEMAS);
     const proxima = () => {
       const id = fila.shift(); if (!id) return;

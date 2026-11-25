@@ -42,8 +42,8 @@ for (let i = 0; i < SEQ.length; i++) {
     const antes = raiz.dataset.theme, log = [];
     let rodando = true;
     const amostra = () => {
-      const m = new DOMMatrix(getComputedStyle(circ).transform);
-      log.push({ t: performance.now(), tema: raiz.dataset.theme, vis: !el.hidden, esc: m.a, op: +getComputedStyle(el).opacity * +getComputedStyle(circ).opacity });
+      const esc = ((c) => { const m = /circle\(([\d.]+)px/.exec(getComputedStyle(c).clipPath || ''); return m ? Math.min(1, +m[1] / (+c.dataset.r || 1)) : 0; })(circ);
+      log.push({ t: performance.now(), tema: raiz.dataset.theme, vis: !el.hidden, esc, op: +getComputedStyle(el).opacity * +getComputedStyle(circ).opacity });
       if (rodando) requestAnimationFrame(amostra);
     };
     requestAnimationFrame(amostra);
