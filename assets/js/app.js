@@ -464,10 +464,8 @@ function loopAmp() {
     vel += ((a - pos) * 90 - vel * 13) * dt;   // rigidez 90, amortecimento 13: sem quicar
     pos += vel * dt;
     fase += dt * (1.2 + a * 2.2);              // balanço lento de cabeça enquanto fala
-    if (!transicao) {   // idem: segura a reação à voz enquanto a revelação do tema novo acontece
-      raiz.style.setProperty('--amp', Math.max(0, pos).toFixed(3));
-      raiz.style.setProperty('--fala', (Math.sin(fase) * Math.max(0, pos)).toFixed(3));
-    }
+    raiz.style.setProperty('--amp', Math.max(0, pos).toFixed(3));
+    raiz.style.setProperty('--fala', (Math.sin(fase) * Math.max(0, pos)).toFixed(3));
     if (fx) fx.pulso = Math.max(fx.pulso, a * 0.5);
     if (voz.falando || pos > 0.005 || Math.abs(vel) > 0.005) requestAnimationFrame(tick);
     else { raiz.style.setProperty('--amp', '0'); raiz.style.setProperty('--fala', '0'); ampOn = false; }
@@ -602,12 +600,8 @@ function iniciarParalaxe() {
   let rx = 0, ry = 0, alvoX = 0, alvoY = 0, rodando = false;
   const anima = () => {
     rx += (alvoX - rx) * 0.08; ry += (alvoY - ry) * 0.08;
-    // durante a troca de tema não mexe nas variáveis da raiz (no celular o giroscópio faria isso a cada quadro
-    // e obrigaria a página inteira a ser recalculada bem na hora da revelação)
-    if (!transicao) {
-      raiz.style.setProperty('--rx', rx.toFixed(2) + 'deg');
-      raiz.style.setProperty('--ry', ry.toFixed(2) + 'deg');
-    }
+    raiz.style.setProperty('--rx', rx.toFixed(2) + 'deg');
+    raiz.style.setProperty('--ry', ry.toFixed(2) + 'deg');
     if (Math.abs(alvoX - rx) > 0.02 || Math.abs(alvoY - ry) > 0.02) requestAnimationFrame(anima); else rodando = false;
   };
   const mover = (nx, ny) => {
