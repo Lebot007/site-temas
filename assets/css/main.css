@@ -555,3 +555,13 @@ html[data-leve] .frase, html[data-leve] .ficha, html[data-leve] .redes a, html[d
 /* reserva para navegadores sem <dialog> nativo */
 dialog:not([open]) { display: none; }
 dialog.dialog-compat { position: fixed; inset: 0; margin: auto; z-index: 150; box-shadow: 0 0 0 100vmax rgba(0,0,0,.6); }
+
+/* ---------- troca de personagem no celular: cortina (ver cortina() em app.js) ---------- */
+.cortina { position: fixed; inset: 0; z-index: 150; pointer-events: none; overflow: hidden; will-change: opacity; contain: strict; }
+.cortina[hidden] { display: none; }
+.cortina-circ { position: absolute; border-radius: 50%; transform: scale(.001); will-change: transform; }
+.cortina-kanji {
+  position: absolute; left: 50%; top: 50%; translate: -50% -50%; opacity: 0; will-change: transform, opacity;
+  font-family: 'Noto Serif JP', 'Yu Mincho', 'Hiragino Mincho ProN', serif; font-weight: 900; line-height: 1;
+  font-size: min(40vw, 30vh, 260px);
+}

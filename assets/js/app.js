@@ -249,6 +249,50 @@ function pintar(id) {
 }
 
 let seqTroca = 0, transicao = null;
+
+/* ---------------- troca de personagem no celular: "cortina" ----------------
+   No celular de verdade (ex.: Galaxy S24 Ultra) a View Transitions API falhava de formas que o emulador do
+   navegador não mostra: às vezes o Chrome pulava a transição (troca "no seco"), às vezes as "fotos" da página
+   (canvas WebGL do fundo, vidros com backdrop-filter, janela de seleção fechando) piscavam por cima do tema novo.
+   Aqui não há foto nenhuma: um círculo na cor do personagem novo cresce a partir do botão até cobrir a tela,
+   o tema troca por baixo (invisível), espera o personagem estar decodificado e a cortina se dissolve.
+   Só transform e opacity num único elemento fixo: roda na placa de vídeo do aparelho, sem redesenhar a página. */
+const usarCortina = () => !document.startViewTransition || !ehMouse.matches;
+function cortina(id, origem, simples) {
+  const t = TEMAS[id], c = t.cores;
+  const el = $('#cortina'), circ = $('.cortina-circ', el), k = $('.cortina-kanji', el);
+  el.getAnimations({ subtree: true }).forEach(a => a.cancel());
+  const W = innerWidth, H = innerHeight;
+  let x = W - 40, y = 32;
+  if (origem) { const r = origem.getBoundingClientRect(); if (r.width) { x = r.left + r.width / 2; y = r.top + r.height / 2; } }
+  const R = Math.ceil(Math.hypot(Math.max(x, W - x), Math.max(y, H - y))) + 8;
+  Object.assign(circ.style, { width: `${2 * R}px`, height: `${2 * R}px`, left: `${x - R}px`, top: `${y - R}px`,
+    background: `radial-gradient(closest-side, ${c.bg2}, ${c.bg})` });
+  k.textContent = t.kanji; k.style.color = c.acc;
+  el.hidden = false;
+  const cobre = simples
+    ? circ.animate([{ opacity: 0, transform: 'scale(1)' }, { opacity: 1, transform: 'scale(1)' }], { duration: 260, easing: 'ease-out', fill: 'both' })
+    : circ.animate([{ transform: 'scale(0.001)' }, { transform: 'scale(1)' }], { duration: 520, easing: 'cubic-bezier(.65,0,.3,1)', fill: 'both' });
+  if (!simples) k.animate([{ opacity: 0, transform: 'scale(.75)' }, { opacity: 1, transform: 'scale(1)' }], { duration: 380, delay: 240, easing: 'cubic-bezier(.2,.9,.2,1)', fill: 'both' });
+  const espera = ms => new Promise(ok => setTimeout(ok, ms));
+  // 2 quadros (página nova desenhada); com teto, porque em aba de fundo o navegador para de desenhar quadros
+  const quadro = () => Promise.race([new Promise(ok => requestAnimationFrame(() => requestAnimationFrame(ok))), espera(120)]);
+  const finished = cobre.finished.catch(() => {}).then(async () => {
+    raiz.classList.add('sem-transicao');      // as cores trocam de uma vez por baixo da cortina
+    pintar(id);
+    const pi = $('#personagem-img');
+    await Promise.race([pi.decode ? pi.decode().catch(() => {}) : null, espera(350)]);
+    await quadro();
+    raiz.classList.remove('sem-transicao');
+    await quadro();                            // a página nova já está desenhada antes de a cortina abrir
+    const abre = el.animate([{ opacity: 1 }, { opacity: 0 }], { duration: simples ? 320 : 420, easing: 'cubic-bezier(.3,0,.2,1)', fill: 'forwards' });
+    if (!simples) k.animate([{ transform: 'scale(1)' }, { transform: 'scale(1.3)' }], { duration: 420, easing: 'cubic-bezier(.4,0,.6,1)', fill: 'forwards' });
+    await abre.finished.catch(() => {});
+    el.hidden = true;
+    el.getAnimations({ subtree: true }).forEach(a => a.cancel());
+  });
+  return { finished };
+}
 let secaoAtual = null;   // seção que está no meio da tela (ver iniciarReacoes)
 // troca em andamento (+ 2,5 s depois, enquanto imagens/fontes assentam): o vigia de FPS não mede nesse período
 let trocando = false, calmaAte = 0;
@@ -281,7 +325,11 @@ async function trocarTema(id, { origem, falar = true } = {}) {
     if (transicao) { await transicao.finished.catch(() => {}); if (meu !== seqTroca) return; }
     raiz.classList.remove('preparando');
     const reduz = matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (document.startViewTransition && !reduz && qual.nivel !== 'zero') {
+    if (usarCortina()) {
+      // celular/tablet e navegadores sem View Transitions: cortina própria (sempre anima, nunca vaza o tema antigo)
+      const c = transicao = cortina(id, origem, reduz || qual.nivel === 'zero');
+      c.finished.finally(() => { if (transicao === c) transicao = null; });
+    } else if (!reduz && qual.nivel !== 'zero') {
       if (origem) {
         const r = origem.getBoundingClientRect();
         raiz.style.setProperty('--vt-x', `${r.left + r.width / 2}px`);

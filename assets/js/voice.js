@@ -168,8 +168,14 @@ export class Voz {
     this.audio.src = this.url(k);
     this.falando = { k, g: chave, prioridade, id };
     const p = this.audio.play();
-    if (p && p.catch) p.catch(() => { if (this.falando && this.falando.id === id) this.terminou(); });
-    this.emit('fala', info.t, info.d, k);
+    // a legenda só aparece se o áudio realmente tocar (se o navegador bloquear o som antes do primeiro toque
+    // na tela, antes aparecia a legenda "falando" sem voz nenhuma)
+    if (p && p.then) {
+      p.then(() => { if (this.falando && this.falando.id === id) this.emit('fala', info.t, info.d, k); },
+             () => { if (this.falando && this.falando.id === id) this.terminou(); });
+    } else {
+      this.emit('fala', info.t, info.d, k);
+    }
     return true;
   }
 
