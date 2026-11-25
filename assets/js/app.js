@@ -63,7 +63,9 @@ function iniciarQualidade() {
 
 /* ---------------- fontes do tema ---------------- */
 const fontesProntas = new Map();
-const AMOSTRA = 'Lebot AaBbÇçÃãÉéÕõ 0123';
+// todos os caracteres que o site usa (as fontes japonesas do Google vêm em fatias por caractere: se faltar uma
+// letra acentuada na amostra, a fatia dela só baixava na hora de desenhar — no meio da revelação do tema)
+const AMOSTRA = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz 0123456789 ÁáÀàÂâÃãÉéÊêÍíÓóÔôÕõÚúÜüÇç .,;:!?\'"“”‘’—–-…·()/&@#%+';
 // 'Cinzel:wght@500;700&family=Source+Serif+4:opsz,wght@8..60,400' -> [['Cinzel','500'],['Cinzel','700'],['Source Serif 4','400']]
 function facesDaFonte(google) {
   return google.split('&family=').flatMap(parte => {
@@ -282,11 +284,13 @@ async function trocarTema(id, { origem, falar = true } = {}) {
       // sem isso a página nova aparecia dentro do círculo ainda com as cores do tema ANTIGO, que iam mudando
       // por até 0,6 s (mistura dos dois temas) e redesenhando a tela inteira a cada quadro em plena animação.
       // A própria revelação já é a transição; fora dela (navegador sem suporte) o fade de cor continua igual.
-      const vt = transicao = document.startViewTransition(() => { raiz.classList.add('sem-transicao'); pintar(id); });
+      const vt = transicao = document.startViewTransition(() => { raiz.classList.add('sem-transicao', 'revelando'); pintar(id); });
       vt.updateCallbackDone.finally(() => requestAnimationFrame(() => requestAnimationFrame(() => {
         if (transicao === vt || !transicao) raiz.classList.remove('sem-transicao');
       })));
-      vt.finished.finally(() => { if (transicao === vt) transicao = null; });
+      vt.finished.finally(() => {
+        if (transicao === vt) { transicao = null; raiz.classList.remove('revelando'); }
+      });
     } else {
       pintar(id);
     }
@@ -482,6 +486,19 @@ function iniciarDialogo() {
   });
 }
 
+/* Variáveis que mudam a cada quadro (giroscópio do celular e volume da voz) vão SÓ nos blocos que as usam.
+   Antes iam na raiz (<html>): no celular o giroscópio mexe sem parar, e cada quadro recalculava o estilo da
+   página inteira — inclusive da animação de troca de tema, que herda da raiz. Era carga constante só em
+   aparelho de verdade (emulador não tem giroscópio). Os valores e o visual são exatamente os mesmos. */
+const TILT_EM = ['.fundo', '#palco'];          // .fundo-arte, aura, anel, personagem, kanji
+const VOZ_EM = ['#palco', '#dialogo'];         // aura, personagem, ondinhas da caixa de fala
+const alvosVar = new Map();
+function porQuadro(seletores, nome, valor) {
+  let els = alvosVar.get(seletores);
+  if (!els) { els = seletores.map(s => $(s)).filter(Boolean); alvosVar.set(seletores, els); }
+  for (const el of els) el.style.setProperty(nome, valor);
+}
+
 // O personagem responde à fala com física de mola (sobe e inclina poucos pixels e volta suave).
 let ampOn = false;
 function loopAmp() {
@@ -493,11 +510,11 @@ function loopAmp() {
     vel += ((a - pos) * 90 - vel * 13) * dt;   // rigidez 90, amortecimento 13: sem quicar
     pos += vel * dt;
     fase += dt * (1.2 + a * 2.2);              // balanço lento de cabeça enquanto fala
-    raiz.style.setProperty('--amp', Math.max(0, pos).toFixed(3));
-    raiz.style.setProperty('--fala', (Math.sin(fase) * Math.max(0, pos)).toFixed(3));
+    porQuadro(VOZ_EM, '--amp', Math.max(0, pos).toFixed(3));
+    porQuadro(VOZ_EM, '--fala', (Math.sin(fase) * Math.max(0, pos)).toFixed(3));
     if (fx) fx.pulso = Math.max(fx.pulso, a * 0.5);
     if (voz.falando || pos > 0.005 || Math.abs(vel) > 0.005) requestAnimationFrame(tick);
-    else { raiz.style.setProperty('--amp', '0'); raiz.style.setProperty('--fala', '0'); ampOn = false; }
+    else { porQuadro(VOZ_EM, '--amp', '0'); porQuadro(VOZ_EM, '--fala', '0'); ampOn = false; }
   };
   requestAnimationFrame(tick);
 }
@@ -629,8 +646,8 @@ function iniciarParalaxe() {
   let rx = 0, ry = 0, alvoX = 0, alvoY = 0, rodando = false;
   const anima = () => {
     rx += (alvoX - rx) * 0.08; ry += (alvoY - ry) * 0.08;
-    raiz.style.setProperty('--rx', rx.toFixed(2) + 'deg');
-    raiz.style.setProperty('--ry', ry.toFixed(2) + 'deg');
+    porQuadro(TILT_EM, '--rx', rx.toFixed(2) + 'deg');
+    porQuadro(TILT_EM, '--ry', ry.toFixed(2) + 'deg');
     if (Math.abs(alvoX - rx) > 0.02 || Math.abs(alvoY - ry) > 0.02) requestAnimationFrame(anima); else rodando = false;
   };
   const mover = (nx, ny) => {
