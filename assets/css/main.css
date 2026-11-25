@@ -96,9 +96,11 @@ html[data-theme="beatrice"] .fundo::after { background: radial-gradient(700px 50
 /* Kaneki: chuva fina de Tóquio */
 html[data-theme="kaneki"] .fundo::after {
   background: repeating-linear-gradient(100deg, rgba(255,255,255,.035) 0 1px, transparent 1px 9px);
+  inset: -120px -40px 0 0;   /* maior que a tela: o deslocamento abaixo nunca mostra borda */
   animation: chuva .7s linear infinite;
 }
-@keyframes chuva { to { background-position: -40px 120px; } }
+/* mesmo movimento de antes, mas por transform (roda na GPU, sem redesenhar a tela inteira a cada quadro) */
+@keyframes chuva { to { transform: translate(-40px, 120px); } }
 /* Sukuna: brasa do santuário */
 html[data-theme="sukuna"] .fundo::after { background: radial-gradient(900px 700px at 75% 100%, rgba(224,36,47,.35), transparent 70%); }
 /* Gojo: vazio infinito */
@@ -403,6 +405,10 @@ html[data-claro] .palco-personagem img { filter: drop-shadow(0 0 calc(14px + var
 
 /* transição de tema (View Transitions onde existir) */
 ::view-transition-old(root), ::view-transition-new(root) { animation: none; mix-blend-mode: normal; }
+/* a foto antiga fica por baixo (já coberta) um pouco além da revelação, para o celular terminar de
+   desenhar a página nova antes de a transição sair da tela; sem isso pedaços do tema antigo piscam no fim */
+::view-transition-old(root) { animation: segurar 1.2s linear; }
+@keyframes segurar { to { opacity: 1; } }
 ::view-transition-new(root) { animation: revelar .9s cubic-bezier(.7,0,.2,1); }
 @keyframes revelar { from { clip-path: circle(0 at var(--vt-x, 90%) var(--vt-y, 5%)); } to { clip-path: circle(150vmax at var(--vt-x, 90%) var(--vt-y, 5%)); } }
 /* enquanto o personagem novo carrega: só um sinal discreto no botão de tema */
