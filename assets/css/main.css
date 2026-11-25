@@ -404,6 +404,12 @@ html[data-claro] .palco-personagem img { filter: drop-shadow(0 0 calc(14px + var
 /* transição de tema (View Transitions onde existir) */
 ::view-transition-old(root), ::view-transition-new(root) { animation: none; mix-blend-mode: normal; }
 ::view-transition-new(root) { animation: revelar .9s cubic-bezier(.7,0,.2,1); }
+/* rede de segurança: depois que o círculo já cobriu a tela toda (~60% do tempo, com esta curva), a foto do
+   tema antigo some. Se o celular perder um quadro da página nova no fim da revelação, aparece só a cor de
+   fundo do tema novo, e não o personagem/tema antigo inteiro piscando (visto no vídeo: Capri -> Sukuna) */
+::view-transition-old(root) { animation: velhoSome .9s linear both; }
+@keyframes velhoSome { 0%, 64% { opacity: 1; } 65%, 100% { opacity: 0; } }
+::view-transition { background: var(--bg); }
 @keyframes revelar { from { clip-path: circle(0 at var(--vt-x, 90%) var(--vt-y, 5%)); } to { clip-path: circle(150vmax at var(--vt-x, 90%) var(--vt-y, 5%)); } }
 /* enquanto o personagem novo carrega: só um sinal discreto no botão de tema */
 html.preparando .btn-tema-rosto { animation: carregandoTema .8s ease-in-out infinite alternate; }
