@@ -278,7 +278,14 @@ async function trocarTema(id, { origem, falar = true } = {}) {
         raiz.style.setProperty('--vt-x', `${r.left + r.width / 2}px`);
         raiz.style.setProperty('--vt-y', `${r.top + r.height / 2}px`);
       }
-      const vt = transicao = document.startViewTransition(() => pintar(id));
+      // Durante a revelação as transições de cor do CSS (fundo do body .6s, textos, botões, topo) ficam desligadas:
+      // sem isso a página nova aparecia dentro do círculo ainda com as cores do tema ANTIGO, que iam mudando
+      // por até 0,6 s (mistura dos dois temas) e redesenhando a tela inteira a cada quadro em plena animação.
+      // A própria revelação já é a transição; fora dela (navegador sem suporte) o fade de cor continua igual.
+      const vt = transicao = document.startViewTransition(() => { raiz.classList.add('sem-transicao'); pintar(id); });
+      vt.updateCallbackDone.finally(() => requestAnimationFrame(() => requestAnimationFrame(() => {
+        if (transicao === vt || !transicao) raiz.classList.remove('sem-transicao');
+      })));
       vt.finished.finally(() => { if (transicao === vt) transicao = null; });
     } else {
       pintar(id);

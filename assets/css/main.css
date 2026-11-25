@@ -418,6 +418,7 @@ html[data-claro] .palco-personagem img { filter: drop-shadow(0 0 calc(14px + var
 @keyframes velhoSome { 0%, 64% { opacity: 1; } 65%, 100% { opacity: 0; } }
 @keyframes furo { from { --vt-r: 0px; } to { --vt-r: 150vmax; } }
 ::view-transition { background: var(--bg); }
+html.sem-transicao, html.sem-transicao *, html.sem-transicao *::before, html.sem-transicao *::after { transition: none !important; }
 @keyframes revelar { from { clip-path: circle(0 at var(--vt-x, 90%) var(--vt-y, 5%)); } to { clip-path: circle(150vmax at var(--vt-x, 90%) var(--vt-y, 5%)); } }
 /* enquanto o personagem novo carrega: só um sinal discreto no botão de tema */
 html.preparando .btn-tema-rosto { animation: carregandoTema .8s ease-in-out infinite alternate; }
