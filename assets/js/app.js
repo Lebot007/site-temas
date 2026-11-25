@@ -148,7 +148,7 @@ function carregarImg(el, src, { srcset = '', sizes = '', placeholder = '', depoi
   let fim; const pronta = new Promise(ok => { fim = ok; });   // resolve quando a imagem nova estiver aplicada
   el.removeAttribute('srcset');
   if (placeholder) { el.src = placeholder; el.classList.remove('carregando'); }   // miniatura já em cache
-  else { el.classList.add('carregando'); }
+  else { el.style.transition = 'none'; el.classList.add('carregando'); }   // some na hora (sem fade) para a imagem antiga não ficar visível durante a troca
   const pre = new Image();
   if (srcset) { pre.sizes = sizes; pre.srcset = srcset; }
   pre.src = src;
@@ -156,6 +156,7 @@ function carregarImg(el, src, { srcset = '', sizes = '', placeholder = '', depoi
   const aplicar = () => {
     if (feito || tokensImg.get(el) !== tok) return;
     feito = true;
+    el.style.transition = ''; void el.offsetWidth;   // devolve o fade só para a entrada da imagem nova
     if (srcset) { el.sizes = sizes; el.srcset = srcset; }
     el.src = pre.currentSrc || src;
     el.classList.remove('carregando');
