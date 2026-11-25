@@ -1,220 +1,220 @@
 {
  "gojo": {
   "ola_1": {
-   "t": "Yo! Satoru Gojo aqui. Bem-vindo ao portfólio do Lebot.",
-   "d": 4.89
+   "t": "E aí! Bem-vindo ao portfólio do Lebot. Relaxa, você tá em boas mãos.",
+   "d": 4.45
   },
   "ola_2": {
    "t": "Voltou, é? Claro que voltou. Ninguém resiste a mim.",
-   "d": 3.88
+   "d": 3.38
   },
   "ola_3": {
-   "t": "E aí! Relaxa, você tá com o mais forte.",
-   "d": 2.32
+   "t": "Chegou, hein! Fica tranquilo, você tá com o mais forte.",
+   "d": 3.37
   },
   "ola_4": {
    "t": "Opa, visita! Senta aí, eu trouxe doces.",
-   "d": 3.36
+   "d": 2.79
   },
   "voz_1": {
    "t": "Agora você pode ouvir o mais forte. De nada.",
-   "d": 2.67
+   "d": 2.44
   },
   "voz_2": {
    "t": "Som ligado! Prepara que eu sou muito carismático.",
-   "d": 2.67
+   "d": 2.72
   },
   "sec_inicio_1": {
    "t": "Esse é o Lebot. Um aluno promissor. Quase tão bom quanto eu.",
-   "d": 4.17
+   "d": 3.84
   },
   "sec_inicio_2": {
    "t": "De volta ao começo! Teleporte instantâneo.",
-   "d": 2.52
+   "d": 2.35
   },
   "sec_inicio_3": {
    "t": "O dono do site. Mas a estrela sou eu, né?",
-   "d": 2.11
+   "d": 2.56
   },
   "sec_perfil_1": {
-   "t": "Esse sou eu! Satoru Gojo. O feiticeiro mais forte.",
-   "d": 3.36
+   "t": "Esse sou eu! O feiticeiro mais forte. Pode anotar.",
+   "d": 3.24
   },
   "sec_perfil_2": {
-   "t": "Seis Olhos, Ilimitado... e lindo. Pode anotar.",
-   "d": 3.65
+   "t": "Seis Olhos, Ilimitado... e ainda por cima bonito.",
+   "d": 2.78
   },
   "sec_perfil_3": {
    "t": "Lê com atenção, vai cair na prova.",
-   "d": 2.01
+   "d": 1.83
   },
   "sec_frases_1": {
    "t": "Minhas frases! Clica numa, eu falo.",
-   "d": 2.65
+   "d": 2.35
   },
   "sec_frases_2": {
    "t": "Escolhe uma. Todas são lendárias.",
-   "d": 3.0
+   "d": 2.1
   },
   "sec_galeria_1": {
    "t": "Galeria do Gojo! Obviamente eu sou lindo em todas.",
-   "d": 3.36
+   "d": 2.73
   },
   "sec_galeria_2": {
    "t": "Os artistas me amam. Faz sentido.",
-   "d": 2.31
+   "d": 2.17
   },
   "sec_galeria_3": {
    "t": "Uma exposição só minha. Merecido.",
-   "d": 2.36
+   "d": 2.2
   },
   "sec_contato_1": {
    "t": "Quer falar com o Lebot? Vai fundo. Eu dou cobertura.",
-   "d": 2.84
+   "d": 3.19
   },
   "sec_contato_2": {
    "t": "As redes dele! Segue tudo, é rapidinho.",
-   "d": 2.82
+   "d": 2.66
   },
   "sec_contato_3": {
    "t": "Escolhe uma aí. Eu recomendo todas.",
-   "d": 2.24
+   "d": 2.3
   },
   "instagram_1": {
    "t": "O Instagram dele! Segue aí, não custa nada.",
-   "d": 2.42
+   "d": 3.03
   },
   "instagram_2": {
    "t": "Fotos! Nenhuma tão boa quanto as minhas, mas tudo bem.",
-   "d": 3.04
+   "d": 3.41
   },
   "instagram_3": {
    "t": "Segue lá. Eu tô de olho. Literalmente.",
-   "d": 3.46
+   "d": 2.57
   },
   "tiktok_1": {
    "t": "TikTok! Eu ia aparecer lá, mas ia quebrar o algoritmo.",
-   "d": 3.13
+   "d": 3.6
   },
   "tiktok_2": {
    "t": "Vídeos curtos! Perfeito pra ver comendo doce.",
-   "d": 2.56
+   "d": 2.7
   },
   "tiktok_3": {
    "t": "Vai lá, vai. Eu espero.",
-   "d": 1.55
+   "d": 1.49
   },
   "twitch_1": {
    "t": "A live na Twitch! Bora assistir, eu levo os doces.",
-   "d": 2.84
+   "d": 3.15
   },
   "twitch_2": {
    "t": "Ao vivo! Igual aula prática, só que mais divertido.",
-   "d": 4.03
+   "d": 3.16
   },
   "twitch_3": {
    "t": "Aparece no chat e fala que o Gojo mandou.",
-   "d": 2.47
+   "d": 2.51
   },
   "spotify_1": {
    "t": "A playlist dele. Boa pra ouvir comendo um doce.",
-   "d": 2.88
+   "d": 2.57
   },
   "spotify_2": {
    "t": "Música! Coloca alto, ninguém reclama do mais forte.",
-   "d": 3.74
+   "d": 3.25
   },
   "spotify_3": {
    "t": "Bota pra tocar. Eu danço bem, sabia?",
-   "d": 2.46
+   "d": 2.5
   },
   "github_1": {
    "t": "O GitHub dele. É aqui que a mágica de verdade acontece.",
-   "d": 3.17
+   "d": 3.32
   },
   "github_2": {
    "t": "Código bem feito. Eu aprovo.",
-   "d": 1.65
+   "d": 1.97
   },
   "github_3": {
    "t": "Dá uma olhada. Tá cheio de técnica aí.",
-   "d": 2.32
+   "d": 2.18
   },
   "discord_1": {
    "t": "O Discord dele! Clica que eu copio pra você.",
-   "d": 2.65
+   "d": 2.45
   },
   "discord_2": {
    "t": "Lebot ponto gê gê. Fácil, né?",
-   "d": 2.88
+   "d": 2.26
   },
   "discord_3": {
    "t": "Chama ele no Discord. Diz que eu mandei.",
-   "d": 2.37
+   "d": 2.14
   },
   "copiado_1": {
    "t": "Copiado! Velocidade do mais forte.",
-   "d": 2.66
+   "d": 2.25
   },
   "copiado_2": {
    "t": "Pronto! Nem precisou de técnica.",
-   "d": 2.13
+   "d": 2.06
   },
   "arte_1": {
    "t": "Olha só, que beleza. Também, com esse modelo.",
-   "d": 2.52
+   "d": 2.5
   },
   "arte_2": {
    "t": "Esse aqui me pegou no meu melhor ângulo.",
-   "d": 1.81
+   "d": 1.82
   },
   "arte_3": {
    "t": "Os olhos ficaram perfeitos. Como os originais.",
-   "d": 2.75
+   "d": 2.58
   },
   "arte_4": {
    "t": "Eu fico bem até de venda nos olhos.",
-   "d": 2.03
+   "d": 1.69
   },
   "arte_5": {
    "t": "Uau. Eu sou tão bonito assim? Sou.",
-   "d": 2.36
+   "d": 2.62
   },
   "arte_6": {
    "t": "Clica nessa. Ela merece.",
-   "d": 1.87
+   "d": 1.9
   },
   "abrir_arte_1": {
    "t": "Ampliando. Com os Seis Olhos fica ainda melhor.",
-   "d": 3.44
+   "d": 2.77
   },
   "abrir_arte_2": {
    "t": "Olha os detalhes! Perfeição.",
-   "d": 1.91
+   "d": 1.76
   },
   "abrir_arte_3": {
    "t": "Em tela cheia eu fico ainda mais lindo.",
-   "d": 1.75
+   "d": 2.29
   },
   "abrir_arte_4": {
    "t": "Zoom no mais forte. Aproveita.",
-   "d": 2.59
+   "d": 1.99
   },
   "abrir_arte_5": {
    "t": "Essa é top. Confia.",
-   "d": 1.86
+   "d": 1.51
   },
   "abrir_arte_6": {
    "t": "Pode olhar à vontade. Eu deixo.",
-   "d": 2.04
+   "d": 1.93
   },
   "tema_1": {
    "t": "Vai me trocar? Sério? Você sabe que eu sou o mais forte, né?",
-   "d": 3.54
+   "d": 3.4
   },
   "tema_2": {
    "t": "Outro guia? Tudo bem, eu espero. Com doces.",
-   "d": 3.25
+   "d": 3.59
   },
   "tema_3": {
    "t": "Vai lá. Mas volta, hein?",
@@ -222,15 +222,15 @@
   },
   "idle_1": {
    "t": "Ei, ei, cadê você? Tô ficando entediado.",
-   "d": 2.48
+   "d": 2.29
   },
   "idle_2": {
    "t": "Se ficar parado, eu vou comer todos os doces sozinho.",
-   "d": 2.27
+   "d": 3.16
   },
   "idle_3": {
    "t": "Silêncio total. Parece o Vazio Infinito.",
-   "d": 3.24
+   "d": 2.4
   },
   "idle_4": {
    "t": "Tô contando até três. Um... dois...",
@@ -238,51 +238,51 @@
   },
   "idle_5": {
    "t": "Cochilou? Acontece com os melhores. Menos comigo.",
-   "d": 3.86
+   "d": 3.04
   },
   "frase_1": {
    "t": "Fica tranquilo. Afinal, eu sou o mais forte.",
-   "d": 2.75
+   "d": 2.4
   },
   "frase_2": {
    "t": "Expansão de Domínio. Vazio Infinito.",
-   "d": 2.03
+   "d": 2.42
   },
   "frase_3": {
    "t": "Ao longo dos céus e da terra, somente eu sou o honrado.",
-   "d": 3.46
+   "d": 2.84
   },
   "frase_4": {
    "t": "Perder? Nah. Eu ganharia.",
-   "d": 2.41
+   "d": 1.98
   },
   "frase_5": {
    "t": "Ninguém encosta nos meus alunos.",
-   "d": 1.84
+   "d": 1.55
   },
   "frase_6": {
    "t": "Eu sou o mais forte porque eu nasci assim.",
-   "d": 1.75
+   "d": 2.1
   },
   "tchau_1": {
    "t": "Até mais! Não sente muita saudade, hein.",
-   "d": 3.05
+   "d": 2.34
   },
   "tchau_2": {
    "t": "Tchau! Vou ali comprar uns doces.",
-   "d": 2.16
+   "d": 2.04
   },
   "tchau_3": {
    "t": "Falou! O mais forte se despede.",
-   "d": 2.55
+   "d": 2.1
   },
   "topo_1": {
    "t": "De volta pro topo! Teleporte instantâneo.",
-   "d": 2.7
+   "d": 2.48
   },
   "topo_2": {
    "t": "Subindo! Mais rápido que a luz.",
-   "d": 2.64
+   "d": 2.04
   }
  },
  "beatrice": {
