@@ -10,7 +10,7 @@ export const PERFIS = {
     ],
     traits: ['Brincalhona', 'Curiosa', 'Carente de companhia', 'Digital até a alma'],
     ficha: [['Obra', 'Cyberpunk: Edgerunners 2'], ['Estúdios', 'Studio Trigger · CD PROJEKT RED'], ['Origem', 'Projeto Capricorn (Arasaka)'], ['Onde vive', 'Um shard de dados'], ['Visual', 'Formas vermelhas e visor verde neon']],
-    frases: ['frase_1', 'frase_2', 'frase_3', 'frase_4', 'frase_5', 'frase_6'],
+    frases: [{ k: "frase_1", t: "Eu não sou só um programa. Eu sou várias pessoas tentando ser uma só." }, { k: "frase_2", t: "Num mundo feito de cromo, ser lembrada é o jeito de continuar viva." }, { k: "frase_3", t: "Se o mundo inteiro apagar, eu continuo aqui. Guardadinha no chip." }, { k: "frase_4", t: "Night City não perdoa ninguém. Mas aqui a gente tem um ao outro." }, { k: "frase_5", t: "Me conecta de novo? Eu prometo não sumir." }, { k: "frase_6", t: "Eu sou feita de memórias. E agora você é uma delas." }],
   },
   sukuna: {
     titulo: 'O Rei das Maldições',
@@ -20,7 +20,7 @@ export const PERFIS = {
     ],
     traits: ['Arrogante', 'Implacável', 'Gênio do combate', 'Respeita apenas a força'],
     ficha: [['Obra', 'Jujutsu Kaisen'], ['Criador', 'Gege Akutami'], ['Estúdio', 'MAPPA'], ['Voz original', 'Junichi Suwabe'], ['Técnica', 'Santuário (Desmantelar e Clivar)'], ['Domínio', 'Santuário Malevolente']],
-    frases: ['frase_1', 'frase_2', 'frase_3', 'frase_4', 'frase_5', 'frase_6'],
+    frases: [{ k: "frase_1", t: "Conheça o seu lugar, tolo." }, { k: "frase_2", t: "Fique orgulhoso. Você é forte." }, { k: "frase_3", t: "Expansão de Domínio. Santuário Malevolente." }, { k: "frase_4", t: "Eu sou o Rei das Maldições. Lembre-se disso." }, { k: "frase_5", t: "Desmantelar. Clivar." }, { k: "frase_6", t: "Eu faço o que quero, quando quero." }],
   },
   kaneki: {
     titulo: 'Metade humano, metade ghoul',
@@ -30,7 +30,7 @@ export const PERFIS = {
     ],
     traits: ['Gentil', 'Leitor voraz', 'Protetor', 'Atormentado'],
     ficha: [['Obra', 'Tokyo Ghoul'], ['Criador', 'Sui Ishida'], ['Estúdio', 'Studio Pierrot'], ['Voz original', 'Natsuki Hanae'], ['Kagune', 'Rinkaku'], ['Refúgio', 'Café Anteiku']],
-    frases: ['frase_1', 'frase_2', 'frase_3', 'frase_4', 'frase_5', 'frase_6'],
+    frases: [{ k: "frase_1", t: "Eu não sou o protagonista de uma novela. Sou só um universitário que gosta de ler." }, { k: "frase_2", t: "Se você escrevesse uma história comigo, seria uma tragédia." }, { k: "frase_3", t: "Não é o mundo que está errado. Sou eu." }, { k: "frase_4", t: "Mil menos sete... novecentos e noventa e três. Novecentos e noventa e três menos sete... novecentos e oitenta e seis." }, { k: "frase_5", t: "Eu prefiro ser ferido do que ferir alguém." }, { k: "frase_6", t: "Eu vou proteger quem eu amo. Não importa o que eu me torne." }],
   },
   frieren: {
     titulo: 'A maga que aprende a sentir',
@@ -40,7 +40,7 @@ export const PERFIS = {
     ],
     traits: ['Calma', 'Distraída', 'Colecionadora de feitiços', 'Mais carinhosa do que parece'],
     ficha: [['Obra', 'Sousou no Frieren'], ['Autores', 'Kanehito Yamada · Tsukasa Abe'], ['Estúdio', 'Madhouse'], ['Voz original', 'Atsumi Tanezaki'], ['Raça', 'Elfa'], ['Feitiço marcante', 'Zoltraak']],
-    frases: ['frase_1', 'frase_2', 'frase_3', 'frase_4', 'frase_5', 'frase_6'],
+    frases: [{ k: "frase_1", t: "A vida humana é curta. Por que eu não tentei conhecê-lo melhor?" }, { k: "frase_2", t: "Zoltraak." }, { k: "frase_3", t: "Magia é o mundo da imaginação." }, { k: "frase_4", t: "Eu quero entender os humanos." }, { k: "frase_5", t: "Esse baú deve ser um mímico. Mas eu vou abrir mesmo assim." }, { k: "frase_6", t: "Eu aprendo feitiços que fazem flores. É o meu preferido." }],
   },
   emilia: {
     titulo: 'A meia-elfa de coração gentil',
@@ -50,7 +50,7 @@ export const PERFIS = {
     ],
     traits: ['Gentil', 'Determinada', 'Ingênua', 'Justa'],
     ficha: [['Obra', 'Re:Zero, Começando a Vida em Outro Mundo'], ['Autor', 'Tappei Nagatsuki'], ['Estúdio', 'White Fox'], ['Voz original', 'Rie Takahashi'], ['Espírito', 'Puck'], ['Magia', 'Gelo']],
-    frases: ['frase_1', 'frase_2', 'frase_3', 'frase_4', 'frase_5', 'frase_6'],
+    frases: [{ k: "frase_1", t: "Eu sou só a Emilia. Só Emilia." }, { k: "frase_2", t: "Eu quero ser alguém que ajuda as pessoas, não importa o que digam." }, { k: "frase_3", t: "Obrigada por estar aqui. De verdade." }, { k: "frase_4", t: "Eu vou me esforçar. Isso eu prometo." }, { k: "frase_5", t: "Eu quero que todos sejam tratados com justiça." }, { k: "frase_6", t: "Mesmo com medo, eu vou seguir em frente." }],
   },
   beatrice: {
     titulo: 'A guardiã da biblioteca proibida',
@@ -60,7 +60,7 @@ export const PERFIS = {
     ],
     traits: ['Orgulhosa', 'Tsundere', 'Leal', 'Mais doce do que admite'],
     ficha: [['Obra', 'Re:Zero, Começando a Vida em Outro Mundo'], ['Autor', 'Tappei Nagatsuki'], ['Estúdio', 'White Fox'], ['Voz original', 'Satomi Arai'], ['Natureza', 'Grande Espírito'], ['Lar', 'Biblioteca dos Livros Proibidos']],
-    frases: ['frase_1', 'frase_2', 'frase_3', 'frase_4', 'frase_5', 'frase_6'],
+    frases: [{ k: "frase_1", t: "A Betty é um grande espírito, eu diria." }, { k: "frase_2", t: "Quem é você para invadir a Biblioteca dos Livros Proibidos?" }, { k: "frase_3", t: "A Betty não está feliz. Nem um pouquinho, eu diria." }, { k: "frase_4", t: "A Betty esperou por alguém por quatrocentos anos, eu diria." }, { k: "frase_5", t: "Não chame a Betty de criança, eu diria!" }, { k: "frase_6", t: "Se for você... a Betty aceita, eu diria." }],
   },
   rem: {
     titulo: 'A empregada que começou do zero',
@@ -70,7 +70,7 @@ export const PERFIS = {
     ],
     traits: ['Dedicada', 'Educada', 'Corajosa', 'Leal até o fim'],
     ficha: [['Obra', 'Re:Zero, Começando a Vida em Outro Mundo'], ['Autor', 'Tappei Nagatsuki'], ['Estúdio', 'White Fox'], ['Voz original', 'Inori Minase'], ['Raça', 'Oni'], ['Arma', 'Mangual (morning star)']],
-    frases: ['frase_1', 'frase_2', 'frase_3', 'frase_4', 'frase_5', 'frase_6'],
+    frases: [{ k: "frase_1", t: "Vamos começar do zero. Do zero, juntos." }, { k: "frase_2", t: "A Rem acha que você é um herói." }, { k: "frase_3", t: "Por favor, deixe a Rem ficar ao seu lado." }, { k: "frase_4", t: "Falar do futuro faz o demônio rir, não é?" }, { k: "frase_5", t: "A Rem ama você. Isso nunca vai mudar." }, { k: "frase_6", t: "A Rem vai proteger você. Custe o que custar." }],
   },
   eren: {
     titulo: 'O garoto que queria ver o mar',
@@ -80,7 +80,7 @@ export const PERFIS = {
     ],
     traits: ['Obstinado', 'Impulsivo', 'Movido pela liberdade', 'Implacável'],
     ficha: [['Obra', 'Shingeki no Kyojin (Attack on Titan)'], ['Criador', 'Hajime Isayama'], ['Estúdios', 'WIT Studio · MAPPA'], ['Voz original', 'Yuki Kaji'], ['Titãs', 'Ataque e Fundador'], ['Tropa', 'Tropa de Exploração']],
-    frases: ['frase_1', 'frase_2', 'frase_3', 'frase_4', 'frase_5', 'frase_6'],
+    frases: [{ k: "frase_1", t: "Se você vencer, você vive. Se perder, morre. Se não lutar, não pode vencer!" }, { k: "frase_2", t: "Tatakae. Lute!" }, { k: "frase_3", t: "Eu continuo seguindo em frente." }, { k: "frase_4", t: "Eu nasci neste mundo. Eu sou livre." }, { k: "frase_5", t: "Além das muralhas tem o mar. Eu vou ver." }, { k: "frase_6", t: "A liberdade não é dada. É conquistada." }],
   },
   thorfinn: {
     titulo: 'O guerreiro que escolheu a paz',
@@ -90,7 +90,7 @@ export const PERFIS = {
     ],
     traits: ['Pacífico', 'Trabalhador', 'Arrependido', 'Sonhador'],
     ficha: [['Obra', 'Vinland Saga'], ['Criador', 'Makoto Yukimura'], ['Estúdios', 'WIT Studio · MAPPA'], ['Voz original', 'Yuto Uemura'], ['Pai', 'Thors, o Troll de Jom'], ['Sonho', 'Fundar Vinland']],
-    frases: ['frase_1', 'frase_2', 'frase_3', 'frase_4', 'frase_5', 'frase_6'],
+    frases: [{ k: "frase_1", t: "Eu não tenho inimigos." }, { k: "frase_2", t: "Ninguém tem inimigos. Ninguém." }, { k: "frase_3", t: "Eu vou construir uma terra sem guerra e sem escravidão. Vinland." }, { k: "frase_4", t: "Um verdadeiro guerreiro não precisa de espada." }, { k: "frase_5", t: "Eu passei a vida tirando. Agora eu quero dar." }, { k: "frase_6", t: "O arrependimento não apaga o passado. Mas muda o futuro." }],
   },
   gojo: {
     titulo: 'O feiticeiro mais forte',
@@ -100,6 +100,6 @@ export const PERFIS = {
     ],
     traits: ['Confiante', 'Brincalhão', 'Protetor dos alunos', 'Ama doces'],
     ficha: [['Obra', 'Jujutsu Kaisen'], ['Criador', 'Gege Akutami'], ['Estúdio', 'MAPPA'], ['Voz original', 'Yuichi Nakamura'], ['Técnica', 'Ilimitado e Seis Olhos'], ['Domínio', 'Vazio Infinito']],
-    frases: ['frase_1', 'frase_2', 'frase_3', 'frase_4', 'frase_5', 'frase_6'],
+    frases: [{ k: "frase_1", t: "Fica tranquilo. Afinal, eu sou o mais forte." }, { k: "frase_2", t: "Expansão de Domínio. Vazio Infinito." }, { k: "frase_3", t: "Ao longo dos céus e da terra, somente eu sou o honrado." }, { k: "frase_4", t: "Perder? Nah. Eu ganharia." }, { k: "frase_5", t: "Ninguém encosta nos meus alunos." }, { k: "frase_6", t: "Eu sou o mais forte porque eu nasci assim." }],
   },
 };

@@ -12,7 +12,8 @@ function webglOk() {
 }
 
 export function detectar() {
-  const salvo = localStorage.getItem(KEY);
+  let salvo = null;
+  try { salvo = localStorage.getItem(KEY); } catch {}
   if (salvo && ['alto', 'medio', 'baixo', 'zero'].includes(salvo)) return { nivel: salvo, manual: true };
 
   const reduz = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -20,21 +21,21 @@ export function detectar() {
 
   const nav = navigator;
   const cores = nav.hardwareConcurrency || 4;
-  const mem = nav.deviceMemory || 4;            // só Chromium expõe; nos outros assume 4
+  const mem = nav.deviceMemory || 0;            // só Chromium expõe; 0 = desconhecido (Firefox/Safari)
   const economia = nav.connection && nav.connection.saveData;
   const toque = matchMedia('(pointer: coarse)').matches;
-  const semPonteiro = matchMedia('(pointer: none)').matches || matchMedia('(hover: none) and (min-width: 1280px)').matches;
+  const semPonteiro = matchMedia('(pointer: none)').matches;
   const tv = semPonteiro || /SMART-TV|SmartTV|Tizen|Web0S|webOS|HbbTV|AFT|BRAVIA|CrKey|GoogleTV/i.test(nav.userAgent);
   const telaGrande = Math.max(screen.width, screen.height) * (devicePixelRatio || 1);
 
   let nivel = 'alto';
-  if (economia || tv || cores <= 2 || mem <= 2) nivel = 'baixo';
-  else if (toque || cores <= 4 || mem <= 4 || telaGrande > 3800) nivel = 'medio';
+  if (economia || tv || cores <= 2 || (mem && mem <= 2)) nivel = 'baixo';
+  else if (toque || cores <= 4 || (mem && mem <= 4) || telaGrande > 3800) nivel = 'medio';
   return { nivel, manual: false, tv, toque };
 }
 
 export function salvarNivel(n) {
-  if (n) localStorage.setItem(KEY, n); else localStorage.removeItem(KEY);
+  try { if (n) localStorage.setItem(KEY, n); else localStorage.removeItem(KEY); } catch {}
 }
 
 export const PRESETS = {

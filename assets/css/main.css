@@ -528,3 +528,12 @@ html[data-claro] .palco-kanji { -webkit-text-stroke-color: color-mix(in srgb, va
 html[data-leve] *, html[data-leve] *::before { -webkit-backdrop-filter: none !important; backdrop-filter: none !important; }
 html[data-leve] .palco-anel, html[data-leve] .hero-letras { animation: none; }
 html[data-leve] .frase, html[data-leve] .ficha, html[data-leve] .redes a, html[data-leve] .palco-legenda { background: var(--bg2); }
+
+/* imagem trocando: some até a nova estar pronta (evita mostrar a do personagem anterior) */
+#personagem-img, .lightbox img, .ficha-retrato img, .btn-tema-rosto, .dialogo-rosto { transition: opacity .25s ease; }
+#personagem-img.carregando, .lightbox img.carregando, .ficha-retrato img.carregando,
+.btn-tema-rosto.carregando, .dialogo-rosto.carregando { opacity: 0; }
+
+/* reserva para navegadores sem <dialog> nativo */
+dialog:not([open]) { display: none; }
+dialog.dialog-compat { position: fixed; inset: 0; margin: auto; z-index: 150; box-shadow: 0 0 0 100vmax rgba(0,0,0,.6); }

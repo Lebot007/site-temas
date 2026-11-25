@@ -2,10 +2,13 @@
 // Áudios pré-gerados (MP3) — nenhuma chave de API no site.
 
 const KEY = 'lebot:voz';
+// localStorage pode falhar (aba anônima antiga, armazenamento bloqueado): nunca derrubar o site por isso
+const ler = k => { try { return localStorage.getItem(k); } catch { return null; } };
+const gravar = (k, v) => { try { localStorage.setItem(k, v); } catch {} };
 // prioridade: 3 = ação direta (clique, ligar voz) · 2 = troca de tema · 1 = hover/seção · 0 = ocioso
 export class Voz {
   constructor() {
-    this.ligada = localStorage.getItem(KEY) === '1';
+    this.ligada = ler(KEY) === '1';
     this.manifest = null;
     this.tema = null;
     this.audio = new Audio();
@@ -21,7 +24,7 @@ export class Voz {
     this.audio.addEventListener('error', () => this.terminou());
     this.audio.addEventListener('pause', () => {
       // só conta como fim se a pausa for da fala atual (não da troca de src)
-      if (this.falando && !this.audio.ended && this.audio.src.endsWith(`/${this.falando.k}.mp3`) && this.audio.currentTime > 0) this.terminou();
+      if (this.falando && !this.audio.ended && this.audio.src.includes(`/${this.falando.k}.mp3`) && this.audio.currentTime > 0) this.terminou();
     });
   }
 
@@ -30,7 +33,7 @@ export class Voz {
 
   async carregar(base) {
     this.base = base;
-    try { this.manifest = await (await fetch(base + 'manifest.json', { cache: 'force-cache' })).json(); }
+    try { this.manifest = await (await fetch(base + 'manifest.json', { cache: 'no-cache' })).json(); }
     catch { this.manifest = {}; }
   }
 
@@ -51,7 +54,11 @@ export class Voz {
     for (const k of lista) fetch(this.url(k), { priority: 'low' }).catch(() => {});
   }
 
-  url(k) { return `${this.base}${this.tema}/${k}.mp3`; }
+  // a duração entra no endereço: quando uma fala é regenerada, o navegador baixa a nova (sem cache velho)
+  url(k) {
+    const info = ((this.manifest || {})[this.tema] || {})[k];
+    return `${this.base}${this.tema}/${k}.mp3${info ? `?v=${Math.round(info.d * 100)}` : ''}`;
+  }
 
   // cria o analisador só depois de um gesto (exigência do Safari/Chrome)
   prepararAnalise() {
@@ -92,7 +99,7 @@ export class Voz {
     const quer = typeof forcar === 'boolean' ? forcar : !(this.ligada && !this.saindo);
     this.saindo = false;
     this.ligada = quer;
-    localStorage.setItem(KEY, this.ligada ? '1' : '0');
+    gravar(KEY, this.ligada ? '1' : '0');
     if (this.ligada) {
       this.prepararAnalise();
       if (this.ctx && this.ctx.state === 'suspended') this.ctx.resume();

@@ -12,6 +12,16 @@ const NIVEIS = ['alto', 'medio', 'baixo', 'zero'];
 const ehMouse = matchMedia('(hover: hover) and (pointer: fine)');
 
 let IMGS = {};
+
+// navegadores sem <dialog> (iOS < 15.4, TVs antigas): comportamento equivalente simples
+for (const d of document.querySelectorAll('dialog')) {
+  if (typeof d.showModal !== 'function') {
+    d.showModal = () => { d.setAttribute('open', ''); d.classList.add('dialog-compat'); };
+    d.close = () => { d.removeAttribute('open'); d.dispatchEvent(new Event('close')); };
+    d.addEventListener('keydown', e => { if (e.key === 'Escape') d.close(); });
+  }
+}
+const aberto = d => d.hasAttribute('open');
 let temaAtual = null;
 let qual = detectar();
 const voz = new Voz();
@@ -87,6 +97,34 @@ async function copiar(txt) {
   return ok;
 }
 
+/* ---------------- troca de imagem sem "piscar" a anterior ----------------
+   Baixa a imagem nova em segundo plano e só troca quando ela está pronta.
+   Cada elemento guarda um token: se outra troca começar no meio, a antiga é descartada. */
+const tokensImg = new WeakMap();
+function carregarImg(el, src, { srcset = '', sizes = '', placeholder = '', depois } = {}) {
+  const tok = {};
+  tokensImg.set(el, tok);
+  el.removeAttribute('srcset');
+  if (placeholder) { el.src = placeholder; el.classList.remove('carregando'); }   // miniatura já em cache
+  else { el.classList.add('carregando'); }
+  const pre = new Image();
+  if (srcset) { pre.sizes = sizes; pre.srcset = srcset; }
+  pre.src = src;
+  let feito = false;
+  const aplicar = () => {
+    if (feito || tokensImg.get(el) !== tok) return;
+    feito = true;
+    if (srcset) { el.sizes = sizes; el.srcset = srcset; }
+    el.src = pre.currentSrc || src;
+    el.classList.remove('carregando');
+    if (depois) depois();
+  };
+  if (pre.complete && pre.naturalWidth) return aplicar();
+  pre.onload = aplicar;
+  pre.onerror = aplicar;
+  if (pre.decode) pre.decode().then(aplicar, () => {});
+}
+
 /* ---------------- aplicar tema ---------------- */
 function img(id, k) { const d = IMGS[id]; return d && d[k]; }
 function url(rel) { return rel ? BASE + rel : ''; }
@@ -117,21 +155,22 @@ function pintar(id) {
   // personagem no palco
   const h = img(id, 'heroi');
   const pi = $('#personagem-img');
-  if (h) {
-    pi.srcset = `${url(h.m)} 600w, ${url(h.src)} 1200w`;
-    pi.sizes = '(max-width: 860px) 90vw, 50vw';
-    pi.src = url(h.src);
-    pi.width = h.w; pi.height = h.h;
-    pi.alt = `${t.nome}, de ${t.anime}`;
-  }
   const palco = $('#palco-btn');
-  palco.classList.remove('entrando'); void palco.offsetWidth; palco.classList.add('entrando');
+  if (h) {
+    pi.alt = `${t.nome}, de ${t.anime}`;
+    pi.width = h.w; pi.height = h.h;
+    const pequeno = matchMedia('(max-width: 860px)').matches;
+    carregarImg(pi, url(pequeno ? h.m : h.src), {
+      srcset: `${url(h.m)} 600w, ${url(h.src)} 1200w`, sizes: '(max-width: 860px) 90vw, 50vw',
+      depois: () => { palco.classList.remove('entrando'); void palco.offsetWidth; palco.classList.add('entrando'); },
+    });
+  }
   palco.setAttribute('aria-label', `Ouvir uma frase de ${t.nome}`);
 
   const rosto = url(img(id, 'rosto'));
-  $('.btn-tema-rosto').src = rosto;
+  carregarImg($('.btn-tema-rosto'), rosto);
+  carregarImg($('.dialogo-rosto'), rosto);
   $('.btn-tema-nome').textContent = curto;
-  $('.dialogo-rosto').src = rosto;
   $('.dialogo-nome').textContent = t.nome;
   $('.convite-nome').textContent = curto;
   const f = matchMedia('(max-width: 860px)').matches ? (img(id, 'fundo_m') || img(id, 'fundo')) : img(id, 'fundo');
@@ -147,6 +186,10 @@ function trocarTema(id, { origem, falar = true } = {}) {
   if (!TEMAS[id]) id = 'gojo';
   const primeira = temaAtual === null;
   if (id === temaAtual) return;
+  const lb = $('#lightbox');
+  if (aberto(lb)) lb.close();
+  const lbImg = $('img', lb);
+  tokensImg.delete(lbImg); lbImg.removeAttribute('src');
   temaAtual = id;
   try { localStorage.setItem('lebot:tema', id); } catch {}
   const u = new URL(location.href); u.searchParams.set('p', id);
@@ -182,14 +225,14 @@ function montarPerfil(id) {
   }));
   const alt = img(id, 'alt');
   const fi = $('.ficha-retrato img');
-  if (alt) { fi.src = url(alt.m); fi.alt = `${TEMAS[id].nome}`; }
+  if (alt) { fi.alt = TEMAS[id].nome; fi.classList.toggle('foto', !!alt.foto); carregarImg(fi, url(alt.m)); }
 
   const lista = $('#frases-lista');
-  lista.replaceChildren(...p.frases.map(k => {
+  lista.replaceChildren(...p.frases.map(({ k, t: textoBase }) => {
     const li = document.createElement('li');
     const b = document.createElement('button');
     b.type = 'button'; b.className = 'frase'; b.dataset.frase = k;
-    const q = document.createElement('q'); q.textContent = (falas[k] && falas[k].t) || '';
+    const q = document.createElement('q'); q.textContent = (falas[k] && falas[k].t) || textoBase;
     const o = document.createElement('span'); o.className = 'frase-ouvir';
     o.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg><span>Ouvir</span>';
     b.append(q, o); li.append(b);
@@ -223,7 +266,8 @@ function abrirLightbox(i) {
   idxLb = (i + galeriaAtual.length) % galeriaAtual.length;
   const g = galeriaAtual[idxLb];
   const im = $('img', lb);
-  im.src = url(g.f); im.alt = `Arte de ${TEMAS[temaAtual].nome}`;
+  im.alt = `Arte de ${TEMAS[temaAtual].nome}`;
+  carregarImg(im, url(g.f), { placeholder: url(g.t) });
   const cap = $('figcaption', lb);
   cap.textContent = '';
   cap.append(g.oficial ? 'Arte oficial' : 'Fanart', g.credito ? ` · ${g.credito}` : '');
@@ -231,7 +275,7 @@ function abrirLightbox(i) {
     cap.append(' · ');
     cap.append(Object.assign(document.createElement('a'), { href: g.origem, target: '_blank', rel: 'noopener', textContent: 'ver original' }));
   }
-  if (!lb.open) lb.showModal();
+  if (!aberto(lb)) lb.showModal();
 }
 
 function iniciarLightbox() {
@@ -435,7 +479,8 @@ function iniciarReacoes() {
     const fr = e.target.closest('.frase');
     if (fr) {
       if (!voz.ligada) { avisarVozDesligada(fr); return; }
-      voz.falar(fr.dataset.frase, 3); return;
+      if (!voz.falar(fr.dataset.frase, 3)) legenda(fr.querySelector('q').textContent);
+      return;
     }
     if (e.target.closest('#palco-btn')) {
       if (!voz.ligada) { avisarVozDesligada(e.target.closest('#palco-btn')); return; }
@@ -465,6 +510,14 @@ function iniciarReacoes() {
     const ag = performance.now();
     if (!document.hidden && ag - ultimo > 40000 && ag - ultimoIdle > 90000) { ultimoIdle = ag; voz.falar('idle', 0, { limite: 0 }); }
   }, 5000);
+}
+
+function legenda(texto) {
+  const box = $('#dialogo');
+  $('.dialogo-texto').textContent = texto;
+  box.classList.remove('saindo'); box.hidden = false;
+  clearTimeout(timerSumir);
+  timerSumir = setTimeout(() => { box.classList.add('saindo'); setTimeout(() => { box.hidden = true; }, 300); }, 3200);
 }
 
 function avisarVozDesligada(el) {
