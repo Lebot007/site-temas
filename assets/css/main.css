@@ -407,8 +407,16 @@ html[data-claro] .palco-personagem img { filter: drop-shadow(0 0 calc(14px + var
 /* rede de segurança: depois que o círculo já cobriu a tela toda (~60% do tempo, com esta curva), a foto do
    tema antigo some. Se o celular perder um quadro da página nova no fim da revelação, aparece só a cor de
    fundo do tema novo, e não o personagem/tema antigo inteiro piscando (visto no vídeo: Capri -> Sukuna) */
-::view-transition-old(root) { animation: velhoSome .9s linear both; }
+/* e antes disso, a foto antiga ganha um "furo" exatamente do tamanho do círculo novo (mesma duração e curva
+   de revelar): ela só existe FORA do círculo, então nunca aparece por cima do tema novo em nenhum quadro */
+@property --vt-r { syntax: '<length>'; inherits: false; initial-value: 0px; }
+::view-transition-old(root) {
+  animation: velhoSome .9s linear both, furo .9s cubic-bezier(.7,0,.2,1) both;
+  -webkit-mask-image: radial-gradient(circle at var(--vt-x, 90%) var(--vt-y, 5%), transparent calc(var(--vt-r) - 2px), #000 calc(var(--vt-r) - 1px));
+  mask-image: radial-gradient(circle at var(--vt-x, 90%) var(--vt-y, 5%), transparent calc(var(--vt-r) - 2px), #000 calc(var(--vt-r) - 1px));
+}
 @keyframes velhoSome { 0%, 64% { opacity: 1; } 65%, 100% { opacity: 0; } }
+@keyframes furo { from { --vt-r: 0px; } to { --vt-r: 150vmax; } }
 ::view-transition { background: var(--bg); }
 @keyframes revelar { from { clip-path: circle(0 at var(--vt-x, 90%) var(--vt-y, 5%)); } to { clip-path: circle(150vmax at var(--vt-x, 90%) var(--vt-y, 5%)); } }
 /* enquanto o personagem novo carrega: só um sinal discreto no botão de tema */
