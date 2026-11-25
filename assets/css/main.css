@@ -405,7 +405,11 @@ html[data-claro] .palco-personagem img { filter: drop-shadow(0 0 calc(14px + var
 ::view-transition-old(root), ::view-transition-new(root) { animation: none; mix-blend-mode: normal; }
 ::view-transition-new(root) { animation: revelar .9s cubic-bezier(.7,0,.2,1); }
 @keyframes revelar { from { clip-path: circle(0 at var(--vt-x, 90%) var(--vt-y, 5%)); } to { clip-path: circle(150vmax at var(--vt-x, 90%) var(--vt-y, 5%)); } }
-html.trocando body { opacity: .0; transition: opacity .3s ease; }
+/* enquanto o personagem novo carrega: só um sinal discreto no botão de tema */
+html.preparando .btn-tema-rosto { animation: carregandoTema .8s ease-in-out infinite alternate; }
+@keyframes carregandoTema { to { opacity: .35; } }
+/* durante a troca o personagem não "respira" nem entra de novo por cima da revelação */
+::view-transition-group(root) { animation-duration: .85s; }
 
 
 /* ---------- emblema kanji (marca) ---------- */

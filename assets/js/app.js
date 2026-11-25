@@ -62,10 +62,51 @@ function iniciarQualidade() {
 }
 
 /* ---------------- fontes do tema ---------------- */
+const fontesProntas = new Map();
 function carregarFonte(t) {
-  const link = $('#fonte-tema');
-  const url = `https://fonts.googleapis.com/css2?family=${t.fontes.google}&display=swap`;
-  if (link.href !== url) link.href = url;
+  const href = `https://fonts.googleapis.com/css2?family=${t.fontes.google}&display=swap`;
+  if (fontesProntas.has(href)) return fontesProntas.get(href);
+  let link = [...document.querySelectorAll('link[rel="stylesheet"]')].find(l => l.href === href);
+  const css = new Promise(ok => {
+    if (link && link.sheet) return ok();
+    if (!link) { link = Object.assign(document.createElement('link'), { rel: 'stylesheet', href }); document.head.append(link); }
+    link.addEventListener('load', ok, { once: true });
+    link.addEventListener('error', ok, { once: true });
+  });
+  const pronto = css.then(() => document.fonts
+    ? Promise.all([document.fonts.load(`700 1em "${t.fontes.display}"`), document.fonts.load(`400 1em "${t.fontes.body}"`)]).catch(() => {})
+    : null);
+  fontesProntas.set(href, pronto);
+  return pronto;
+}
+
+// qual imagem do personagem usar (a mesma que é pré-carregada, para não trocar de arquivo no meio)
+function srcHeroi(h) {
+  const pequeno = matchMedia('(max-width: 860px)').matches && (devicePixelRatio || 1) < 2;
+  return url(pequeno ? h.m : h.src);
+}
+function srcFundo(id) {
+  return url(matchMedia('(max-width: 860px)').matches ? (img(id, 'fundo_m') || img(id, 'fundo')) : img(id, 'fundo'));
+}
+function preCarregar(u) {
+  return new Promise(ok => {
+    if (!u) return ok();
+    const i = new Image();
+    i.onload = i.onerror = () => ok();
+    i.src = u;
+    if (i.decode) i.decode().then(ok, ok);
+  });
+}
+// tudo que o tema novo precisa antes de aparecer (com limite de tempo para conexão lenta)
+function prepararTema(id) {
+  const h = img(id, 'heroi');
+  const tudo = Promise.all([
+    carregarFonte(TEMAS[id]),
+    h && preCarregar(srcHeroi(h)),
+    preCarregar(srcFundo(id)),
+    preCarregar(url(img(id, 'rosto'))),
+  ]);
+  return Promise.race([tudo, new Promise(ok => setTimeout(ok, 1800))]);
 }
 
 /* ---------------- ícone da aba no tema do personagem ---------------- */
@@ -159,9 +200,7 @@ function pintar(id) {
   if (h) {
     pi.alt = `${t.nome}, de ${t.anime}`;
     pi.width = h.w; pi.height = h.h;
-    const pequeno = matchMedia('(max-width: 860px)').matches;
-    carregarImg(pi, url(pequeno ? h.m : h.src), {
-      srcset: `${url(h.m)} 600w, ${url(h.src)} 1200w`, sizes: '(max-width: 860px) 90vw, 50vw',
+    carregarImg(pi, srcHeroi(h), {
       depois: () => { palco.classList.remove('entrando'); void palco.offsetWidth; palco.classList.add('entrando'); },
     });
   }
@@ -173,8 +212,8 @@ function pintar(id) {
   $('.btn-tema-nome').textContent = curto;
   $('.dialogo-nome').textContent = t.nome;
   $('.convite-nome').textContent = curto;
-  const f = matchMedia('(max-width: 860px)').matches ? (img(id, 'fundo_m') || img(id, 'fundo')) : img(id, 'fundo');
-  st.setProperty('--arte-fundo', f ? `url("${url(f)}")` : 'none');
+  const f = srcFundo(id);
+  st.setProperty('--arte-fundo', f ? `url("${f}")` : 'none');
 
   montarPerfil(id);
   montarGaleria(id);
@@ -182,7 +221,8 @@ function pintar(id) {
   if (fx) fx.tema(t.fx);
 }
 
-function trocarTema(id, { origem, falar = true } = {}) {
+let seqTroca = 0, transicao = null;
+async function trocarTema(id, { origem, falar = true } = {}) {
   if (!TEMAS[id]) id = 'gojo';
   const primeira = temaAtual === null;
   if (id === temaAtual) return;
@@ -196,17 +236,27 @@ function trocarTema(id, { origem, falar = true } = {}) {
   history.replaceState(null, '', u);
   voz.calar();
   voz.setTema(id);
+  const meu = ++seqTroca;
 
-  const reduz = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (!primeira && document.startViewTransition && !reduz && qual.nivel !== 'zero') {
-    if (origem) {
-      const r = origem.getBoundingClientRect();
-      raiz.style.setProperty('--vt-x', `${r.left + r.width / 2}px`);
-      raiz.style.setProperty('--vt-y', `${r.top + r.height / 2}px`);
+  if (primeira) { carregarFonte(TEMAS[id]); pintar(id); }
+  else {
+    raiz.classList.add('preparando');
+    await prepararTema(id);
+    raiz.classList.remove('preparando');
+    if (meu !== seqTroca) return;              // outro personagem foi escolhido enquanto carregava
+    const reduz = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (transicao) { try { transicao.skipTransition(); } catch {} }
+    if (document.startViewTransition && !reduz && qual.nivel !== 'zero') {
+      if (origem) {
+        const r = origem.getBoundingClientRect();
+        raiz.style.setProperty('--vt-x', `${r.left + r.width / 2}px`);
+        raiz.style.setProperty('--vt-y', `${r.top + r.height / 2}px`);
+      }
+      transicao = document.startViewTransition(() => pintar(id));
+      transicao.finished.finally(() => { transicao = null; });
+    } else {
+      pintar(id);
     }
-    document.startViewTransition(() => pintar(id));
-  } else {
-    pintar(id);
   }
   if (falar && !primeira) { voz.prefetch(); setTimeout(() => voz.falar('ola', 2), 450); }
 }
