@@ -63,6 +63,16 @@ function iniciarQualidade() {
 
 /* ---------------- fontes do tema ---------------- */
 const fontesProntas = new Map();
+const AMOSTRA = 'Lebot AaBbÇçÃãÉéÕõ 0123';
+// 'Cinzel:wght@500;700&family=Source+Serif+4:opsz,wght@8..60,400' -> [['Cinzel','500'],['Cinzel','700'],['Source Serif 4','400']]
+function facesDaFonte(google) {
+  return google.split('&family=').flatMap(parte => {
+    const [nome, eixos = ''] = parte.split(':');
+    const fam = nome.replace(/\+/g, ' ');
+    const vals = eixos.includes('@') ? eixos.split('@')[1].split(';').map(v => v.split(',').pop()) : ['400'];
+    return vals.map(w => [fam, w]);
+  });
+}
 function carregarFonte(t) {
   const href = `https://fonts.googleapis.com/css2?family=${t.fontes.google}&display=swap`;
   if (fontesProntas.has(href)) return fontesProntas.get(href);
@@ -73,8 +83,11 @@ function carregarFonte(t) {
     link.addEventListener('load', ok, { once: true });
     link.addEventListener('error', ok, { once: true });
   });
+  // carrega TODOS os pesos que o tema usa (antes só 700 do título e 400 do texto: os outros pesos chegavam
+  // depois da troca e o texto era redesenhado no meio/fim da transição — pior nas fontes japonesas, que são
+  // grandes: Kaneki/Sukuna (Zen Kaku Gothic New), Rem (Zen Maru Gothic), Thorfinn (Source Serif 4))
   const pronto = css.then(() => document.fonts
-    ? Promise.all([document.fonts.load(`700 1em "${t.fontes.display}"`), document.fonts.load(`400 1em "${t.fontes.body}"`)]).catch(() => {})
+    ? Promise.all(facesDaFonte(t.fontes.google).map(([fam, w]) => document.fonts.load(`${w} 1em "${fam}"`, AMOSTRA))).catch(() => {})
     : null);
   fontesProntas.set(href, pronto);
   return pronto;
@@ -668,6 +681,16 @@ async function iniciar() {
   }
   const intro = $('#intro');
   setTimeout(() => { intro.classList.add('fim'); setTimeout(() => { intro.hidden = true; }, 900); }, 700);
+  // com a página já pronta, baixa aos poucos as fontes dos outros personagens (são pequenas),
+  // para a troca nunca ter que esperar/trocar fonte no meio da animação. Respeita a economia de dados.
+  if (!(navigator.connection && navigator.connection.saveData)) {
+    const fila = Object.keys(TEMAS);
+    const proxima = () => {
+      const id = fila.shift(); if (!id) return;
+      Promise.resolve(carregarFonte(TEMAS[id])).then(() => setTimeout(() => (window.requestIdleCallback ? requestIdleCallback(proxima, { timeout: 2000 }) : proxima()), 300));
+    };
+    setTimeout(proxima, 2500);
+  }
 }
 
 iniciar();
