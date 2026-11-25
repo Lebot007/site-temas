@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="gojo">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lebot · Portfólio</title>
+<meta name="description" content="Portfólio de Lebot, desenvolvedor e criador. Escolha um personagem de anime para guiar a visita, com voz e temas interativos.">
+<meta name="theme-color" content="#03050d">
+<meta property="og:title" content="Lebot · Portfólio">
+<meta property="og:description" content="Desenvolvedor e criador. Escolha seu guia: Gojo, Sukuna, Kaneki, Frieren, Rem e mais.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/og.jpg">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link id="fonte-tema" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Manrope:wght@400;500;700&display=swap">
+<!-- só os 10 kanjis dos emblemas (arquivo minúsculo) -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700;900&text=%E9%9B%BB%E5%91%AA%E5%96%B0%E9%AD%94%E6%B0%B7%E6%9B%B8%E9%AC%BC%E9%80%B2%E9%BA%A6%E7%84%A1&display=swap">
+<link rel="stylesheet" href="assets/css/main.css">
+<script>
+  // aplica o tema salvo antes de pintar (evita piscar o tema errado)
+  (function () {
+    try {
+      var p = new URLSearchParams(location.search).get('p') || localStorage.getItem('lebot:tema');
+      if (p) document.documentElement.setAttribute('data-theme', p);
+    } catch (e) {}
+  })();
+</script>
+<script type="module" src="assets/js/app.js"></script>
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<div class="intro" id="intro" aria-hidden="true"><span class="intro-kanji tema-kanji">無</span><span class="intro-nome">Lebot</span></div>
+
+<canvas id="atmosfera" aria-hidden="true"></canvas>
+<div class="fundo" aria-hidden="true"><div class="fundo-arte"></div><div class="fundo-veu"></div></div>
+
+<header class="topo">
+  <a class="marca" href="#inicio" aria-label="Lebot, voltar ao início" data-voz="topo"><span class="marca-kanji tema-kanji" aria-hidden="true">無</span><span class="marca-nome">Lebot</span></a>
+  <nav class="menu" aria-label="Seções">
+    <a href="#personagem" data-voz="sec_perfil">Personagem</a>
+    <a href="#frases" data-voz="sec_frases">Frases</a>
+    <a href="#galeria" data-voz="sec_galeria">Galeria</a>
+    <a href="#contato" data-voz="sec_contato">Redes</a>
+  </nav>
+  <div class="controles">
+    <button class="btn-voz" id="btn-voz" type="button" aria-pressed="false" title="Ligar ou desligar a voz do personagem">
+      <svg class="ic-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a4.5 4.5 0 0 1 0 7M18.5 6a8 8 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <svg class="ic-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M17 9l5 6M22 9l-5 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <span class="btn-voz-txt">Voz desligada</span>
+    </button>
+    <button class="btn-tema" id="btn-tema" type="button" aria-haspopup="dialog" aria-controls="roster" data-voz="tema">
+      <img class="btn-tema-rosto" alt="" width="36" height="36">
+      <span class="btn-tema-txt"><b class="btn-tema-nome">Personagem</b><small>Trocar tema</small></span>
+    </button>
+  </div>
+</header>
+
+<main id="conteudo">
+  <section id="inicio" class="hero" data-secao="sec_inicio">
+    <div class="hero-texto">
+      <p class="hero-anime"><span class="tema-anime"></span></p>
+      <h1 class="hero-nome" aria-label="Lebot"><span class="hero-letras">Lebot</span></h1>
+      <p class="hero-papel tema-papel"></p>
+      <p class="hero-assinatura tema-assinatura"></p>
+      <div class="hero-acoes">
+        <a class="btn btn-cheio" href="#personagem" data-voz="sec_perfil">Conhecer <span class="tema-nome-curto"></span></a>
+        <a class="btn btn-linha" href="#contato" data-voz="sec_contato">Minhas redes</a>
+      </div>
+    </div>
+    <figure class="palco" id="palco">
+      <span class="palco-kanji tema-kanji" aria-hidden="true">無</span>
+      <div class="palco-aura" aria-hidden="true"></div>
+      <div class="palco-anel" aria-hidden="true"></div>
+      <button class="palco-personagem" id="palco-btn" type="button" aria-label="Ouvir uma frase do personagem">
+        <img id="personagem-img" alt="" decoding="async" fetchpriority="high">
+      </button>
+      <figcaption class="palco-legenda"><b class="tema-nome"></b><span class="tema-anime"></span></figcaption>
+    </figure>
+    <a class="rolar" href="#sobre" aria-label="Rolar para a próxima seção"><span></span></a>
+  </section>
+
+  <section id="personagem" class="secao perfil" data-secao="sec_perfil">
+    <div class="perfil-grade">
+      <div class="perfil-texto">
+        <p class="perfil-anime tema-anime"></p>
+        <h2 class="titulo perfil-titulo"></h2>
+        <div class="perfil-bio"></div>
+        <ul class="perfil-traits" aria-label="Personalidade"></ul>
+      </div>
+      <aside class="ficha" aria-label="Ficha do personagem">
+        <figure class="ficha-retrato"><img alt="" loading="lazy" decoding="async"></figure>
+        <dl class="ficha-dados"></dl>
+      </aside>
+    </div>
+  </section>
+
+  <section id="frases" class="secao frases" data-secao="sec_frases">
+    <h2 class="titulo">Frases de <span class="tema-nome-curto"></span></h2>
+    <p class="secao-sub">Clique numa frase para ouvir com a voz do personagem.</p>
+    <ul class="frases-lista" id="frases-lista"></ul>
+  </section>
+
+  <section id="galeria" class="secao galeria" data-secao="sec_galeria">
+    <h2 class="titulo">Galeria</h2>
+    <p class="secao-sub">Artes oficiais e fanarts. Os créditos de cada artista aparecem ao abrir a imagem.</p>
+    <div class="mosaico" id="mosaico"></div>
+  </section>
+
+  <section id="contato" class="secao contato" data-secao="sec_contato">
+    <h2 class="titulo">Onde me encontrar</h2>
+    <p class="secao-sub">Me acompanhe nas redes. No Discord, clique para copiar o usuário.</p>
+    <ul class="redes">
+      <li><a href="https://www.instagram.com/https.jvalves/" target="_blank" rel="noopener" data-voz="instagram">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.3"/></svg>
+        <span><b>Instagram</b><small>@https.jvalves</small></span></a></li>
+      <li><a href="https://www.tiktok.com/@lebot_gg" target="_blank" rel="noopener" data-voz="tiktok">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3h3a4 4 0 0 0 4 4v3a7 7 0 0 1-4-1.3V15a6 6 0 1 1-6-6v3a3 3 0 1 0 3 3V3z"/></svg>
+        <span><b>TikTok</b><small>@lebot_gg</small></span></a></li>
+      <li><a href="https://www.twitch.tv/Lebotz_gg" target="_blank" rel="noopener" data-voz="twitch">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3 3 7v12h5v3h3l3-3h4l4-4V3H5zm15 11-3 3h-4l-3 3v-3H6V5h14v9z"/><path d="M15 8h2v5h-2zM10 8h2v5h-2z"/></svg>
+        <span><b>Twitch</b><small>Lebotz_gg</small></span></a></li>
+      <li><a href="https://open.spotify.com/user/o2fbtdnh53z6t6ca4v6wez8rz" target="_blank" rel="noopener" data-voz="spotify">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M7 9.5c3.5-1 7.5-.6 10.5 1M7.5 12.6c3-.8 6-.4 8.5 1M8 15.5c2.3-.6 4.5-.3 6.5.8" fill="none" stroke="var(--bg)" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <span><b>Spotify</b><small>Minhas playlists</small></span></a></li>
+      <li><button type="button" class="rede-discord" data-voz="discord" data-copiar="Lebot.gg" aria-describedby="discord-dica">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.6 1.2a18.3 18.3 0 0 0-5.5 0L8.6 3a19.7 19.7 0 0 0-4.9 1.5C.6 9.1-.3 13.6.1 18.1A19.9 19.9 0 0 0 6.2 21l1.3-2a12.9 12.9 0 0 1-2-.9l.5-.4a14.2 14.2 0 0 0 12.1 0l.5.4c-.6.4-1.3.7-2 1l1.3 2a19.8 19.8 0 0 0 6-3c.5-5.2-.9-9.7-3.6-13.7zM8 15.3c-1.2 0-2.2-1.1-2.2-2.4S6.8 10.5 8 10.5s2.2 1.1 2.2 2.4-1 2.4-2.2 2.4zm8 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4z"/></svg>
+        <span><b>Discord</b><small>Lebot.gg</small></span><em class="rede-copiar" id="discord-dica">Copiar</em></button></li>
+      <li><a href="https://github.com/Lebot007" target="_blank" rel="noopener" data-voz="github">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 3 .8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.8V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+        <span><b>GitHub</b><small>Lebot007</small></span></a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="rodape">
+  <p>© <span id="ano">2026</span> Lebot. <a href="https://github.com/Lebot007" target="_blank" rel="noopener">GitHub</a> · Código sob licença MIT.</p>
+  <p class="rodape-creditos">Personagens e artes oficiais pertencem aos seus respectivos autores e estúdios. Fanarts creditadas aos artistas na galeria. Projeto de fã, sem fins comerciais.</p>
+  <div class="rodape-acoes">
+    <label class="qualidade">Efeitos
+      <select id="sel-qualidade">
+        <option value="">Automático</option>
+        <option value="alto">Máximo</option>
+        <option value="medio">Equilibrado</option>
+        <option value="baixo">Leve</option>
+        <option value="zero">Sem animação</option>
+      </select>
+    </label>
+    <a href="#inicio" class="voltar" data-voz="topo">Voltar ao topo</a>
+  </div>
+</footer>
+
+<!-- caixa de diálogo: legenda do que o personagem fala -->
+<div class="aviso" id="aviso" role="status" aria-live="polite" hidden></div>
+
+<div class="dialogo" id="dialogo" role="status" aria-live="polite" hidden>
+  <img class="dialogo-rosto" alt="" width="56" height="56">
+  <div class="dialogo-corpo"><b class="dialogo-nome"></b><p class="dialogo-texto"></p></div>
+  <span class="dialogo-onda" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+</div>
+
+<!-- convite para ligar a voz -->
+<div class="convite" id="convite" hidden>
+  <p><b class="convite-nome"></b> quer falar com você. Ligar a voz?</p>
+  <div><button type="button" class="btn btn-cheio" data-convite="sim">Ligar voz</button><button type="button" class="btn btn-linha" data-convite="nao">Agora não</button></div>
+</div>
+
+<!-- seleção de personagem -->
+<dialog class="roster" id="roster" aria-labelledby="roster-titulo">
+  <div class="roster-topo">
+    <h2 id="roster-titulo">Escolha seu guia</h2>
+    <button type="button" class="roster-fechar" data-fechar aria-label="Fechar">✕</button>
+  </div>
+  <ul class="roster-lista" id="roster-lista"></ul>
+</dialog>
+
+<dialog class="lightbox" id="lightbox" aria-label="Imagem ampliada">
+  <button type="button" class="lightbox-fechar" data-fechar aria-label="Fechar">✕</button>
+  <button type="button" class="lightbox-nav ant" data-nav="-1" aria-label="Imagem anterior">‹</button>
+  <figure><img alt=""><figcaption></figcaption></figure>
+  <button type="button" class="lightbox-nav prox" data-nav="1" aria-label="Próxima imagem">›</button>
+</dialog>
+
+<noscript><p class="sem-js">Este portfólio usa JavaScript para os temas e a voz. Ative-o para a experiência completa.</p></noscript>
+</body>
+</html>

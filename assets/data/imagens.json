@@ -1,0 +1,2368 @@
+{
+ "gojo": {
+  "heroi": {
+   "src": "assets/img/gojo/heroi.webp",
+   "m": "assets/img/gojo/heroi-m.webp",
+   "w": 749,
+   "h": 1056,
+   "metodo": "cache",
+   "credito": "Satoru Gojo Wiki (Fandom) — material oficial © detentores dos direitos",
+   "origem": "https://jujutsu-kaisen.fandom.com/wiki/File%3ASatoru_Gojo_%28JUMP_31-2023%29.png"
+  },
+  "rosto": "assets/img/gojo/rosto.webp",
+  "alt": {
+   "src": "assets/img/gojo/alt.webp",
+   "m": "assets/img/gojo/alt-m.webp",
+   "w": 546,
+   "h": 1500,
+   "metodo": "cache",
+   "credito": "Satoru Gojo Wiki (Fandom) — material oficial © detentores dos direitos",
+   "origem": "https://jujutsu-kaisen.fandom.com/wiki/File%3ASatoru_Gojo_%28Prequel_Anime%29.png"
+  },
+  "fundo": "assets/img/gojo/fundo.webp",
+  "galeria": [
+   {
+    "t": "assets/img/gojo/galeria/00-p.webp",
+    "f": "assets/img/gojo/galeria/00.webp",
+    "w": 560,
+    "h": 800,
+    "oficial": true,
+    "credito": "@animejujutsu",
+    "origem": "https://twitter.com/animejujutsu/status/1676975740200574977"
+   },
+   {
+    "t": "assets/img/gojo/galeria/01-p.webp",
+    "f": "assets/img/gojo/galeria/01.webp",
+    "w": 560,
+    "h": 355,
+    "oficial": true,
+    "credito": "@FgG_tagatame",
+    "origem": "https://twitter.com/FgG_tagatame/status/1493466396327493632"
+   },
+   {
+    "t": "assets/img/gojo/galeria/02-p.webp",
+    "f": "assets/img/gojo/galeria/02.webp",
+    "w": 560,
+    "h": 315,
+    "oficial": true,
+    "credito": "Satoru Gojo Wiki (Fandom) — material oficial © detentores dos direitos",
+    "origem": "https://jujutsu-kaisen.fandom.com/wiki/File%3ASatoru_Gojo_arrives_on_the_battlefield_%28Anime%29.png"
+   },
+   {
+    "t": "assets/img/gojo/galeria/03-p.webp",
+    "f": "assets/img/gojo/galeria/03.webp",
+    "w": 560,
+    "h": 315,
+    "oficial": true,
+    "credito": "Satoru Gojo Wiki (Fandom) — material oficial © detentores dos direitos",
+    "origem": "https://jujutsu-kaisen.fandom.com/wiki/File%3ASatoru_Gojo_targets_weakened_Hanami_%28Anime%29.png"
+   },
+   {
+    "t": "assets/img/gojo/galeria/04-p.webp",
+    "f": "assets/img/gojo/galeria/04.webp",
+    "w": 560,
+    "h": 502,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2021/01/23/18/30/15/87245491_p0.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2021/01/23/18/30/15/87245491_p0.jpg"
+   },
+   {
+    "t": "assets/img/gojo/galeria/05-p.webp",
+    "f": "assets/img/gojo/galeria/05.webp",
+    "w": 560,
+    "h": 594,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2020/11/30/01/27/57/85997470_p0.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2020/11/30/01/27/57/85997470_p0.jpg"
+   },
+   {
+    "t": "assets/img/gojo/galeria/06-p.webp",
+    "f": "assets/img/gojo/galeria/06.webp",
+    "w": 560,
+    "h": 819,
+    "oficial": false,
+    "credito": "@kamome_hika",
+    "origem": "https://twitter.com/kamome_hika/status/1324002360830484483"
+   },
+   {
+    "t": "assets/img/gojo/galeria/07-p.webp",
+    "f": "assets/img/gojo/galeria/07.webp",
+    "w": 560,
+    "h": 996,
+    "oficial": false,
+    "credito": "@noonvincent",
+    "origem": "https://twitter.com/noonvincent/status/1331644943501324292"
+   },
+   {
+    "t": "assets/img/gojo/galeria/08-p.webp",
+    "f": "assets/img/gojo/galeria/08.webp",
+    "w": 560,
+    "h": 315,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2021/01/16/16/53/58/87086669_p0.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2021/01/16/16/53/58/87086669_p0.jpg"
+   },
+   {
+    "t": "assets/img/gojo/galeria/09-p.webp",
+    "f": "assets/img/gojo/galeria/09.webp",
+    "w": 560,
+    "h": 747,
+    "oficial": false,
+    "credito": "https://69phobia.tumblr.com/post/747693870857568256",
+    "origem": "https://69phobia.tumblr.com/post/747693870857568256"
+   },
+   {
+    "t": "assets/img/gojo/galeria/10-p.webp",
+    "f": "assets/img/gojo/galeria/10.webp",
+    "w": 560,
+    "h": 700,
+    "oficial": false,
+    "credito": "@period666",
+    "origem": "https://twitter.com/period666/status/1767250212794536346"
+   },
+   {
+    "t": "assets/img/gojo/galeria/11-p.webp",
+    "f": "assets/img/gojo/galeria/11.webp",
+    "w": 560,
+    "h": 721,
+    "oficial": false,
+    "credito": "@LAU_Wang99",
+    "origem": "https://twitter.com/LAU_Wang99/status/1863215669107712261"
+   },
+   {
+    "t": "assets/img/gojo/galeria/12-p.webp",
+    "f": "assets/img/gojo/galeria/12.webp",
+    "w": 560,
+    "h": 1014,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2023/08/23/15/34/06/111089383_p0.png",
+    "origem": "https://i.pximg.net/img-original/img/2023/08/23/15/34/06/111089383_p0.png"
+   },
+   {
+    "t": "assets/img/gojo/galeria/13-p.webp",
+    "f": "assets/img/gojo/galeria/13.webp",
+    "w": 560,
+    "h": 1083,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2021/02/26/12/03/34/88057223_p7.png",
+    "origem": "https://i.pximg.net/img-original/img/2021/02/26/12/03/34/88057223_p7.png"
+   },
+   {
+    "t": "assets/img/gojo/galeria/14-p.webp",
+    "f": "assets/img/gojo/galeria/14.webp",
+    "w": 560,
+    "h": 637,
+    "oficial": false,
+    "credito": "@shiki__no",
+    "origem": "https://twitter.com/shiki__no/status/1381588060282875905"
+   },
+   {
+    "t": "assets/img/gojo/galeria/15-p.webp",
+    "f": "assets/img/gojo/galeria/15.webp",
+    "w": 560,
+    "h": 792,
+    "oficial": false,
+    "credito": "@tu3_f",
+    "origem": "https://twitter.com/tu3_f/status/1348534971179233280"
+   },
+   {
+    "t": "assets/img/gojo/galeria/16-p.webp",
+    "f": "assets/img/gojo/galeria/16.webp",
+    "w": 560,
+    "h": 418,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2021/02/27/19/36/20/88088408_p0.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2021/02/27/19/36/20/88088408_p0.jpg"
+   },
+   {
+    "t": "assets/img/gojo/galeria/17-p.webp",
+    "f": "assets/img/gojo/galeria/17.webp",
+    "w": 560,
+    "h": 750,
+    "oficial": false,
+    "credito": "@tk2hes",
+    "origem": "https://twitter.com/tk2hes/status/1407919397591678976"
+   },
+   {
+    "t": "assets/img/gojo/galeria/18-p.webp",
+    "f": "assets/img/gojo/galeria/18.webp",
+    "w": 560,
+    "h": 808,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2021/02/19/18/25/16/87890141_p0.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2021/02/19/18/25/16/87890141_p0.jpg"
+   }
+  ],
+  "fundo_m": "assets/img/gojo/fundo-m.webp"
+ },
+ "sukuna": {
+  "heroi": {
+   "src": "assets/img/sukuna/heroi.webp",
+   "m": "assets/img/sukuna/heroi-m.webp",
+   "w": 1235,
+   "h": 1500,
+   "metodo": "cache",
+   "credito": "https://i.pximg.net/img-original/img/2023/07/29/14/56/05/110338038_p10.jpg",
+   "origem": "https://safebooru.org/index.php?page=post&s=view&id=5276707"
+  },
+  "rosto": "assets/img/sukuna/rosto.webp",
+  "alt": {
+   "src": "assets/img/sukuna/alt.webp",
+   "m": "assets/img/sukuna/alt-m.webp",
+   "w": 997,
+   "h": 1305,
+   "metodo": "cache",
+   "credito": "@calclzz",
+   "origem": "https://safebooru.org/index.php?page=post&s=view&id=3527949"
+  },
+  "fundo": "assets/img/sukuna/fundo.webp",
+  "galeria": [
+   {
+    "t": "assets/img/sukuna/galeria/00-p.webp",
+    "f": "assets/img/sukuna/galeria/00.webp",
+    "w": 560,
+    "h": 884,
+    "oficial": true,
+    "credito": "file://20260111_204259.jpg",
+    "origem": "file://20260111_204259.jpg"
+   },
+   {
+    "t": "assets/img/sukuna/galeria/01-p.webp",
+    "f": "assets/img/sukuna/galeria/01.webp",
+    "w": 560,
+    "h": 315,
+    "oficial": true,
+    "credito": "Sukuna Wiki (Fandom) — material oficial © detentores dos direitos",
+    "origem": "https://jujutsu-kaisen.fandom.com/wiki/File%3ASukuna_and_Mahito_laugh_at_Yuji_%28Anime%29.png"
+   },
+   {
+    "t": "assets/img/sukuna/galeria/02-p.webp",
+    "f": "assets/img/sukuna/galeria/02.webp",
+    "w": 560,
+    "h": 420,
+    "oficial": false,
+    "credito": "@PluviumG",
+    "origem": "https://twitter.com/PluviumG/status/1930914408924127612"
+   },
+   {
+    "t": "assets/img/sukuna/galeria/03-p.webp",
+    "f": "assets/img/sukuna/galeria/03.webp",
+    "w": 560,
+    "h": 771,
+    "oficial": false,
+    "credito": "@woshihedawei",
+    "origem": "https://twitter.com/woshihedawei/status/1700784079145513046"
+   },
+   {
+    "t": "assets/img/sukuna/galeria/04-p.webp",
+    "f": "assets/img/sukuna/galeria/04.webp",
+    "w": 560,
+    "h": 560,
+    "oficial": false,
+    "credito": "@Gojo_lover",
+    "origem": "https://twitter.com/Gojo_lover/status/1336707240724549632"
+   },
+   {
+    "t": "assets/img/sukuna/galeria/05-p.webp",
+    "f": "assets/img/sukuna/galeria/05.webp",
+    "w": 560,
+    "h": 646,
+    "oficial": false,
+    "credito": "@shimhaq",
+    "origem": "https://twitter.com/shimhaq/status/1440397638126366722"
+   },
+   {
+    "t": "assets/img/sukuna/galeria/06-p.webp",
+    "f": "assets/img/sukuna/galeria/06.webp",
+    "w": 560,
+    "h": 905,
+    "oficial": false,
+    "credito": "@tamausagi_m",
+    "origem": "https://twitter.com/tamausagi_m/status/1387754918178541569"
+   },
+   {
+    "t": "assets/img/sukuna/galeria/07-p.webp",
+    "f": "assets/img/sukuna/galeria/07.webp",
+    "w": 560,
+    "h": 560,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2020/12/15/15/58/40/86315896_p0.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2020/12/15/15/58/40/86315896_p0.jpg"
+   },
+   {
+    "t": "assets/img/sukuna/galeria/08-p.webp",
+    "f": "assets/img/sukuna/galeria/08.webp",
+    "w": 560,
+    "h": 902,
+    "oficial": false,
+    "credito": "@bikku__2",
+    "origem": "https://twitter.com/bikku__2/status/1337469782526812160"
+   },
+   {
+    "t": "assets/img/sukuna/galeria/09-p.webp",
+    "f": "assets/img/sukuna/galeria/09.webp",
+    "w": 560,
+    "h": 981,
+    "oficial": false,
+    "credito": "@mooooon_day",
+    "origem": "https://twitter.com/mooooon_day/status/1347901815786913793"
+   },
+   {
+    "t": "assets/img/sukuna/galeria/10-p.webp",
+    "f": "assets/img/sukuna/galeria/10.webp",
+    "w": 560,
+    "h": 831,
+    "oficial": false,
+    "credito": "@woshihedawei",
+    "origem": "https://twitter.com/woshihedawei/status/1722901212859601378?t=19"
+   },
+   {
+    "t": "assets/img/sukuna/galeria/11-p.webp",
+    "f": "assets/img/sukuna/galeria/11.webp",
+    "w": 560,
+    "h": 897,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2020/12/27/03/31/49/86568012_p5.png",
+    "origem": "https://i.pximg.net/img-original/img/2020/12/27/03/31/49/86568012_p5.png"
+   },
+   {
+    "t": "assets/img/sukuna/galeria/12-p.webp",
+    "f": "assets/img/sukuna/galeria/12.webp",
+    "w": 560,
+    "h": 978,
+    "oficial": false,
+    "credito": "@jozpic",
+    "origem": "https://twitter.com/jozpic/status/1720362977667547259"
+   },
+   {
+    "t": "assets/img/sukuna/galeria/13-p.webp",
+    "f": "assets/img/sukuna/galeria/13.webp",
+    "w": 560,
+    "h": 747,
+    "oficial": false,
+    "credito": "@Kota_2kx_",
+    "origem": "https://twitter.com/Kota_2kx_/status/1784687873029267471"
+   },
+   {
+    "t": "assets/img/sukuna/galeria/14-p.webp",
+    "f": "assets/img/sukuna/galeria/14.webp",
+    "w": 560,
+    "h": 996,
+    "oficial": false,
+    "credito": "@nameno92372763",
+    "origem": "https://twitter.com/nameno92372763/status/1781302808693850194"
+   },
+   {
+    "t": "assets/img/sukuna/galeria/15-p.webp",
+    "f": "assets/img/sukuna/galeria/15.webp",
+    "w": 560,
+    "h": 322,
+    "oficial": false,
+    "credito": "@MASKOO185826",
+    "origem": "https://twitter.com/MASKOO185826/status/1793628592477266329"
+   },
+   {
+    "t": "assets/img/sukuna/galeria/16-p.webp",
+    "f": "assets/img/sukuna/galeria/16.webp",
+    "w": 560,
+    "h": 470,
+    "oficial": false,
+    "credito": "@hieumayart",
+    "origem": "https://twitter.com/hieumayart/status/1726226534850277493"
+   },
+   {
+    "t": "assets/img/sukuna/galeria/17-p.webp",
+    "f": "assets/img/sukuna/galeria/17.webp",
+    "w": 560,
+    "h": 341,
+    "oficial": false,
+    "credito": "@shokobrt23",
+    "origem": "https://twitter.com/shokobrt23/status/1768158803105644713?t=tBCHyF-N65kHlIF3xYhPCA&amp;s=19"
+   },
+   {
+    "t": "assets/img/sukuna/galeria/18-p.webp",
+    "f": "assets/img/sukuna/galeria/18.webp",
+    "w": 560,
+    "h": 791,
+    "oficial": false,
+    "credito": "@asahito_asa",
+    "origem": "https://twitter.com/asahito_asa/status/1610632638343303168"
+   }
+  ],
+  "fundo_m": "assets/img/sukuna/fundo-m.webp"
+ },
+ "kaneki": {
+  "heroi": {
+   "src": "assets/img/kaneki/heroi.webp",
+   "m": "assets/img/kaneki/heroi-m.webp",
+   "w": 1035,
+   "h": 1274,
+   "metodo": "cache",
+   "credito": "https://i.pximg.net/img-original/img/2023/12/11/22/40/15/114147897_p3.jpg",
+   "origem": "https://safebooru.org/index.php?page=post&s=view&id=4655804"
+  },
+  "rosto": "assets/img/kaneki/rosto.webp",
+  "alt": {
+   "src": "assets/img/kaneki/alt.webp",
+   "m": "assets/img/kaneki/alt-m.webp",
+   "w": 1035,
+   "h": 1274,
+   "metodo": "cache",
+   "credito": "https://i.pximg.net/img-original/img/2023/12/11/22/40/15/114147897_p4.jpg",
+   "origem": "https://safebooru.org/index.php?page=post&s=view&id=4655805"
+  },
+  "fundo": "assets/img/kaneki/fundo.webp",
+  "galeria": [
+   {
+    "t": "assets/img/kaneki/galeria/00-p.webp",
+    "f": "assets/img/kaneki/galeria/00.webp",
+    "w": 560,
+    "h": 795,
+    "oficial": true,
+    "credito": "https://animeanime.jp/imgs/p/rQC-FVStleeQ4uCDm4cdn6GgF60oy6_oqaqr/143498.jpg",
+    "origem": "https://animeanime.jp/imgs/p/rQC-FVStleeQ4uCDm4cdn6GgF60oy6_oqaqr/143498.jpg"
+   },
+   {
+    "t": "assets/img/kaneki/galeria/01-p.webp",
+    "f": "assets/img/kaneki/galeria/01.webp",
+    "w": 560,
+    "h": 840,
+    "oficial": true,
+    "credito": "safebooru #1295408",
+    "origem": "https://safebooru.org/index.php?page=post&s=view&id=1295408"
+   },
+   {
+    "t": "assets/img/kaneki/galeria/02-p.webp",
+    "f": "assets/img/kaneki/galeria/02.webp",
+    "w": 560,
+    "h": 370,
+    "oficial": true,
+    "credito": "Ken Kaneki Wiki (Fandom) — material oficial © detentores dos direitos",
+    "origem": "https://tokyoghoul.fandom.com/wiki/File%3AKaneki%27s_Mask.png"
+   },
+   {
+    "t": "assets/img/kaneki/galeria/03-p.webp",
+    "f": "assets/img/kaneki/galeria/03.webp",
+    "w": 560,
+    "h": 549,
+    "oficial": true,
+    "credito": "Ken Kaneki Wiki (Fandom) — material oficial © detentores dos direitos",
+    "origem": "https://tokyoghoul.fandom.com/wiki/File%3AKaneki%27s_winglike_kagune.png"
+   },
+   {
+    "t": "assets/img/kaneki/galeria/04-p.webp",
+    "f": "assets/img/kaneki/galeria/04.webp",
+    "w": 560,
+    "h": 560,
+    "oficial": false,
+    "credito": "pixiv 66873062",
+    "origem": "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=66873062"
+   },
+   {
+    "t": "assets/img/kaneki/galeria/05-p.webp",
+    "f": "assets/img/kaneki/galeria/05.webp",
+    "w": 560,
+    "h": 822,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2018/02/23/00/51/39/67413798_p0.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2018/02/23/00/51/39/67413798_p0.jpg"
+   },
+   {
+    "t": "assets/img/kaneki/galeria/06-p.webp",
+    "f": "assets/img/kaneki/galeria/06.webp",
+    "w": 560,
+    "h": 793,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2018/06/24/00/00/35/69371134_p0.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2018/06/24/00/00/35/69371134_p0.jpg"
+   },
+   {
+    "t": "assets/img/kaneki/galeria/07-p.webp",
+    "f": "assets/img/kaneki/galeria/07.webp",
+    "w": 560,
+    "h": 791,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2018/07/23/20/00/17/69826606_p41.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2018/07/23/20/00/17/69826606_p41.jpg"
+   },
+   {
+    "t": "assets/img/kaneki/galeria/08-p.webp",
+    "f": "assets/img/kaneki/galeria/08.webp",
+    "w": 560,
+    "h": 697,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2024/03/11/11/39/37/116820693_p0.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2024/03/11/11/39/37/116820693_p0.jpg"
+   },
+   {
+    "t": "assets/img/kaneki/galeria/09-p.webp",
+    "f": "assets/img/kaneki/galeria/09.webp",
+    "w": 560,
+    "h": 700,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2016/07/17/22/03/03/57955931_p0.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2016/07/17/22/03/03/57955931_p0.jpg"
+   },
+   {
+    "t": "assets/img/kaneki/galeria/10-p.webp",
+    "f": "assets/img/kaneki/galeria/10.webp",
+    "w": 560,
+    "h": 560,
+    "oficial": false,
+    "credito": "http://jcm-2.tumblr.com/post/126240065785/double-meme-gun-studios",
+    "origem": "http://jcm-2.tumblr.com/post/126240065785/double-meme-gun-studios"
+   },
+   {
+    "t": "assets/img/kaneki/galeria/11-p.webp",
+    "f": "assets/img/kaneki/galeria/11.webp",
+    "w": 560,
+    "h": 789,
+    "oficial": false,
+    "credito": "http://i2.pixiv.net/img-original/img/2015/09/21/00/58/34/52629669_p0.png",
+    "origem": "http://i2.pixiv.net/img-original/img/2015/09/21/00/58/34/52629669_p0.png"
+   },
+   {
+    "t": "assets/img/kaneki/galeria/12-p.webp",
+    "f": "assets/img/kaneki/galeria/12.webp",
+    "w": 560,
+    "h": 871,
+    "oficial": false,
+    "credito": "@ammenite",
+    "origem": "https://twitter.com/ammenite/status/1843250701423833269"
+   },
+   {
+    "t": "assets/img/kaneki/galeria/13-p.webp",
+    "f": "assets/img/kaneki/galeria/13.webp",
+    "w": 560,
+    "h": 404,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2017/06/19/00/00/10/63456028_p11.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2017/06/19/00/00/10/63456028_p11.jpg"
+   },
+   {
+    "t": "assets/img/kaneki/galeria/14-p.webp",
+    "f": "assets/img/kaneki/galeria/14.webp",
+    "w": 560,
+    "h": 957,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2017/06/19/00/00/10/63456028_p4.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2017/06/19/00/00/10/63456028_p4.jpg"
+   },
+   {
+    "t": "assets/img/kaneki/galeria/15-p.webp",
+    "f": "assets/img/kaneki/galeria/15.webp",
+    "w": 560,
+    "h": 996,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2018/06/24/00/00/35/69371134_p9.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2018/06/24/00/00/35/69371134_p9.jpg"
+   },
+   {
+    "t": "assets/img/kaneki/galeria/16-p.webp",
+    "f": "assets/img/kaneki/galeria/16.webp",
+    "w": 560,
+    "h": 736,
+    "oficial": false,
+    "credito": "http://i4.pixiv.net/img-original/img/2015/01/25/00/00/13/48356611_p0.jpg",
+    "origem": "http://i4.pixiv.net/img-original/img/2015/01/25/00/00/13/48356611_p0.jpg"
+   },
+   {
+    "t": "assets/img/kaneki/galeria/17-p.webp",
+    "f": "assets/img/kaneki/galeria/17.webp",
+    "w": 560,
+    "h": 802,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2022/03/20/00/15/01/97032430_p0.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2022/03/20/00/15/01/97032430_p0.jpg"
+   },
+   {
+    "t": "assets/img/kaneki/galeria/18-p.webp",
+    "f": "assets/img/kaneki/galeria/18.webp",
+    "w": 560,
+    "h": 560,
+    "oficial": false,
+    "credito": "pixiv 49751752",
+    "origem": "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=49751752"
+   },
+   {
+    "t": "assets/img/kaneki/galeria/19-p.webp",
+    "f": "assets/img/kaneki/galeria/19.webp",
+    "w": 560,
+    "h": 851,
+    "oficial": false,
+    "credito": "pixiv 74177855",
+    "origem": "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=74177855"
+   }
+  ],
+  "fundo_m": "assets/img/kaneki/fundo-m.webp"
+ },
+ "frieren": {
+  "heroi": {
+   "src": "assets/img/frieren/heroi.webp",
+   "m": "assets/img/frieren/heroi-m.webp",
+   "w": 1220,
+   "h": 1500,
+   "metodo": "transparente original",
+   "credito": "",
+   "origem": ""
+  },
+  "rosto": "assets/img/frieren/rosto.webp",
+  "alt": {
+   "src": "assets/img/frieren/alt.webp",
+   "m": "assets/img/frieren/alt-m.webp",
+   "w": 1030,
+   "h": 1246,
+   "metodo": "transparente original",
+   "credito": "https://mabinogi.nexon.com/page/event/2024/1121_frieren/index.asp",
+   "origem": "https://safebooru.org/index.php?page=post&s=view&id=6164572"
+  },
+  "fundo": "assets/img/frieren/fundo.webp",
+  "galeria": [
+   {
+    "t": "assets/img/frieren/galeria/00-p.webp",
+    "f": "assets/img/frieren/galeria/00.webp",
+    "w": 560,
+    "h": 565,
+    "oficial": true,
+    "credito": "https://frieren-anime.jp/assets/img/index/visual.jpg",
+    "origem": "https://frieren-anime.jp/assets/img/index/visual.jpg"
+   },
+   {
+    "t": "assets/img/frieren/galeria/01-p.webp",
+    "f": "assets/img/frieren/galeria/01.webp",
+    "w": 560,
+    "h": 700,
+    "oficial": true,
+    "credito": "@VIZMedia",
+    "origem": "https://twitter.com/VIZMedia/status/1960364158148300800"
+   },
+   {
+    "t": "assets/img/frieren/galeria/02-p.webp",
+    "f": "assets/img/frieren/galeria/02.webp",
+    "w": 560,
+    "h": 560,
+    "oficial": true,
+    "credito": "@Anime_Frieren",
+    "origem": "https://twitter.com/Anime_Frieren/status/1708793727442182226"
+   },
+   {
+    "t": "assets/img/frieren/galeria/03-p.webp",
+    "f": "assets/img/frieren/galeria/03.webp",
+    "w": 560,
+    "h": 793,
+    "oficial": true,
+    "credito": "@FRIEREN_PR",
+    "origem": "https://twitter.com/FRIEREN_PR/status/1658761168494956545"
+   },
+   {
+    "t": "assets/img/frieren/galeria/04-p.webp",
+    "f": "assets/img/frieren/galeria/04.webp",
+    "w": 560,
+    "h": 792,
+    "oficial": true,
+    "credito": "@Anime_Frieren",
+    "origem": "https://twitter.com/Anime_Frieren/status/1767566224592912828"
+   },
+   {
+    "t": "assets/img/frieren/galeria/05-p.webp",
+    "f": "assets/img/frieren/galeria/05.webp",
+    "w": 560,
+    "h": 713,
+    "oficial": true,
+    "credito": "@FRIEREN_PR",
+    "origem": "https://twitter.com/FRIEREN_PR/status/1771193332120629372"
+   },
+   {
+    "t": "assets/img/frieren/galeria/06-p.webp",
+    "f": "assets/img/frieren/galeria/06.webp",
+    "w": 560,
+    "h": 747,
+    "oficial": true,
+    "credito": "@Anime_Frieren",
+    "origem": "https://twitter.com/Anime_Frieren/status/1874108328046928288"
+   },
+   {
+    "t": "assets/img/frieren/galeria/07-p.webp",
+    "f": "assets/img/frieren/galeria/07.webp",
+    "w": 560,
+    "h": 786,
+    "oficial": true,
+    "credito": "@Madhouse_News",
+    "origem": "https://twitter.com/Madhouse_News/status/1811928894897029158"
+   },
+   {
+    "t": "assets/img/frieren/galeria/08-p.webp",
+    "f": "assets/img/frieren/galeria/08.webp",
+    "w": 560,
+    "h": 863,
+    "oficial": true,
+    "credito": "@FRIEREN_PR",
+    "origem": "https://twitter.com/FRIEREN_PR/status/1813136490571911399"
+   },
+   {
+    "t": "assets/img/frieren/galeria/09-p.webp",
+    "f": "assets/img/frieren/galeria/09.webp",
+    "w": 560,
+    "h": 793,
+    "oficial": true,
+    "credito": "@frieren_pr",
+    "origem": "https://twitter.com/frieren_pr/status/1812774112806248883"
+   },
+   {
+    "t": "assets/img/frieren/galeria/10-p.webp",
+    "f": "assets/img/frieren/galeria/10.webp",
+    "w": 560,
+    "h": 996,
+    "oficial": true,
+    "credito": "@FRIEREN_PR",
+    "origem": "https://twitter.com/FRIEREN_PR/status/1807292985882939644"
+   },
+   {
+    "t": "assets/img/frieren/galeria/11-p.webp",
+    "f": "assets/img/frieren/galeria/11.webp",
+    "w": 560,
+    "h": 560,
+    "oficial": true,
+    "credito": "https://cafe.daum.net/GuardianTales/ARz7/247",
+    "origem": "https://cafe.daum.net/GuardianTales/ARz7/247"
+   },
+   {
+    "t": "assets/img/frieren/galeria/12-p.webp",
+    "f": "assets/img/frieren/galeria/12.webp",
+    "w": 560,
+    "h": 560,
+    "oficial": true,
+    "credito": "https://www.grandsummoners.info/units/Frieren",
+    "origem": "https://www.grandsummoners.info/units/Frieren"
+   },
+   {
+    "t": "assets/img/frieren/galeria/13-p.webp",
+    "f": "assets/img/frieren/galeria/13.webp",
+    "w": 560,
+    "h": 304,
+    "oficial": false,
+    "credito": "@PapayouFR",
+    "origem": "https://twitter.com/PapayouFR/status/1746822872595579388"
+   },
+   {
+    "t": "assets/img/frieren/galeria/14-p.webp",
+    "f": "assets/img/frieren/galeria/14.webp",
+    "w": 560,
+    "h": 840,
+    "oficial": false,
+    "credito": "@leaillex",
+    "origem": "https://x.com/leaillex/status/2100774884737794157"
+   },
+   {
+    "t": "assets/img/frieren/galeria/15-p.webp",
+    "f": "assets/img/frieren/galeria/15.webp",
+    "w": 560,
+    "h": 578,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2023/03/20/03/56/02/106379857_p0.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2023/03/20/03/56/02/106379857_p0.jpg"
+   },
+   {
+    "t": "assets/img/frieren/galeria/16-p.webp",
+    "f": "assets/img/frieren/galeria/16.webp",
+    "w": 560,
+    "h": 383,
+    "oficial": false,
+    "credito": "@Nyte_Tyde",
+    "origem": "https://twitter.com/Nyte_Tyde/status/1933015532930019755"
+   },
+   {
+    "t": "assets/img/frieren/galeria/17-p.webp",
+    "f": "assets/img/frieren/galeria/17.webp",
+    "w": 560,
+    "h": 825,
+    "oficial": false,
+    "credito": "@Omichi_1219",
+    "origem": "https://twitter.com/Omichi_1219/status/1872795569388913028"
+   },
+   {
+    "t": "assets/img/frieren/galeria/18-p.webp",
+    "f": "assets/img/frieren/galeria/18.webp",
+    "w": 560,
+    "h": 396,
+    "oficial": false,
+    "credito": "@aonh_412",
+    "origem": "https://twitter.com/aonh_412/status/1779857165710504264"
+   },
+   {
+    "t": "assets/img/frieren/galeria/19-p.webp",
+    "f": "assets/img/frieren/galeria/19.webp",
+    "w": 560,
+    "h": 658,
+    "oficial": false,
+    "credito": "@hanaroku___",
+    "origem": "https://twitter.com/hanaroku___/status/1836403910283829418"
+   },
+   {
+    "t": "assets/img/frieren/galeria/20-p.webp",
+    "f": "assets/img/frieren/galeria/20.webp",
+    "w": 560,
+    "h": 560,
+    "oficial": false,
+    "credito": "https://www.mihuashi.com/artworks/20720111",
+    "origem": "https://www.mihuashi.com/artworks/20720111"
+   },
+   {
+    "t": "assets/img/frieren/galeria/21-p.webp",
+    "f": "assets/img/frieren/galeria/21.webp",
+    "w": 560,
+    "h": 752,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2025/05/23/15/41/28/118548255_p1.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2025/05/23/15/41/28/118548255_p1.jpg"
+   },
+   {
+    "t": "assets/img/frieren/galeria/22-p.webp",
+    "f": "assets/img/frieren/galeria/22.webp",
+    "w": 560,
+    "h": 466,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2023/12/28/00/00/38/114613535_p0.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2023/12/28/00/00/38/114613535_p0.jpg"
+   },
+   {
+    "t": "assets/img/frieren/galeria/23-p.webp",
+    "f": "assets/img/frieren/galeria/23.webp",
+    "w": 560,
+    "h": 362,
+    "oficial": false,
+    "credito": "@Kaneblob",
+    "origem": "https://twitter.com/Kaneblob/status/1857654357187018964"
+   }
+  ],
+  "fundo_m": "assets/img/frieren/fundo-m.webp"
+ },
+ "emilia": {
+  "heroi": {
+   "src": "assets/img/emilia/heroi.webp",
+   "m": "assets/img/emilia/heroi-m.webp",
+   "w": 963,
+   "h": 1201,
+   "metodo": "cache",
+   "credito": "https://re-zero-witch.jp/images/official/view/view_emilia2.png",
+   "origem": "https://safebooru.org/index.php?page=post&s=view&id=5751868"
+  },
+  "rosto": "assets/img/emilia/rosto.webp",
+  "alt": {
+   "src": "assets/img/emilia/alt.webp",
+   "m": "assets/img/emilia/alt-m.webp",
+   "w": 792,
+   "h": 1019,
+   "metodo": "cache",
+   "credito": "https://static.wikia.nocookie.net/princess-connect/images/1/13/Emilia-astrum-sprite-normal.png/revision/latest?cb=20190810071616",
+   "origem": "https://safebooru.org/index.php?page=post&s=view&id=4231711"
+  },
+  "fundo": "assets/img/emilia/fundo.webp",
+  "galeria": [
+   {
+    "t": "assets/img/emilia/galeria/00-p.webp",
+    "f": "assets/img/emilia/galeria/00.webp",
+    "w": 560,
+    "h": 910,
+    "oficial": true,
+    "credito": "@re_zero_rezelos",
+    "origem": "https://twitter.com/re_zero_rezelos/status/1501769819724697605"
+   },
+   {
+    "t": "assets/img/emilia/galeria/01-p.webp",
+    "f": "assets/img/emilia/galeria/01.webp",
+    "w": 560,
+    "h": 910,
+    "oficial": true,
+    "credito": "@re_zero_rezelos",
+    "origem": "https://twitter.com/re_zero_rezelos/status/1308692584206725121"
+   },
+   {
+    "t": "assets/img/emilia/galeria/02-p.webp",
+    "f": "assets/img/emilia/galeria/02.webp",
+    "w": 560,
+    "h": 910,
+    "oficial": true,
+    "credito": "@re_zero_rezelos",
+    "origem": "https://twitter.com/re_zero_rezelos/status/1399636836012670978"
+   },
+   {
+    "t": "assets/img/emilia/galeria/03-p.webp",
+    "f": "assets/img/emilia/galeria/03.webp",
+    "w": 560,
+    "h": 910,
+    "oficial": true,
+    "credito": "@re_zero_rezelos",
+    "origem": "https://twitter.com/re_zero_rezelos/status/1647857428548157440"
+   },
+   {
+    "t": "assets/img/emilia/galeria/04-p.webp",
+    "f": "assets/img/emilia/galeria/04.webp",
+    "w": 560,
+    "h": 777,
+    "oficial": true,
+    "credito": "@wttn3tpkt",
+    "origem": "https://twitter.com/wttn3tpkt/status/1705454545600663708"
+   },
+   {
+    "t": "assets/img/emilia/galeria/05-p.webp",
+    "f": "assets/img/emilia/galeria/05.webp",
+    "w": 560,
+    "h": 775,
+    "oficial": true,
+    "credito": "https://static.zerochan.net/Emilia.full.3552686.png",
+    "origem": "https://static.zerochan.net/Emilia.full.3552686.png"
+   },
+   {
+    "t": "assets/img/emilia/galeria/06-p.webp",
+    "f": "assets/img/emilia/galeria/06.webp",
+    "w": 560,
+    "h": 1147,
+    "oficial": true,
+    "credito": "Re:Zero Art Works Re:Box",
+    "origem": "Re:Zero Art Works Re:Box"
+   },
+   {
+    "t": "assets/img/emilia/galeria/07-p.webp",
+    "f": "assets/img/emilia/galeria/07.webp",
+    "w": 560,
+    "h": 1114,
+    "oficial": true,
+    "credito": "safebooru #1787487",
+    "origem": "https://safebooru.org/index.php?page=post&s=view&id=1787487"
+   },
+   {
+    "t": "assets/img/emilia/galeria/08-p.webp",
+    "f": "assets/img/emilia/galeria/08.webp",
+    "w": 560,
+    "h": 813,
+    "oficial": true,
+    "credito": "safebooru #1803111",
+    "origem": "https://safebooru.org/index.php?page=post&s=view&id=1803111"
+   },
+   {
+    "t": "assets/img/emilia/galeria/09-p.webp",
+    "f": "assets/img/emilia/galeria/09.webp",
+    "w": 560,
+    "h": 1007,
+    "oficial": true,
+    "credito": "Emilia Wiki (Fandom) — material oficial © detentores dos direitos",
+    "origem": "https://rezero.fandom.com/wiki/File%3AEmilia_LN_character_design.png"
+   },
+   {
+    "t": "assets/img/emilia/galeria/10-p.webp",
+    "f": "assets/img/emilia/galeria/10.webp",
+    "w": 560,
+    "h": 747,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2021/08/03/20/11/43/91703686_p0.png",
+    "origem": "https://i.pximg.net/img-original/img/2021/08/03/20/11/43/91703686_p0.png"
+   },
+   {
+    "t": "assets/img/emilia/galeria/11-p.webp",
+    "f": "assets/img/emilia/galeria/11.webp",
+    "w": 560,
+    "h": 707,
+    "oficial": false,
+    "credito": "safebooru #2663160",
+    "origem": "https://safebooru.org/index.php?page=post&s=view&id=2663160"
+   },
+   {
+    "t": "assets/img/emilia/galeria/12-p.webp",
+    "f": "assets/img/emilia/galeria/12.webp",
+    "w": 560,
+    "h": 700,
+    "oficial": false,
+    "credito": "@azcollins007",
+    "origem": "https://x.com/azcollins007/status/1973356678503604373?s=20"
+   },
+   {
+    "t": "assets/img/emilia/galeria/13-p.webp",
+    "f": "assets/img/emilia/galeria/13.webp",
+    "w": 560,
+    "h": 809,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2026/09/29/14/42/27/150245422_p1.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2026/09/29/14/42/27/150245422_p1.jpg"
+   },
+   {
+    "t": "assets/img/emilia/galeria/14-p.webp",
+    "f": "assets/img/emilia/galeria/14.webp",
+    "w": 560,
+    "h": 546,
+    "oficial": false,
+    "credito": "http://lohas.nicoseiga.jp/priv/e332c1f503de42c77f34c6c04dd0b98c46a41c8c/1484088373/6396734",
+    "origem": "http://lohas.nicoseiga.jp/priv/e332c1f503de42c77f34c6c04dd0b98c46a41c8c/1484088373/6396734"
+   },
+   {
+    "t": "assets/img/emilia/galeria/15-p.webp",
+    "f": "assets/img/emilia/galeria/15.webp",
+    "w": 560,
+    "h": 893,
+    "oficial": false,
+    "credito": "@echiru39",
+    "origem": "https://twitter.com/echiru39/status/1307958840676229120"
+   },
+   {
+    "t": "assets/img/emilia/galeria/16-p.webp",
+    "f": "assets/img/emilia/galeria/16.webp",
+    "w": 560,
+    "h": 792,
+    "oficial": false,
+    "credito": "@Sasouraaaa",
+    "origem": "https://twitter.com/Sasouraaaa/status/1505982580486717442"
+   },
+   {
+    "t": "assets/img/emilia/galeria/17-p.webp",
+    "f": "assets/img/emilia/galeria/17.webp",
+    "w": 560,
+    "h": 868,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2020/08/28/17/09/51/83987258_p0.png",
+    "origem": "https://i.pximg.net/img-original/img/2020/08/28/17/09/51/83987258_p0.png"
+   },
+   {
+    "t": "assets/img/emilia/galeria/18-p.webp",
+    "f": "assets/img/emilia/galeria/18.webp",
+    "w": 560,
+    "h": 829,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2022/05/03/01/57/13/98059896_p13.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2022/05/03/01/57/13/98059896_p13.jpg"
+   },
+   {
+    "t": "assets/img/emilia/galeria/19-p.webp",
+    "f": "assets/img/emilia/galeria/19.webp",
+    "w": 560,
+    "h": 630,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2021/12/20/21/49/28/94902397_p0.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2021/12/20/21/49/28/94902397_p0.jpg"
+   },
+   {
+    "t": "assets/img/emilia/galeria/20-p.webp",
+    "f": "assets/img/emilia/galeria/20.webp",
+    "w": 560,
+    "h": 860,
+    "oficial": false,
+    "credito": "http://i4.pixiv.net/img-original/img/2016/05/16/20/37/33/56916963_p0.jpg",
+    "origem": "http://i4.pixiv.net/img-original/img/2016/05/16/20/37/33/56916963_p0.jpg"
+   },
+   {
+    "t": "assets/img/emilia/galeria/21-p.webp",
+    "f": "assets/img/emilia/galeria/21.webp",
+    "w": 560,
+    "h": 737,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2017/09/24/00/26/29/65105585_p0.png",
+    "origem": "https://i.pximg.net/img-original/img/2017/09/24/00/26/29/65105585_p0.png"
+   },
+   {
+    "t": "assets/img/emilia/galeria/22-p.webp",
+    "f": "assets/img/emilia/galeria/22.webp",
+    "w": 560,
+    "h": 790,
+    "oficial": false,
+    "credito": "@sw_8a6u",
+    "origem": "https://twitter.com/sw_8a6u/status/1894681310515376243"
+   },
+   {
+    "t": "assets/img/emilia/galeria/23-p.webp",
+    "f": "assets/img/emilia/galeria/23.webp",
+    "w": 560,
+    "h": 964,
+    "oficial": false,
+    "credito": "@TorinoAqua",
+    "origem": "https://twitter.com/TorinoAqua/status/1309434856326144001"
+   },
+   {
+    "t": "assets/img/emilia/galeria/24-p.webp",
+    "f": "assets/img/emilia/galeria/24.webp",
+    "w": 560,
+    "h": 793,
+    "oficial": false,
+    "credito": "https://yande.re/post?tags=re_zero_kara_hajimeru_isekai_seikatsu",
+    "origem": "https://yande.re/post?tags=re_zero_kara_hajimeru_isekai_seikatsu"
+   }
+  ],
+  "fundo_m": "assets/img/emilia/fundo-m.webp"
+ },
+ "beatrice": {
+  "heroi": {
+   "src": "assets/img/beatrice/heroi.webp",
+   "m": "assets/img/beatrice/heroi-m.webp",
+   "w": 1012,
+   "h": 1500,
+   "metodo": "rembg isnet-anime",
+   "credito": "@furanpa_mugiuta",
+   "origem": "https://safebooru.org/index.php?page=post&s=view&id=4288748"
+  },
+  "rosto": "assets/img/beatrice/rosto.webp",
+  "alt": {
+   "src": "assets/img/beatrice/alt.webp",
+   "m": "assets/img/beatrice/alt-m.webp",
+   "w": 1090,
+   "h": 1393,
+   "metodo": "rembg isnet-anime",
+   "credito": "@prmsub",
+   "origem": "https://safebooru.org/index.php?page=post&s=view&id=4609441"
+  },
+  "fundo": "assets/img/beatrice/fundo.webp",
+  "galeria": [
+   {
+    "t": "assets/img/beatrice/galeria/00-p.webp",
+    "f": "assets/img/beatrice/galeria/00.webp",
+    "w": 560,
+    "h": 910,
+    "oficial": true,
+    "credito": "@re_zero_rezelos",
+    "origem": "https://twitter.com/re_zero_rezelos/status/1256131242614874112"
+   },
+   {
+    "t": "assets/img/beatrice/galeria/01-p.webp",
+    "f": "assets/img/beatrice/galeria/01.webp",
+    "w": 560,
+    "h": 560,
+    "oficial": true,
+    "credito": "http://divine-gate.net/img/unit/tex_chara_l_2188.png",
+    "origem": "http://divine-gate.net/img/unit/tex_chara_l_2188.png"
+   },
+   {
+    "t": "assets/img/beatrice/galeria/02-p.webp",
+    "f": "assets/img/beatrice/galeria/02.webp",
+    "w": 560,
+    "h": 560,
+    "oficial": true,
+    "credito": "safebooru #2448971",
+    "origem": "https://safebooru.org/index.php?page=post&s=view&id=2448971"
+   },
+   {
+    "t": "assets/img/beatrice/galeria/03-p.webp",
+    "f": "assets/img/beatrice/galeria/03.webp",
+    "w": 560,
+    "h": 795,
+    "oficial": true,
+    "credito": "Re：ゼロから始める異世界生活 15",
+    "origem": "Re：ゼロから始める異世界生活 15"
+   },
+   {
+    "t": "assets/img/beatrice/galeria/04-p.webp",
+    "f": "assets/img/beatrice/galeria/04.webp",
+    "w": 560,
+    "h": 910,
+    "oficial": true,
+    "credito": "@re_zero_rezelos",
+    "origem": "https://twitter.com/re_zero_rezelos/status/1471034794595262466"
+   },
+   {
+    "t": "assets/img/beatrice/galeria/05-p.webp",
+    "f": "assets/img/beatrice/galeria/05.webp",
+    "w": 560,
+    "h": 910,
+    "oficial": true,
+    "credito": "file://CardLarge_11301002a.png",
+    "origem": "file://CardLarge_11301002a.png"
+   },
+   {
+    "t": "assets/img/beatrice/galeria/06-p.webp",
+    "f": "assets/img/beatrice/galeria/06.webp",
+    "w": 560,
+    "h": 910,
+    "oficial": true,
+    "credito": "file://CardLarge_11302001a.png",
+    "origem": "file://CardLarge_11302001a.png"
+   },
+   {
+    "t": "assets/img/beatrice/galeria/07-p.webp",
+    "f": "assets/img/beatrice/galeria/07.webp",
+    "w": 560,
+    "h": 793,
+    "oficial": true,
+    "credito": "@re_zero_WitchRe",
+    "origem": "https://twitter.com/re_zero_WitchRe/status/1846386833141436530"
+   },
+   {
+    "t": "assets/img/beatrice/galeria/08-p.webp",
+    "f": "assets/img/beatrice/galeria/08.webp",
+    "w": 560,
+    "h": 345,
+    "oficial": true,
+    "credito": "https://wiki.biligame.com/crashfever/2091",
+    "origem": "https://wiki.biligame.com/crashfever/2091"
+   },
+   {
+    "t": "assets/img/beatrice/galeria/09-p.webp",
+    "f": "assets/img/beatrice/galeria/09.webp",
+    "w": 560,
+    "h": 818,
+    "oficial": true,
+    "credito": "Beatrice Wiki (Fandom) — material oficial © detentores dos direitos",
+    "origem": "https://rezero.fandom.com/wiki/File%3ABeatrice_LN_character_design.png"
+   },
+   {
+    "t": "assets/img/beatrice/galeria/10-p.webp",
+    "f": "assets/img/beatrice/galeria/10.webp",
+    "w": 560,
+    "h": 638,
+    "oficial": false,
+    "credito": "pixiv 97121193",
+    "origem": "https://www.pixiv.net/en/artworks/97121193"
+   },
+   {
+    "t": "assets/img/beatrice/galeria/11-p.webp",
+    "f": "assets/img/beatrice/galeria/11.webp",
+    "w": 560,
+    "h": 941,
+    "oficial": false,
+    "credito": "http://i1.pixiv.net/img-original/img/2016/07/02/22/26/09/57705024_p0.png",
+    "origem": "http://i1.pixiv.net/img-original/img/2016/07/02/22/26/09/57705024_p0.png"
+   },
+   {
+    "t": "assets/img/beatrice/galeria/12-p.webp",
+    "f": "assets/img/beatrice/galeria/12.webp",
+    "w": 560,
+    "h": 791,
+    "oficial": false,
+    "credito": "@momi0",
+    "origem": "https://twitter.com/momi0/status/926319845636894720"
+   },
+   {
+    "t": "assets/img/beatrice/galeria/13-p.webp",
+    "f": "assets/img/beatrice/galeria/13.webp",
+    "w": 560,
+    "h": 800,
+    "oficial": false,
+    "credito": "https://files.yande.re/image/f59dc9288460e61d456528592e26d1a8/yande.re%20413418%20beatrice_%28re_zero%29%20dress%20ootsuka_shinichirou%20pack_%28re_zero%29%20pantyhose%20re_zero_kara_hajimeru_isekai_seikatsu.jpg",
+    "origem": "https://files.yande.re/image/f59dc9288460e61d456528592e26d1a8/yande.re%20413418%20beatrice_%28re_zero%29%20dress%20ootsuka_shinichirou%20pack_%28re_zero%29%20pantyhose%20re_zero_kara_hajimeru_isekai_seikatsu.jpg"
+   },
+   {
+    "t": "assets/img/beatrice/galeria/14-p.webp",
+    "f": "assets/img/beatrice/galeria/14.webp",
+    "w": 560,
+    "h": 770,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2020/08/05/00/19/25/83452015_p0.png",
+    "origem": "https://i.pximg.net/img-original/img/2020/08/05/00/19/25/83452015_p0.png"
+   },
+   {
+    "t": "assets/img/beatrice/galeria/15-p.webp",
+    "f": "assets/img/beatrice/galeria/15.webp",
+    "w": 560,
+    "h": 792,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2020/09/17/16/10/16/84428578_p0.png",
+    "origem": "https://i.pximg.net/img-original/img/2020/09/17/16/10/16/84428578_p0.png"
+   },
+   {
+    "t": "assets/img/beatrice/galeria/16-p.webp",
+    "f": "assets/img/beatrice/galeria/16.webp",
+    "w": 560,
+    "h": 746,
+    "oficial": false,
+    "credito": "@0paru_paru0",
+    "origem": "https://twitter.com/0paru_paru0/status/1741442774338322862"
+   },
+   {
+    "t": "assets/img/beatrice/galeria/17-p.webp",
+    "f": "assets/img/beatrice/galeria/17.webp",
+    "w": 560,
+    "h": 792,
+    "oficial": false,
+    "credito": "http://i2.pixiv.net/img-original/img/2016/06/08/08/58/37/57285885_p0.jpg",
+    "origem": "http://i2.pixiv.net/img-original/img/2016/06/08/08/58/37/57285885_p0.jpg"
+   },
+   {
+    "t": "assets/img/beatrice/galeria/18-p.webp",
+    "f": "assets/img/beatrice/galeria/18.webp",
+    "w": 560,
+    "h": 778,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2020/09/27/00/12/14/84632645_p0.png",
+    "origem": "https://i.pximg.net/img-original/img/2020/09/27/00/12/14/84632645_p0.png"
+   },
+   {
+    "t": "assets/img/beatrice/galeria/19-p.webp",
+    "f": "assets/img/beatrice/galeria/19.webp",
+    "w": 560,
+    "h": 395,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2017/07/31/00/10/01/64138224_p0.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2017/07/31/00/10/01/64138224_p0.jpg"
+   },
+   {
+    "t": "assets/img/beatrice/galeria/20-p.webp",
+    "f": "assets/img/beatrice/galeria/20.webp",
+    "w": 560,
+    "h": 493,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2020/07/09/02/48/05/82850841_p0.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2020/07/09/02/48/05/82850841_p0.jpg"
+   },
+   {
+    "t": "assets/img/beatrice/galeria/21-p.webp",
+    "f": "assets/img/beatrice/galeria/21.webp",
+    "w": 560,
+    "h": 880,
+    "oficial": false,
+    "credito": "@watano__yuki",
+    "origem": "https://twitter.com/watano__yuki/status/1871896007002538235"
+   },
+   {
+    "t": "assets/img/beatrice/galeria/22-p.webp",
+    "f": "assets/img/beatrice/galeria/22.webp",
+    "w": 560,
+    "h": 560,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2016/07/08/16/19/53/57800886_p0.png",
+    "origem": "https://i.pximg.net/img-original/img/2016/07/08/16/19/53/57800886_p0.png"
+   },
+   {
+    "t": "assets/img/beatrice/galeria/23-p.webp",
+    "f": "assets/img/beatrice/galeria/23.webp",
+    "w": 560,
+    "h": 560,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2021/08/18/19/56/02/92081679_p4.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2021/08/18/19/56/02/92081679_p4.jpg"
+   },
+   {
+    "t": "assets/img/beatrice/galeria/24-p.webp",
+    "f": "assets/img/beatrice/galeria/24.webp",
+    "w": 560,
+    "h": 846,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2020/08/28/14/46/35/83985276_p0.png",
+    "origem": "https://i.pximg.net/img-original/img/2020/08/28/14/46/35/83985276_p0.png"
+   },
+   {
+    "t": "assets/img/beatrice/galeria/25-p.webp",
+    "f": "assets/img/beatrice/galeria/25.webp",
+    "w": 560,
+    "h": 747,
+    "oficial": false,
+    "credito": "pixiv 97253359",
+    "origem": "https://www.pixiv.net/en/artworks/97253359"
+   },
+   {
+    "t": "assets/img/beatrice/galeria/26-p.webp",
+    "f": "assets/img/beatrice/galeria/26.webp",
+    "w": 560,
+    "h": 630,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2023/12/20/16/52/55/114385425_p0.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2023/12/20/16/52/55/114385425_p0.jpg"
+   },
+   {
+    "t": "assets/img/beatrice/galeria/27-p.webp",
+    "f": "assets/img/beatrice/galeria/27.webp",
+    "w": 560,
+    "h": 775,
+    "oficial": false,
+    "credito": "http://i3.pixiv.net/img-original/img/2016/05/04/06/40/58/56695186_p0.jpg",
+    "origem": "http://i3.pixiv.net/img-original/img/2016/05/04/06/40/58/56695186_p0.jpg"
+   }
+  ],
+  "fundo_m": "assets/img/beatrice/fundo-m.webp"
+ },
+ "rem": {
+  "heroi": {
+   "src": "assets/img/rem/heroi.webp",
+   "m": "assets/img/rem/heroi-m.webp",
+   "w": 1000,
+   "h": 1140,
+   "metodo": "cache",
+   "credito": "https://re-zero-witch.jp/images/official/img/rem.png?001",
+   "origem": "https://safebooru.org/index.php?page=post&s=view&id=5751867"
+  },
+  "rosto": "assets/img/rem/rosto.webp",
+  "alt": {
+   "src": "assets/img/rem/alt.webp",
+   "m": "assets/img/rem/alt-m.webp",
+   "w": 828,
+   "h": 1019,
+   "metodo": "cache",
+   "credito": "https://static.wikia.nocookie.net/princess-connect/images/7/70/Rem-demon-sprite-normal.png/revision/latest?cb=20190808065834",
+   "origem": "https://safebooru.org/index.php?page=post&s=view&id=4231721"
+  },
+  "fundo": "assets/img/rem/fundo.webp",
+  "galeria": [
+   {
+    "t": "assets/img/rem/galeria/00-p.webp",
+    "f": "assets/img/rem/galeria/00.webp",
+    "w": 560,
+    "h": 910,
+    "oficial": true,
+    "credito": "https://static.wikia.nocookie.net/rezelos/images/e/e2/Rem.jpeg/revision/latest?cb=20201118173604",
+    "origem": "https://static.wikia.nocookie.net/rezelos/images/e/e2/Rem.jpeg/revision/latest?cb=20201118173604"
+   },
+   {
+    "t": "assets/img/rem/galeria/01-p.webp",
+    "f": "assets/img/rem/galeria/01.webp",
+    "w": 560,
+    "h": 581,
+    "oficial": true,
+    "credito": "World Flipper sprite",
+    "origem": "World Flipper sprite"
+   },
+   {
+    "t": "assets/img/rem/galeria/02-p.webp",
+    "f": "assets/img/rem/galeria/02.webp",
+    "w": 560,
+    "h": 795,
+    "oficial": true,
+    "credito": "https://files.yande.re/image/9fa311965b2d0f8b1d042175b2ce2785/yande.re%20706378.jpg",
+    "origem": "https://files.yande.re/image/9fa311965b2d0f8b1d042175b2ce2785/yande.re%20706378.jpg"
+   },
+   {
+    "t": "assets/img/rem/galeria/03-p.webp",
+    "f": "assets/img/rem/galeria/03.webp",
+    "w": 560,
+    "h": 910,
+    "oficial": true,
+    "credito": "https://static.wikia.nocookie.net/rezelos/images/a/a4/Image_2022-03-16_193550.png/revision/latest?cb=20220316173554",
+    "origem": "https://static.wikia.nocookie.net/rezelos/images/a/a4/Image_2022-03-16_193550.png/revision/latest?cb=20220316173554"
+   },
+   {
+    "t": "assets/img/rem/galeria/04-p.webp",
+    "f": "assets/img/rem/galeria/04.webp",
+    "w": 560,
+    "h": 910,
+    "oficial": true,
+    "credito": "@re_zero_rezelos",
+    "origem": "https://twitter.com/re_zero_rezelos/status/1504004547987050500"
+   },
+   {
+    "t": "assets/img/rem/galeria/05-p.webp",
+    "f": "assets/img/rem/galeria/05.webp",
+    "w": 560,
+    "h": 910,
+    "oficial": true,
+    "credito": "http://www.4gamer.net/games/500/G050082/20220127152/",
+    "origem": "http://www.4gamer.net/games/500/G050082/20220127152/"
+   },
+   {
+    "t": "assets/img/rem/galeria/06-p.webp",
+    "f": "assets/img/rem/galeria/06.webp",
+    "w": 560,
+    "h": 910,
+    "oficial": true,
+    "credito": "https://static.wikia.nocookie.net/rezelos/images/b/b2/Oni-Rem_(3_Star).jpeg/revision/latest?cb=20201118174300",
+    "origem": "https://static.wikia.nocookie.net/rezelos/images/b/b2/Oni-Rem_(3_Star).jpeg/revision/latest?cb=20201118174300"
+   },
+   {
+    "t": "assets/img/rem/galeria/07-p.webp",
+    "f": "assets/img/rem/galeria/07.webp",
+    "w": 560,
+    "h": 1280,
+    "oficial": true,
+    "credito": "Rem Wiki (Fandom) — material oficial © detentores dos direitos",
+    "origem": "https://rezero.fandom.com/wiki/File%3ARem_LN_character_design.png"
+   },
+   {
+    "t": "assets/img/rem/galeria/08-p.webp",
+    "f": "assets/img/rem/galeria/08.webp",
+    "w": 560,
+    "h": 560,
+    "oficial": true,
+    "credito": "https://static.wikia.nocookie.net/princess-connect/images/7/70/Rem-demon-sprite-normal.png/revision/latest?cb=20190808065834",
+    "origem": "https://static.wikia.nocookie.net/princess-connect/images/7/70/Rem-demon-sprite-normal.png/revision/latest?cb=20190808065834"
+   },
+   {
+    "t": "assets/img/rem/galeria/09-p.webp",
+    "f": "assets/img/rem/galeria/09.webp",
+    "w": 560,
+    "h": 927,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2020/01/01/09/10/28/78632736_p0.png",
+    "origem": "https://i.pximg.net/img-original/img/2020/01/01/09/10/28/78632736_p0.png"
+   },
+   {
+    "t": "assets/img/rem/galeria/10-p.webp",
+    "f": "assets/img/rem/galeria/10.webp",
+    "w": 560,
+    "h": 800,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2024/03/05/20/58/22/116651178_p0.png",
+    "origem": "https://i.pximg.net/img-original/img/2024/03/05/20/58/22/116651178_p0.png"
+   },
+   {
+    "t": "assets/img/rem/galeria/11-p.webp",
+    "f": "assets/img/rem/galeria/11.webp",
+    "w": 560,
+    "h": 560,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2024/02/07/03/46/50/115830662_p0.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2024/02/07/03/46/50/115830662_p0.jpg"
+   },
+   {
+    "t": "assets/img/rem/galeria/12-p.webp",
+    "f": "assets/img/rem/galeria/12.webp",
+    "w": 560,
+    "h": 798,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2021/06/04/17/45/41/90315034_p0.png",
+    "origem": "https://i.pximg.net/img-original/img/2021/06/04/17/45/41/90315034_p0.png"
+   },
+   {
+    "t": "assets/img/rem/galeria/13-p.webp",
+    "f": "assets/img/rem/galeria/13.webp",
+    "w": 560,
+    "h": 705,
+    "oficial": false,
+    "credito": "http://i2.pixiv.net/img-original/img/2016/08/10/00/02/04/58351449_p0.jpg",
+    "origem": "http://i2.pixiv.net/img-original/img/2016/08/10/00/02/04/58351449_p0.jpg"
+   },
+   {
+    "t": "assets/img/rem/galeria/14-p.webp",
+    "f": "assets/img/rem/galeria/14.webp",
+    "w": 560,
+    "h": 560,
+    "oficial": false,
+    "credito": "@giraffe_kiona",
+    "origem": "https://twitter.com/giraffe_kiona/status/1355050573213495296"
+   },
+   {
+    "t": "assets/img/rem/galeria/15-p.webp",
+    "f": "assets/img/rem/galeria/15.webp",
+    "w": 560,
+    "h": 792,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2021/03/12/03/15/26/88383952_p0.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2021/03/12/03/15/26/88383952_p0.jpg"
+   },
+   {
+    "t": "assets/img/rem/galeria/16-p.webp",
+    "f": "assets/img/rem/galeria/16.webp",
+    "w": 560,
+    "h": 863,
+    "oficial": false,
+    "credito": "@TorinoAqua",
+    "origem": "https://twitter.com/TorinoAqua/status/1315236572082565122"
+   },
+   {
+    "t": "assets/img/rem/galeria/17-p.webp",
+    "f": "assets/img/rem/galeria/17.webp",
+    "w": 560,
+    "h": 789,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2019/11/24/23/59/57/77980002_p0.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2019/11/24/23/59/57/77980002_p0.jpg"
+   },
+   {
+    "t": "assets/img/rem/galeria/18-p.webp",
+    "f": "assets/img/rem/galeria/18.webp",
+    "w": 560,
+    "h": 706,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2020/04/17/18/59/59/80855186_p0.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2020/04/17/18/59/59/80855186_p0.jpg"
+   },
+   {
+    "t": "assets/img/rem/galeria/19-p.webp",
+    "f": "assets/img/rem/galeria/19.webp",
+    "w": 560,
+    "h": 855,
+    "oficial": false,
+    "credito": "@S9405082839451",
+    "origem": "https://twitter.com/S9405082839451/status/1834760821018128461"
+   },
+   {
+    "t": "assets/img/rem/galeria/20-p.webp",
+    "f": "assets/img/rem/galeria/20.webp",
+    "w": 560,
+    "h": 825,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2019/07/26/12/31/27/75908791_p0.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2019/07/26/12/31/27/75908791_p0.jpg"
+   },
+   {
+    "t": "assets/img/rem/galeria/21-p.webp",
+    "f": "assets/img/rem/galeria/21.webp",
+    "w": 560,
+    "h": 705,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2016/07/08/13/11/40/57799325_p0.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2016/07/08/13/11/40/57799325_p0.jpg"
+   },
+   {
+    "t": "assets/img/rem/galeria/22-p.webp",
+    "f": "assets/img/rem/galeria/22.webp",
+    "w": 560,
+    "h": 829,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2016/09/25/07/10/46/59156566_p0.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2016/09/25/07/10/46/59156566_p0.jpg"
+   },
+   {
+    "t": "assets/img/rem/galeria/23-p.webp",
+    "f": "assets/img/rem/galeria/23.webp",
+    "w": 560,
+    "h": 795,
+    "oficial": false,
+    "credito": "http://i3.pixiv.net/img-original/img/2016/06/04/00/50/49/57210298_p0.jpg",
+    "origem": "http://i3.pixiv.net/img-original/img/2016/06/04/00/50/49/57210298_p0.jpg"
+   },
+   {
+    "t": "assets/img/rem/galeria/24-p.webp",
+    "f": "assets/img/rem/galeria/24.webp",
+    "w": 560,
+    "h": 790,
+    "oficial": false,
+    "credito": "@nagul_",
+    "origem": "https://twitter.com/nagul_/status/1329264247117778944"
+   },
+   {
+    "t": "assets/img/rem/galeria/25-p.webp",
+    "f": "assets/img/rem/galeria/25.webp",
+    "w": 560,
+    "h": 829,
+    "oficial": false,
+    "credito": "safebooru #2337624",
+    "origem": "https://safebooru.org/index.php?page=post&s=view&id=2337624"
+   },
+   {
+    "t": "assets/img/rem/galeria/26-p.webp",
+    "f": "assets/img/rem/galeria/26.webp",
+    "w": 560,
+    "h": 784,
+    "oficial": false,
+    "credito": "http://i4.pixiv.net/img-original/img/2016/09/01/01/06/54/58753799_p0.jpg",
+    "origem": "http://i4.pixiv.net/img-original/img/2016/09/01/01/06/54/58753799_p0.jpg"
+   },
+   {
+    "t": "assets/img/rem/galeria/27-p.webp",
+    "f": "assets/img/rem/galeria/27.webp",
+    "w": 560,
+    "h": 829,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2017/03/24/00/48/28/62063538_p0.png",
+    "origem": "https://i.pximg.net/img-original/img/2017/03/24/00/48/28/62063538_p0.png"
+   }
+  ],
+  "fundo_m": "assets/img/rem/fundo-m.webp"
+ },
+ "eren": {
+  "heroi": {
+   "src": "assets/img/eren/heroi.webp",
+   "m": "assets/img/eren/heroi-m.webp",
+   "w": 1526,
+   "h": 1500,
+   "metodo": "transparente original",
+   "credito": "",
+   "origem": ""
+  },
+  "rosto": "assets/img/eren/rosto.webp",
+  "alt": {
+   "src": "assets/img/eren/alt.webp",
+   "m": "assets/img/eren/alt-m.webp",
+   "w": 485,
+   "h": 942,
+   "metodo": "cache",
+   "credito": "",
+   "origem": ""
+  },
+  "fundo": "assets/img/eren/fundo.webp",
+  "galeria": [
+   {
+    "t": "assets/img/eren/galeria/00-p.webp",
+    "f": "assets/img/eren/galeria/00.webp",
+    "w": 560,
+    "h": 792,
+    "oficial": true,
+    "credito": "@anime_shingeki",
+    "origem": "https://twitter.com/anime_shingeki/status/1348292263244255234"
+   },
+   {
+    "t": "assets/img/eren/galeria/01-p.webp",
+    "f": "assets/img/eren/galeria/01.webp",
+    "w": 560,
+    "h": 792,
+    "oficial": true,
+    "credito": "@anime_shingeki",
+    "origem": "https://twitter.com/anime_shingeki/status/1720712490202652891"
+   },
+   {
+    "t": "assets/img/eren/galeria/02-p.webp",
+    "f": "assets/img/eren/galeria/02.webp",
+    "w": 560,
+    "h": 768,
+    "oficial": true,
+    "credito": "@anime_shingeki",
+    "origem": "https://twitter.com/anime_shingeki/status/1720621891591995741"
+   },
+   {
+    "t": "assets/img/eren/galeria/03-p.webp",
+    "f": "assets/img/eren/galeria/03.webp",
+    "w": 560,
+    "h": 570,
+    "oficial": true,
+    "credito": "Eren Yeager Wiki (Fandom) — material oficial © detentores dos direitos",
+    "origem": "https://attackontitan.fandom.com/wiki/File%3AEren_free_from_prison.jpg"
+   },
+   {
+    "t": "assets/img/eren/galeria/04-p.webp",
+    "f": "assets/img/eren/galeria/04.webp",
+    "w": 560,
+    "h": 747,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2017/04/28/19/53/09/62617344_p1.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2017/04/28/19/53/09/62617344_p1.jpg"
+   },
+   {
+    "t": "assets/img/eren/galeria/05-p.webp",
+    "f": "assets/img/eren/galeria/05.webp",
+    "w": 560,
+    "h": 409,
+    "oficial": false,
+    "credito": "@errslance",
+    "origem": "https://twitter.com/errslance/status/1050057982799740928"
+   },
+   {
+    "t": "assets/img/eren/galeria/06-p.webp",
+    "f": "assets/img/eren/galeria/06.webp",
+    "w": 560,
+    "h": 804,
+    "oficial": false,
+    "credito": "@kiyoshi_ST",
+    "origem": "https://twitter.com/kiyoshi_ST/status/1830930736376869364"
+   },
+   {
+    "t": "assets/img/eren/galeria/07-p.webp",
+    "f": "assets/img/eren/galeria/07.webp",
+    "w": 560,
+    "h": 794,
+    "oficial": false,
+    "credito": "@S9405082839451",
+    "origem": "https://twitter.com/S9405082839451/status/1843430556199252239"
+   },
+   {
+    "t": "assets/img/eren/galeria/08-p.webp",
+    "f": "assets/img/eren/galeria/08.webp",
+    "w": 560,
+    "h": 571,
+    "oficial": false,
+    "credito": "@shigeruwannaeat",
+    "origem": "https://twitter.com/shigeruwannaeat/status/1381238916456443906"
+   },
+   {
+    "t": "assets/img/eren/galeria/09-p.webp",
+    "f": "assets/img/eren/galeria/09.webp",
+    "w": 560,
+    "h": 792,
+    "oficial": false,
+    "credito": "@moriori1113",
+    "origem": "https://twitter.com/moriori1113/status/1640691884673875968"
+   },
+   {
+    "t": "assets/img/eren/galeria/10-p.webp",
+    "f": "assets/img/eren/galeria/10.webp",
+    "w": 560,
+    "h": 837,
+    "oficial": false,
+    "credito": "@116180kOc",
+    "origem": "https://twitter.com/116180kOc/status/2002369932835570029"
+   },
+   {
+    "t": "assets/img/eren/galeria/11-p.webp",
+    "f": "assets/img/eren/galeria/11.webp",
+    "w": 560,
+    "h": 391,
+    "oficial": false,
+    "credito": "@AxxxAxxxxA",
+    "origem": "https://twitter.com/AxxxAxxxxA/status/1299016390980976640"
+   },
+   {
+    "t": "assets/img/eren/galeria/12-p.webp",
+    "f": "assets/img/eren/galeria/12.webp",
+    "w": 560,
+    "h": 840,
+    "oficial": false,
+    "credito": "pixiv 65947159",
+    "origem": "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=65947159"
+   },
+   {
+    "t": "assets/img/eren/galeria/13-p.webp",
+    "f": "assets/img/eren/galeria/13.webp",
+    "w": 560,
+    "h": 793,
+    "oficial": false,
+    "credito": "@SIRIUS_0905HZ",
+    "origem": "https://twitter.com/SIRIUS_0905HZ/status/1509051351178698755"
+   },
+   {
+    "t": "assets/img/eren/galeria/14-p.webp",
+    "f": "assets/img/eren/galeria/14.webp",
+    "w": 560,
+    "h": 659,
+    "oficial": false,
+    "credito": "@Chalseu_D",
+    "origem": "https://twitter.com/Chalseu_D/status/1632938482388672512"
+   },
+   {
+    "t": "assets/img/eren/galeria/15-p.webp",
+    "f": "assets/img/eren/galeria/15.webp",
+    "w": 560,
+    "h": 760,
+    "oficial": false,
+    "credito": "@Dino_illus",
+    "origem": "https://twitter.com/Dino_illus/status/1566087330934525955"
+   },
+   {
+    "t": "assets/img/eren/galeria/16-p.webp",
+    "f": "assets/img/eren/galeria/16.webp",
+    "w": 560,
+    "h": 792,
+    "oficial": false,
+    "credito": "https://leonardovincent.artstation.com/projects/QnDEn3",
+    "origem": "https://leonardovincent.artstation.com/projects/QnDEn3"
+   },
+   {
+    "t": "assets/img/eren/galeria/17-p.webp",
+    "f": "assets/img/eren/galeria/17.webp",
+    "w": 560,
+    "h": 795,
+    "oficial": false,
+    "credito": "@liu_ruo88840",
+    "origem": "https://x.com/liu_ruo88840/status/2030648966606623145"
+   },
+   {
+    "t": "assets/img/eren/galeria/18-p.webp",
+    "f": "assets/img/eren/galeria/18.webp",
+    "w": 560,
+    "h": 587,
+    "oficial": false,
+    "credito": "@etsu007",
+    "origem": "https://twitter.com/etsu007/status/1385969306236723204"
+   },
+   {
+    "t": "assets/img/eren/galeria/19-p.webp",
+    "f": "assets/img/eren/galeria/19.webp",
+    "w": 560,
+    "h": 688,
+    "oficial": false,
+    "credito": "@nitijoy2",
+    "origem": "https://twitter.com/nitijoy2/status/1734558570635817409"
+   },
+   {
+    "t": "assets/img/eren/galeria/20-p.webp",
+    "f": "assets/img/eren/galeria/20.webp",
+    "w": 560,
+    "h": 396,
+    "oficial": false,
+    "credito": "@ZiRwoissa",
+    "origem": "https://twitter.com/ZiRwoissa/status/1495600331988025344"
+   }
+  ],
+  "fundo_m": "assets/img/eren/fundo-m.webp"
+ },
+ "thorfinn": {
+  "heroi": {
+   "src": "assets/img/thorfinn/heroi.webp",
+   "m": "assets/img/thorfinn/heroi-m.webp",
+   "w": 388,
+   "h": 800,
+   "metodo": "transparente original",
+   "credito": "Thorfinn Wiki (Fandom) — material oficial © detentores dos direitos",
+   "origem": "https://vinlandsaga.fandom.com/wiki/File%3AThorfinn_S2_anime_design.png"
+  },
+  "rosto": "assets/img/thorfinn/rosto.webp",
+  "alt": {
+   "src": "assets/img/thorfinn/alt.webp",
+   "m": "assets/img/thorfinn/alt-m.webp",
+   "w": 338,
+   "h": 760,
+   "metodo": "transparente original",
+   "credito": "Thorfinn Wiki (Fandom) — material oficial © detentores dos direitos",
+   "origem": "https://vinlandsaga.fandom.com/wiki/File%3AThorfinn_anime_design.png"
+  },
+  "fundo": "assets/img/thorfinn/fundo.webp",
+  "galeria": [
+   {
+    "t": "assets/img/thorfinn/galeria/00-p.webp",
+    "f": "assets/img/thorfinn/galeria/00.webp",
+    "w": 560,
+    "h": 784,
+    "oficial": true,
+    "credito": "safebooru #81278",
+    "origem": "https://safebooru.org/index.php?page=post&s=view&id=81278"
+   },
+   {
+    "t": "assets/img/thorfinn/galeria/01-p.webp",
+    "f": "assets/img/thorfinn/galeria/01.webp",
+    "w": 560,
+    "h": 814,
+    "oficial": true,
+    "credito": "safebooru #81284",
+    "origem": "https://safebooru.org/index.php?page=post&s=view&id=81284"
+   },
+   {
+    "t": "assets/img/thorfinn/galeria/02-p.webp",
+    "f": "assets/img/thorfinn/galeria/02.webp",
+    "w": 560,
+    "h": 829,
+    "oficial": true,
+    "credito": "safebooru #81283",
+    "origem": "https://safebooru.org/index.php?page=post&s=view&id=81283"
+   },
+   {
+    "t": "assets/img/thorfinn/galeria/03-p.webp",
+    "f": "assets/img/thorfinn/galeria/03.webp",
+    "w": 560,
+    "h": 560,
+    "oficial": true,
+    "credito": "Thorfinn Wiki (Fandom) — material oficial © detentores dos direitos",
+    "origem": "https://vinlandsaga.fandom.com/wiki/File%3AThorfinn_profile_image_%281012%E2%80%931014%29.png"
+   },
+   {
+    "t": "assets/img/thorfinn/galeria/04-p.webp",
+    "f": "assets/img/thorfinn/galeria/04.webp",
+    "w": 560,
+    "h": 560,
+    "oficial": true,
+    "credito": "Thorfinn Wiki (Fandom) — material oficial © detentores dos direitos",
+    "origem": "https://vinlandsaga.fandom.com/wiki/File%3AThorfinn_profile_image_%281015%E2%80%931018%29.png"
+   },
+   {
+    "t": "assets/img/thorfinn/galeria/05-p.webp",
+    "f": "assets/img/thorfinn/galeria/05.webp",
+    "w": 440,
+    "h": 440,
+    "oficial": true,
+    "credito": "Thorfinn Wiki (Fandom) — material oficial © detentores dos direitos",
+    "origem": "https://vinlandsaga.fandom.com/wiki/File%3AThorfinn_profile_image_%281015%29.png"
+   },
+   {
+    "t": "assets/img/thorfinn/galeria/06-p.webp",
+    "f": "assets/img/thorfinn/galeria/06.webp",
+    "w": 560,
+    "h": 747,
+    "oficial": false,
+    "credito": "@Paji__",
+    "origem": "https://twitter.com/Paji__/status/1390145304402350084"
+   },
+   {
+    "t": "assets/img/thorfinn/galeria/07-p.webp",
+    "f": "assets/img/thorfinn/galeria/07.webp",
+    "w": 560,
+    "h": 792,
+    "oficial": false,
+    "credito": "@mmumechii",
+    "origem": "https://twitter.com/mmumechii/status/1674788526863572999"
+   },
+   {
+    "t": "assets/img/thorfinn/galeria/08-p.webp",
+    "f": "assets/img/thorfinn/galeria/08.webp",
+    "w": 560,
+    "h": 448,
+    "oficial": false,
+    "credito": "http://img12.pixiv.net/img/sinstar/19475563.jpg",
+    "origem": "http://img12.pixiv.net/img/sinstar/19475563.jpg"
+   },
+   {
+    "t": "assets/img/thorfinn/galeria/09-p.webp",
+    "f": "assets/img/thorfinn/galeria/09.webp",
+    "w": 560,
+    "h": 906,
+    "oficial": false,
+    "credito": "@shirube_akashi",
+    "origem": "https://twitter.com/shirube_akashi/status/1947997728698712433"
+   },
+   {
+    "t": "assets/img/thorfinn/galeria/10-p.webp",
+    "f": "assets/img/thorfinn/galeria/10.webp",
+    "w": 560,
+    "h": 861,
+    "oficial": false,
+    "credito": "@icebuko",
+    "origem": "https://x.com/icebuko/status/2076979563817836965"
+   },
+   {
+    "t": "assets/img/thorfinn/galeria/11-p.webp",
+    "f": "assets/img/thorfinn/galeria/11.webp",
+    "w": 560,
+    "h": 747,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2023/01/05/00/45/53/104244028_p0.png",
+    "origem": "https://i.pximg.net/img-original/img/2023/01/05/00/45/53/104244028_p0.png"
+   },
+   {
+    "t": "assets/img/thorfinn/galeria/12-p.webp",
+    "f": "assets/img/thorfinn/galeria/12.webp",
+    "w": 560,
+    "h": 860,
+    "oficial": false,
+    "credito": "@cRow_illust__",
+    "origem": "https://twitter.com/cRow_illust__/status/1388645756920209409"
+   },
+   {
+    "t": "assets/img/thorfinn/galeria/13-p.webp",
+    "f": "assets/img/thorfinn/galeria/13.webp",
+    "w": 560,
+    "h": 831,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2020/01/02/14/26/54/78662747_p0.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2020/01/02/14/26/54/78662747_p0.jpg"
+   },
+   {
+    "t": "assets/img/thorfinn/galeria/14-p.webp",
+    "f": "assets/img/thorfinn/galeria/14.webp",
+    "w": 560,
+    "h": 709,
+    "oficial": false,
+    "credito": "https://lauregal.artstation.com/projects/kQQ2W6",
+    "origem": "https://lauregal.artstation.com/projects/kQQ2W6"
+   },
+   {
+    "t": "assets/img/thorfinn/galeria/15-p.webp",
+    "f": "assets/img/thorfinn/galeria/15.webp",
+    "w": 560,
+    "h": 792,
+    "oficial": false,
+    "credito": "@wildzo_",
+    "origem": "https://twitter.com/wildzo_/status/1704008774380601642"
+   },
+   {
+    "t": "assets/img/thorfinn/galeria/16-p.webp",
+    "f": "assets/img/thorfinn/galeria/16.webp",
+    "w": 560,
+    "h": 560,
+    "oficial": false,
+    "credito": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4122030e-c99f-4a9a-9351-eff65913dac3/dk0ewyb-a0c8425c-a335-4879-9c69-3154a63fcfef.png/v1/fill/w_1280,h_1280/thorfinn_by_kraplak_levitan_dk0ewyb-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiIvZi80MTIyMDMwZS1jOTlmLTRhOWEtOTM1MS1lZmY2NTkxM2RhYzMvZGswZXd5Yi1hMGM4NDI1Yy1hMzM1LTQ4NzktOWM2OS0zMTU0YTYzZmNmZWYucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.R1LcvAwJUYF_qpzMSHgemnmtE-VLI-MeR0oXqJcAPGE",
+    "origem": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4122030e-c99f-4a9a-9351-eff65913dac3/dk0ewyb-a0c8425c-a335-4879-9c69-3154a63fcfef.png/v1/fill/w_1280,h_1280/thorfinn_by_kraplak_levitan_dk0ewyb-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiIvZi80MTIyMDMwZS1jOTlmLTRhOWEtOTM1MS1lZmY2NTkxM2RhYzMvZGswZXd5Yi1hMGM4NDI1Yy1hMzM1LTQ4NzktOWM2OS0zMTU0YTYzZmNmZWYucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.R1LcvAwJUYF_qpzMSHgemnmtE-VLI-MeR0oXqJcAPGE"
+   },
+   {
+    "t": "assets/img/thorfinn/galeria/17-p.webp",
+    "f": "assets/img/thorfinn/galeria/17.webp",
+    "w": 560,
+    "h": 735,
+    "oficial": false,
+    "credito": "@chairannn_",
+    "origem": "https://x.com/chairannn_/status/2045725583322312727"
+   },
+   {
+    "t": "assets/img/thorfinn/galeria/18-p.webp",
+    "f": "assets/img/thorfinn/galeria/18.webp",
+    "w": 560,
+    "h": 792,
+    "oficial": false,
+    "credito": "@dango_yum",
+    "origem": "https://x.com/dango_yum/status/2047132172105159128"
+   },
+   {
+    "t": "assets/img/thorfinn/galeria/19-p.webp",
+    "f": "assets/img/thorfinn/galeria/19.webp",
+    "w": 560,
+    "h": 296,
+    "oficial": false,
+    "credito": "@anniechromes",
+    "origem": "https://twitter.com/anniechromes/status/1415820747067568130"
+   },
+   {
+    "t": "assets/img/thorfinn/galeria/20-p.webp",
+    "f": "assets/img/thorfinn/galeria/20.webp",
+    "w": 560,
+    "h": 537,
+    "oficial": false,
+    "credito": "https://wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8f92cfb3-a2bd-469d-84c3-96c0f82813a8/ddpbzk6-40c55f7c-b44e-4712-bcd2-bf45e12b219d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImV4cCI6MTY3NzQyMDM3MiwiaWF0IjoxNjc3NDE5NzYyLCJqdGkiOiI2M2ZiNjRmYzk3YTViIiwib2JqIjpbW3sicGF0aCI6IlwvZlwvOGY5MmNmYjMtYTJiZC00NjlkLTg0YzMtOTZjMGY4MjgxM2E4XC9kZHBiems2LTQwYzU1ZjdjLWI0NGUtNDcxMi1iY2QyLWJmNDVlMTJiMjE5ZC5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.-0LBlj-TT5sG_1l4zTmSQRtJ8x4X38EW3cL52KHduSU",
+    "origem": "https://wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8f92cfb3-a2bd-469d-84c3-96c0f82813a8/ddpbzk6-40c55f7c-b44e-4712-bcd2-bf45e12b219d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImV4cCI6MTY3NzQyMDM3MiwiaWF0IjoxNjc3NDE5NzYyLCJqdGkiOiI2M2ZiNjRmYzk3YTViIiwib2JqIjpbW3sicGF0aCI6IlwvZlwvOGY5MmNmYjMtYTJiZC00NjlkLTg0YzMtOTZjMGY4MjgxM2E4XC9kZHBiems2LTQwYzU1ZjdjLWI0NGUtNDcxMi1iY2QyLWJmNDVlMTJiMjE5ZC5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.-0LBlj-TT5sG_1l4zTmSQRtJ8x4X38EW3cL52KHduSU"
+   },
+   {
+    "t": "assets/img/thorfinn/galeria/21-p.webp",
+    "f": "assets/img/thorfinn/galeria/21.webp",
+    "w": 560,
+    "h": 792,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2019/09/13/13/15/12/76758029_p0.png",
+    "origem": "https://i.pximg.net/img-original/img/2019/09/13/13/15/12/76758029_p0.png"
+   },
+   {
+    "t": "assets/img/thorfinn/galeria/22-p.webp",
+    "f": "assets/img/thorfinn/galeria/22.webp",
+    "w": 560,
+    "h": 700,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2020/12/18/05/12/58/86365509_p0.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2020/12/18/05/12/58/86365509_p0.jpg"
+   },
+   {
+    "t": "assets/img/thorfinn/galeria/23-p.webp",
+    "f": "assets/img/thorfinn/galeria/23.webp",
+    "w": 560,
+    "h": 757,
+    "oficial": false,
+    "credito": "https://www.deviantart.com/botanicaxu/art/Vinland-Saga-Thorfinn-I-804723400",
+    "origem": "https://www.deviantart.com/botanicaxu/art/Vinland-Saga-Thorfinn-I-804723400"
+   }
+  ],
+  "fundo_m": "assets/img/thorfinn/fundo-m.webp"
+ },
+ "capri": {
+  "heroi": {
+   "src": "assets/img/capri/heroi.webp",
+   "m": "assets/img/capri/heroi-m.webp",
+   "w": 939,
+   "h": 1500,
+   "metodo": "cache",
+   "credito": "@potemki11",
+   "origem": "https://safebooru.org/index.php?page=post&s=view&id=7253675"
+  },
+  "rosto": "assets/img/capri/rosto.webp",
+  "alt": {
+   "src": "assets/img/capri/alt.webp",
+   "m": "assets/img/capri/alt-m.webp",
+   "w": 600,
+   "h": 800,
+   "metodo": "foto",
+   "foto": true,
+   "credito": "",
+   "origem": ""
+  },
+  "fundo": "assets/img/capri/fundo.webp",
+  "galeria": [
+   {
+    "t": "assets/img/capri/galeria/00-p.webp",
+    "f": "assets/img/capri/galeria/00.webp",
+    "w": 560,
+    "h": 482,
+    "oficial": true,
+    "credito": "Material oficial / fanart (ver _acervo/capri/FONTES.md)",
+    "origem": ""
+   },
+   {
+    "t": "assets/img/capri/galeria/01-p.webp",
+    "f": "assets/img/capri/galeria/01.webp",
+    "w": 560,
+    "h": 315,
+    "oficial": true,
+    "credito": "Material oficial / fanart (ver _acervo/capri/FONTES.md)",
+    "origem": ""
+   },
+   {
+    "t": "assets/img/capri/galeria/02-p.webp",
+    "f": "assets/img/capri/galeria/02.webp",
+    "w": 560,
+    "h": 315,
+    "oficial": true,
+    "credito": "Material oficial / fanart (ver _acervo/capri/FONTES.md)",
+    "origem": ""
+   },
+   {
+    "t": "assets/img/capri/galeria/03-p.webp",
+    "f": "assets/img/capri/galeria/03.webp",
+    "w": 560,
+    "h": 747,
+    "oficial": true,
+    "credito": "Material oficial / fanart (ver _acervo/capri/FONTES.md)",
+    "origem": ""
+   },
+   {
+    "t": "assets/img/capri/galeria/04-p.webp",
+    "f": "assets/img/capri/galeria/04.webp",
+    "w": 560,
+    "h": 232,
+    "oficial": true,
+    "credito": "Material oficial / fanart (ver _acervo/capri/FONTES.md)",
+    "origem": ""
+   },
+   {
+    "t": "assets/img/capri/galeria/05-p.webp",
+    "f": "assets/img/capri/galeria/05.webp",
+    "w": 560,
+    "h": 315,
+    "oficial": true,
+    "credito": "Material oficial / fanart (ver _acervo/capri/FONTES.md)",
+    "origem": ""
+   },
+   {
+    "t": "assets/img/capri/galeria/06-p.webp",
+    "f": "assets/img/capri/galeria/06.webp",
+    "w": 560,
+    "h": 713,
+    "oficial": false,
+    "credito": "Material oficial / fanart (ver _acervo/capri/FONTES.md)",
+    "origem": ""
+   },
+   {
+    "t": "assets/img/capri/galeria/07-p.webp",
+    "f": "assets/img/capri/galeria/07.webp",
+    "w": 560,
+    "h": 795,
+    "oficial": false,
+    "credito": "Material oficial / fanart (ver _acervo/capri/FONTES.md)",
+    "origem": ""
+   },
+   {
+    "t": "assets/img/capri/galeria/08-p.webp",
+    "f": "assets/img/capri/galeria/08.webp",
+    "w": 560,
+    "h": 747,
+    "oficial": false,
+    "credito": "Material oficial / fanart (ver _acervo/capri/FONTES.md)",
+    "origem": ""
+   },
+   {
+    "t": "assets/img/capri/galeria/09-p.webp",
+    "f": "assets/img/capri/galeria/09.webp",
+    "w": 560,
+    "h": 792,
+    "oficial": false,
+    "credito": "Material oficial / fanart (ver _acervo/capri/FONTES.md)",
+    "origem": ""
+   },
+   {
+    "t": "assets/img/capri/galeria/10-p.webp",
+    "f": "assets/img/capri/galeria/10.webp",
+    "w": 560,
+    "h": 792,
+    "oficial": false,
+    "credito": "Material oficial / fanart (ver _acervo/capri/FONTES.md)",
+    "origem": ""
+   },
+   {
+    "t": "assets/img/capri/galeria/11-p.webp",
+    "f": "assets/img/capri/galeria/11.webp",
+    "w": 560,
+    "h": 630,
+    "oficial": false,
+    "credito": "Material oficial / fanart (ver _acervo/capri/FONTES.md)",
+    "origem": ""
+   },
+   {
+    "t": "assets/img/capri/galeria/12-p.webp",
+    "f": "assets/img/capri/galeria/12.webp",
+    "w": 560,
+    "h": 792,
+    "oficial": false,
+    "credito": "Material oficial / fanart (ver _acervo/capri/FONTES.md)",
+    "origem": ""
+   },
+   {
+    "t": "assets/img/capri/galeria/13-p.webp",
+    "f": "assets/img/capri/galeria/13.webp",
+    "w": 560,
+    "h": 706,
+    "oficial": false,
+    "credito": "Material oficial / fanart (ver _acervo/capri/FONTES.md)",
+    "origem": ""
+   },
+   {
+    "t": "assets/img/capri/galeria/14-p.webp",
+    "f": "assets/img/capri/galeria/14.webp",
+    "w": 560,
+    "h": 770,
+    "oficial": false,
+    "credito": "Material oficial / fanart (ver _acervo/capri/FONTES.md)",
+    "origem": ""
+   },
+   {
+    "t": "assets/img/capri/galeria/15-p.webp",
+    "f": "assets/img/capri/galeria/15.webp",
+    "w": 560,
+    "h": 932,
+    "oficial": false,
+    "credito": "Material oficial / fanart (ver _acervo/capri/FONTES.md)",
+    "origem": ""
+   },
+   {
+    "t": "assets/img/capri/galeria/16-p.webp",
+    "f": "assets/img/capri/galeria/16.webp",
+    "w": 560,
+    "h": 640,
+    "oficial": false,
+    "credito": "Material oficial / fanart (ver _acervo/capri/FONTES.md)",
+    "origem": ""
+   },
+   {
+    "t": "assets/img/capri/galeria/17-p.webp",
+    "f": "assets/img/capri/galeria/17.webp",
+    "w": 560,
+    "h": 713,
+    "oficial": false,
+    "credito": "@hyakkinkunu",
+    "origem": "https://x.com/hyakkinkunu/status/2112627187660828860"
+   },
+   {
+    "t": "assets/img/capri/galeria/18-p.webp",
+    "f": "assets/img/capri/galeria/18.webp",
+    "w": 560,
+    "h": 732,
+    "oficial": false,
+    "credito": "@Noki_g4rden",
+    "origem": "https://x.com/Noki_g4rden/status/2113283059931922892"
+   },
+   {
+    "t": "assets/img/capri/galeria/19-p.webp",
+    "f": "assets/img/capri/galeria/19.webp",
+    "w": 560,
+    "h": 566,
+    "oficial": false,
+    "credito": "@Hikimori_1",
+    "origem": "https://x.com/Hikimori_1/status/2113128497724149863"
+   },
+   {
+    "t": "assets/img/capri/galeria/20-p.webp",
+    "f": "assets/img/capri/galeria/20.webp",
+    "w": 560,
+    "h": 560,
+    "oficial": false,
+    "credito": "@soulkillerjelq",
+    "origem": "https://x.com/soulkillerjelq/status/2113407311599538493"
+   },
+   {
+    "t": "assets/img/capri/galeria/21-p.webp",
+    "f": "assets/img/capri/galeria/21.webp",
+    "w": 560,
+    "h": 747,
+    "oficial": false,
+    "credito": "@kkkkkk2015807",
+    "origem": "https://x.com/kkkkkk2015807/status/2112968162694287691"
+   },
+   {
+    "t": "assets/img/capri/galeria/22-p.webp",
+    "f": "assets/img/capri/galeria/22.webp",
+    "w": 560,
+    "h": 792,
+    "oficial": false,
+    "credito": "https://i.pximg.net/img-original/img/2026/10/22/16/51/48/151138083_p0.jpg",
+    "origem": "https://i.pximg.net/img-original/img/2026/10/22/16/51/48/151138083_p0.jpg"
+   },
+   {
+    "t": "assets/img/capri/galeria/23-p.webp",
+    "f": "assets/img/capri/galeria/23.webp",
+    "w": 560,
+    "h": 420,
+    "oficial": false,
+    "credito": "@pommuart",
+    "origem": "https://x.com/pommuart/status/2113577765194871022"
+   },
+   {
+    "t": "assets/img/capri/galeria/24-p.webp",
+    "f": "assets/img/capri/galeria/24.webp",
+    "w": 560,
+    "h": 700,
+    "oficial": false,
+    "credito": "@MizuriAU",
+    "origem": "https://x.com/MizuriAU/status/2117890966103392457"
+   },
+   {
+    "t": "assets/img/capri/galeria/25-p.webp",
+    "f": "assets/img/capri/galeria/25.webp",
+    "w": 560,
+    "h": 626,
+    "oficial": false,
+    "credito": "@Vinsgar",
+    "origem": "https://x.com/Vinsgar/status/2113569920755568923"
+   },
+   {
+    "t": "assets/img/capri/galeria/26-p.webp",
+    "f": "assets/img/capri/galeria/26.webp",
+    "w": 560,
+    "h": 933,
+    "oficial": false,
+    "credito": "@Its_Ghostii",
+    "origem": "https://x.com/Its_Ghostii/status/2113370837944270947"
+   }
+  ],
+  "fundo_m": "assets/img/capri/fundo-m.webp"
+ }
+}

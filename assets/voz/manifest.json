@@ -1,0 +1,574 @@
+{
+ "gojo": {
+  "ola_1": {
+   "t": "Yo! Satoru Gojo aqui. Bem-vindo ao portfólio do Lebot.",
+   "d": 4.89
+  },
+  "ola_2": {
+   "t": "Voltou, é? Claro que voltou. Ninguém resiste a mim.",
+   "d": 3.88
+  },
+  "ola_3": {
+   "t": "E aí! Relaxa, você tá com o mais forte.",
+   "d": 2.32
+  },
+  "ola_4": {
+   "t": "Opa, visita! Senta aí, eu trouxe doces.",
+   "d": 3.36
+  },
+  "voz_1": {
+   "t": "Agora você pode ouvir o mais forte. De nada.",
+   "d": 2.67
+  },
+  "voz_2": {
+   "t": "Som ligado! Prepara que eu sou muito carismático.",
+   "d": 2.67
+  },
+  "sec_inicio_1": {
+   "t": "Esse é o Lebot. Um aluno promissor. Quase tão bom quanto eu.",
+   "d": 4.17
+  },
+  "sec_inicio_2": {
+   "t": "De volta ao começo! Teleporte instantâneo.",
+   "d": 2.52
+  },
+  "sec_inicio_3": {
+   "t": "O dono do site. Mas a estrela sou eu, né?",
+   "d": 2.11
+  },
+  "sec_perfil_1": {
+   "t": "Esse sou eu! Satoru Gojo. O feiticeiro mais forte.",
+   "d": 3.36
+  },
+  "sec_perfil_2": {
+   "t": "Seis Olhos, Ilimitado... e lindo. Pode anotar.",
+   "d": 3.65
+  },
+  "sec_perfil_3": {
+   "t": "Lê com atenção, vai cair na prova.",
+   "d": 2.01
+  },
+  "sec_frases_1": {
+   "t": "Minhas frases! Clica numa, eu falo.",
+   "d": 2.65
+  },
+  "sec_frases_2": {
+   "t": "Escolhe uma. Todas são lendárias.",
+   "d": 3.0
+  },
+  "sec_galeria_1": {
+   "t": "Galeria do Gojo! Obviamente eu sou lindo em todas.",
+   "d": 3.36
+  },
+  "sec_galeria_2": {
+   "t": "Os artistas me amam. Faz sentido.",
+   "d": 2.31
+  },
+  "sec_galeria_3": {
+   "t": "Uma exposição só minha. Merecido.",
+   "d": 2.36
+  },
+  "sec_contato_1": {
+   "t": "Quer falar com o Lebot? Vai fundo. Eu dou cobertura.",
+   "d": 2.84
+  },
+  "sec_contato_2": {
+   "t": "As redes dele! Segue tudo, é rapidinho.",
+   "d": 2.82
+  },
+  "sec_contato_3": {
+   "t": "Escolhe uma aí. Eu recomendo todas.",
+   "d": 2.24
+  },
+  "instagram_1": {
+   "t": "O Instagram dele! Segue aí, não custa nada.",
+   "d": 2.42
+  },
+  "instagram_2": {
+   "t": "Fotos! Nenhuma tão boa quanto as minhas, mas tudo bem.",
+   "d": 3.04
+  },
+  "instagram_3": {
+   "t": "Segue lá. Eu tô de olho. Literalmente.",
+   "d": 3.46
+  },
+  "tiktok_1": {
+   "t": "TikTok! Eu ia aparecer lá, mas ia quebrar o algoritmo.",
+   "d": 3.13
+  },
+  "tiktok_2": {
+   "t": "Vídeos curtos! Perfeito pra ver comendo doce.",
+   "d": 2.56
+  },
+  "tiktok_3": {
+   "t": "Vai lá, vai. Eu espero.",
+   "d": 1.55
+  },
+  "twitch_1": {
+   "t": "A live na Twitch! Bora assistir, eu levo os doces.",
+   "d": 2.84
+  },
+  "twitch_2": {
+   "t": "Ao vivo! Igual aula prática, só que mais divertido.",
+   "d": 4.03
+  },
+  "twitch_3": {
+   "t": "Aparece no chat e fala que o Gojo mandou.",
+   "d": 2.47
+  },
+  "spotify_1": {
+   "t": "A playlist dele. Boa pra ouvir comendo um doce.",
+   "d": 2.88
+  },
+  "spotify_2": {
+   "t": "Música! Coloca alto, ninguém reclama do mais forte.",
+   "d": 3.74
+  },
+  "spotify_3": {
+   "t": "Bota pra tocar. Eu danço bem, sabia?",
+   "d": 2.46
+  },
+  "github_1": {
+   "t": "O GitHub dele. É aqui que a mágica de verdade acontece.",
+   "d": 3.17
+  },
+  "github_2": {
+   "t": "Código bem feito. Eu aprovo.",
+   "d": 1.65
+  },
+  "github_3": {
+   "t": "Dá uma olhada. Tá cheio de técnica aí.",
+   "d": 2.32
+  },
+  "discord_1": {
+   "t": "O Discord dele! Clica que eu copio pra você.",
+   "d": 2.65
+  },
+  "discord_2": {
+   "t": "Lebot ponto gê gê. Fácil, né?",
+   "d": 2.88
+  },
+  "discord_3": {
+   "t": "Chama ele no Discord. Diz que eu mandei.",
+   "d": 2.37
+  },
+  "copiado_1": {
+   "t": "Copiado! Velocidade do mais forte.",
+   "d": 2.66
+  },
+  "copiado_2": {
+   "t": "Pronto! Nem precisou de técnica.",
+   "d": 2.13
+  },
+  "arte_1": {
+   "t": "Olha só, que beleza. Também, com esse modelo.",
+   "d": 2.52
+  },
+  "arte_2": {
+   "t": "Esse aqui me pegou no meu melhor ângulo.",
+   "d": 1.81
+  },
+  "arte_3": {
+   "t": "Os olhos ficaram perfeitos. Como os originais.",
+   "d": 2.75
+  },
+  "arte_4": {
+   "t": "Eu fico bem até de venda nos olhos.",
+   "d": 2.03
+  },
+  "arte_5": {
+   "t": "Uau. Eu sou tão bonito assim? Sou.",
+   "d": 2.36
+  },
+  "arte_6": {
+   "t": "Clica nessa. Ela merece.",
+   "d": 1.87
+  },
+  "abrir_arte_1": {
+   "t": "Ampliando. Com os Seis Olhos fica ainda melhor.",
+   "d": 3.44
+  },
+  "abrir_arte_2": {
+   "t": "Olha os detalhes! Perfeição.",
+   "d": 1.91
+  },
+  "abrir_arte_3": {
+   "t": "Em tela cheia eu fico ainda mais lindo.",
+   "d": 1.75
+  },
+  "abrir_arte_4": {
+   "t": "Zoom no mais forte. Aproveita.",
+   "d": 2.59
+  },
+  "abrir_arte_5": {
+   "t": "Essa é top. Confia.",
+   "d": 1.86
+  },
+  "abrir_arte_6": {
+   "t": "Pode olhar à vontade. Eu deixo.",
+   "d": 2.04
+  },
+  "tema_1": {
+   "t": "Vai me trocar? Sério? Você sabe que eu sou o mais forte, né?",
+   "d": 3.54
+  },
+  "tema_2": {
+   "t": "Outro guia? Tudo bem, eu espero. Com doces.",
+   "d": 3.25
+  },
+  "tema_3": {
+   "t": "Vai lá. Mas volta, hein?",
+   "d": 1.59
+  },
+  "idle_1": {
+   "t": "Ei, ei, cadê você? Tô ficando entediado.",
+   "d": 2.48
+  },
+  "idle_2": {
+   "t": "Se ficar parado, eu vou comer todos os doces sozinho.",
+   "d": 2.27
+  },
+  "idle_3": {
+   "t": "Silêncio total. Parece o Vazio Infinito.",
+   "d": 3.24
+  },
+  "idle_4": {
+   "t": "Tô contando até três. Um... dois...",
+   "d": 2.52
+  },
+  "idle_5": {
+   "t": "Cochilou? Acontece com os melhores. Menos comigo.",
+   "d": 3.86
+  },
+  "frase_1": {
+   "t": "Fica tranquilo. Afinal, eu sou o mais forte.",
+   "d": 2.75
+  },
+  "frase_2": {
+   "t": "Expansão de Domínio. Vazio Infinito.",
+   "d": 2.03
+  },
+  "frase_3": {
+   "t": "Ao longo dos céus e da terra, somente eu sou o honrado.",
+   "d": 3.46
+  },
+  "frase_4": {
+   "t": "Perder? Nah. Eu ganharia.",
+   "d": 2.41
+  },
+  "frase_5": {
+   "t": "Ninguém encosta nos meus alunos.",
+   "d": 1.84
+  },
+  "frase_6": {
+   "t": "Eu sou o mais forte porque eu nasci assim.",
+   "d": 1.75
+  },
+  "tchau_1": {
+   "t": "Até mais! Não sente muita saudade, hein.",
+   "d": 3.05
+  },
+  "tchau_2": {
+   "t": "Tchau! Vou ali comprar uns doces.",
+   "d": 2.16
+  },
+  "tchau_3": {
+   "t": "Falou! O mais forte se despede.",
+   "d": 2.55
+  },
+  "topo_1": {
+   "t": "De volta pro topo! Teleporte instantâneo.",
+   "d": 2.7
+  },
+  "topo_2": {
+   "t": "Subindo! Mais rápido que a luz.",
+   "d": 2.64
+  }
+ },
+ "beatrice": {
+  "ola_1": {
+   "t": "Hmpf. Você entrou na biblioteca da Betty sem pedir, de fato.",
+   "d": 3.99
+  },
+  "ola_2": {
+   "t": "Você de novo? A Betty não estava esperando você... suponho.",
+   "d": 3.5
+  },
+  "ola_3": {
+   "t": "Bem-vindo ao portfólio do Lebot. A Betty vai te guiar, de fato.",
+   "d": 3.96
+  },
+  "ola_4": {
+   "t": "Entre em silêncio. Isto é uma biblioteca, suponho.",
+   "d": 3.18
+  },
+  "voz_1": {
+   "t": "Agora você pode ouvir a Betty. Considere isso uma honra, de fato.",
+   "d": 4.08
+  },
+  "voz_2": {
+   "t": "Som ligado. Escute com atenção, suponho.",
+   "d": 3.16
+  },
+  "sec_inicio_1": {
+   "t": "Esse é o Lebot. Até que ele é competente... suponho.",
+   "d": 4.0
+  },
+  "sec_inicio_2": {
+   "t": "De volta ao começo da página, de fato.",
+   "d": 2.3
+  },
+  "sec_inicio_3": {
+   "t": "O dono deste lugar. A Betty tolera ele, de fato.",
+   "d": 3.06
+  },
+  "sec_perfil_1": {
+   "t": "Essa é a Betty. Guardiã da Biblioteca dos Livros Proibidos, de fato.",
+   "d": 4.59
+  },
+  "sec_perfil_2": {
+   "t": "Quatrocentos anos esperando. A Betty é muito paciente, suponho.",
+   "d": 3.99
+  },
+  "sec_perfil_3": {
+   "t": "Leia com cuidado. É a história da Betty, de fato.",
+   "d": 2.97
+  },
+  "sec_frases_1": {
+   "t": "As palavras da Betty. Escolha uma, suponho.",
+   "d": 3.14
+  },
+  "sec_frases_2": {
+   "t": "Clique, e a Betty fala. Só desta vez, de fato.",
+   "d": 3.3
+  },
+  "sec_galeria_1": {
+   "t": "Retratos da Betty. Pode admirar, suponho.",
+   "d": 2.92
+  },
+  "sec_galeria_2": {
+   "t": "Tantos desenhos da Betty. Naturalmente, de fato.",
+   "d": 3.12
+  },
+  "sec_galeria_3": {
+   "t": "A Betty é muito desenhada. Isso é óbvio, suponho.",
+   "d": 3.25
+  },
+  "sec_contato_1": {
+   "t": "Quer falar com o Lebot? Escolha logo, de fato.",
+   "d": 2.65
+  },
+  "sec_contato_2": {
+   "t": "As redes dele. Vá, antes que a Betty se irrite.",
+   "d": 2.93
+  },
+  "sec_contato_3": {
+   "t": "Siga ele. A Betty mandou, suponho.",
+   "d": 2.5
+  },
+  "instagram_1": {
+   "t": "O Instagram dele. Siga, e pare de enrolar, de fato.",
+   "d": 3.56
+  },
+  "instagram_2": {
+   "t": "Fotos. Nenhuma com a Betty, que desperdício.",
+   "d": 2.65
+  },
+  "instagram_3": {
+   "t": "Vá seguir, suponho.",
+   "d": 1.49
+  },
+  "tiktok_1": {
+   "t": "TikTok? Que coisa barulhenta... mas a Betty assiste, suponho.",
+   "d": 3.95
+  },
+  "tiktok_2": {
+   "t": "Vídeos curtos. A Betty não tem paciência pra isso. Mas assiste.",
+   "d": 3.84
+  },
+  "tiktok_3": {
+   "t": "Hmpf. Até que é divertido, de fato.",
+   "d": 2.77
+  },
+  "twitch_1": {
+   "t": "A live dele. A Betty não assiste escondida. De fato, não.",
+   "d": 3.93
+  },
+  "twitch_2": {
+   "t": "Ao vivo? A Betty vai dar uma olhadinha, suponho.",
+   "d": 2.9
+  },
+  "twitch_3": {
+   "t": "Vá assistir. A Betty vai junto, de fato.",
+   "d": 2.68
+  },
+  "spotify_1": {
+   "t": "A playlist dele. Música é aceitável para a Betty.",
+   "d": 3.83
+  },
+  "spotify_2": {
+   "t": "Coloque algo calmo. Isto é uma biblioteca, de fato.",
+   "d": 3.62
+  },
+  "spotify_3": {
+   "t": "Músicas. A Betty aprova, suponho.",
+   "d": 2.76
+  },
+  "github_1": {
+   "t": "O código dele. É como um livro proibido, de fato.",
+   "d": 3.23
+  },
+  "github_2": {
+   "t": "Tantas páginas de código. A Betty leria todas, suponho.",
+   "d": 3.68
+  },
+  "github_3": {
+   "t": "Um grimório moderno, de fato.",
+   "d": 1.96
+  },
+  "discord_1": {
+   "t": "O Discord dele. Clique e a Betty copia, suponho.",
+   "d": 3.71
+  },
+  "discord_2": {
+   "t": "Lebot ponto gê gê. Memorize, de fato.",
+   "d": 3.01
+  },
+  "discord_3": {
+   "t": "Quer conversar? Use o Discord, suponho.",
+   "d": 2.64
+  },
+  "copiado_1": {
+   "t": "Copiado. A Betty é muito útil, de fato.",
+   "d": 2.76
+  },
+  "copiado_2": {
+   "t": "Pronto. Agradeça à Betty, suponho.",
+   "d": 2.47
+  },
+  "arte_1": {
+   "t": "Esse retrato é aceitável, de fato.",
+   "d": 2.41
+  },
+  "arte_2": {
+   "t": "A Betty está muito bonita aqui... suponho.",
+   "d": 3.12
+  },
+  "arte_3": {
+   "t": "Olhe os cachos da Betty. Perfeitos, de fato.",
+   "d": 3.11
+  },
+  "arte_4": {
+   "t": "Esse artista tem bom gosto, suponho.",
+   "d": 2.22
+  },
+  "arte_5": {
+   "t": "Hmpf. A Betty gostou. Só um pouquinho.",
+   "d": 2.74
+  },
+  "arte_6": {
+   "t": "Esse lembra a biblioteca, de fato.",
+   "d": 2.08
+  },
+  "abrir_arte_1": {
+   "t": "Olhe de perto. Mas não encoste, de fato.",
+   "d": 3.08
+  },
+  "abrir_arte_2": {
+   "t": "Admire com calma, suponho.",
+   "d": 2.02
+  },
+  "abrir_arte_3": {
+   "t": "A Betty em detalhes. Naturalmente.",
+   "d": 2.6
+  },
+  "abrir_arte_4": {
+   "t": "Ampliado. A Betty merece, de fato.",
+   "d": 3.02
+  },
+  "abrir_arte_5": {
+   "t": "Hmpf. Está bonito, suponho.",
+   "d": 2.17
+  },
+  "abrir_arte_6": {
+   "t": "Não fique encarando demais, de fato.",
+   "d": 1.97
+  },
+  "tema_1": {
+   "t": "Vai trocar a Betty? Hmpf. Não me importo, de fato.",
+   "d": 3.35
+  },
+  "tema_2": {
+   "t": "Outro guia? A Betty não vai sentir falta... suponho.",
+   "d": 3.43
+  },
+  "tema_3": {
+   "t": "Vá. Mas volte, de fato.",
+   "d": 2.17
+  },
+  "idle_1": {
+   "t": "Ficou parado? A Betty vai voltar a ler, de fato.",
+   "d": 3.34
+  },
+  "idle_2": {
+   "t": "Você é muito estranho... suponho.",
+   "d": 2.03
+  },
+  "idle_3": {
+   "t": "A Betty está esperando. Isso não é comum, de fato.",
+   "d": 3.01
+  },
+  "idle_4": {
+   "t": "Hmpf. Que visitante preguiçoso, suponho.",
+   "d": 2.73
+  },
+  "idle_5": {
+   "t": "A Betty vai tirar um cochilo, de fato.",
+   "d": 2.53
+  },
+  "frase_1": {
+   "t": "Betty é um grande espírito, de fato.",
+   "d": 2.3
+  },
+  "frase_2": {
+   "t": "Quem é você para invadir a Biblioteca dos Livros Proibidos?",
+   "d": 2.95
+  },
+  "frase_3": {
+   "t": "A Betty não está feliz. De fato, nem um pouquinho.",
+   "d": 3.15
+  },
+  "frase_4": {
+   "t": "A Betty esperou por alguém por quatrocentos anos, suponho.",
+   "d": 3.18
+  },
+  "frase_5": {
+   "t": "Não chame a Betty de criança, de fato!",
+   "d": 2.0
+  },
+  "frase_6": {
+   "t": "Se for você... a Betty aceita, suponho.",
+   "d": 2.38
+  },
+  "tchau_1": {
+   "t": "Vai embora? Hmpf. Volte logo... suponho.",
+   "d": 3.67
+  },
+  "tchau_2": {
+   "t": "Feche a porta ao sair, de fato.",
+   "d": 2.25
+  },
+  "tchau_3": {
+   "t": "Até logo. A Betty não vai sentir falta. Talvez.",
+   "d": 3.46
+  },
+  "topo_1": {
+   "t": "De volta pro começo da página, de fato.",
+   "d": 2.19
+  },
+  "topo_2": {
+   "t": "Subindo. Cuidado com os livros, suponho.",
+   "d": 2.76
+  }
+ }
+}

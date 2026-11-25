@@ -1,0 +1,14 @@
+# NUNCA publicar a chave da API
+chaves.txt
+*.key
+.env
+
+# acervo bruto (originais em alta, ~1 GB) — o site usa só as versões otimizadas em assets/img
+_acervo/
+
+# local
+.claude/
+__pycache__/
+*.pyc
+Thumbs.db
+desktop.ini
