@@ -110,6 +110,8 @@ function preCarregar(u) {
     if (i.decode) i.decode().then(ok, ok);
   });
 }
+// cenário em SVG que o CSS põe no rodapé de alguns temas (ver --campo em main.css)
+const CAMPO = { thorfinn: 'assets/img/cenario/trigo.svg', frieren: 'assets/img/cenario/flores.svg' };
 // tudo que o tema novo precisa antes de aparecer (com limite de tempo para conexão lenta)
 function prepararTema(id) {
   const h = img(id, 'heroi');
@@ -118,6 +120,7 @@ function prepararTema(id) {
     h && preCarregar(srcHeroi(h)),
     preCarregar(srcFundo(id)),
     preCarregar(url(img(id, 'rosto'))),
+    preCarregar(CAMPO[id] && url(CAMPO[id])),   // o campo (trigo/flores) só era baixado depois da troca e "surgia" no meio da revelação
   ]);
   return Promise.race([tudo, new Promise(ok => setTimeout(ok, 1800))]);
 }
@@ -155,32 +158,32 @@ async function copiar(txt) {
    Baixa a imagem nova em segundo plano e só troca quando ela está pronta.
    Cada elemento guarda um token: se outra troca começar no meio, a antiga é descartada. */
 const tokensImg = new WeakMap();
-function carregarImg(el, src, { srcset = '', sizes = '', placeholder = '', depois } = {}) {
+// sumirJa: se a imagem nova ainda não estiver em cache, a antiga some na hora (sem o fade de saída),
+// para o personagem anterior nunca aparecer por cima do tema novo durante a revelação. Só usado no personagem.
+function carregarImg(el, src, { srcset = '', sizes = '', placeholder = '', depois, sumirJa = false } = {}) {
   const tok = {};
   tokensImg.set(el, tok);
-  let fim; const pronta = new Promise(ok => { fim = ok; });   // resolve quando a imagem nova estiver aplicada
   el.removeAttribute('srcset');
-  if (placeholder) { el.src = placeholder; el.classList.remove('carregando'); }   // miniatura já em cache
-  else { el.style.transition = 'none'; el.classList.add('carregando'); }   // some na hora (sem fade) para a imagem antiga não ficar visível durante a troca
   const pre = new Image();
   if (srcset) { pre.sizes = sizes; pre.srcset = srcset; }
   pre.src = src;
+  const emCache = pre.complete && pre.naturalWidth;
+  if (placeholder) { el.src = placeholder; el.classList.remove('carregando'); }   // miniatura já em cache
+  else { if (sumirJa && !emCache) el.style.transition = 'none'; el.classList.add('carregando'); }
   let feito = false;
   const aplicar = () => {
     if (feito || tokensImg.get(el) !== tok) return;
     feito = true;
-    el.style.transition = ''; void el.offsetWidth;   // devolve o fade só para a entrada da imagem nova
+    if (sumirJa) el.style.transition = '';   // a entrada da imagem nova continua com o fade normal
     if (srcset) { el.sizes = sizes; el.srcset = srcset; }
     el.src = pre.currentSrc || src;
     el.classList.remove('carregando');
     if (depois) depois();
-    fim();
   };
-  if (pre.complete && pre.naturalWidth) { aplicar(); return pronta; }
+  if (emCache) return aplicar();
   pre.onload = aplicar;
   pre.onerror = aplicar;
   if (pre.decode) pre.decode().then(aplicar, () => {});
-  return pronta;
 }
 
 /* ---------------- aplicar tema ---------------- */
@@ -214,11 +217,11 @@ function pintar(id) {
   const h = img(id, 'heroi');
   const pi = $('#personagem-img');
   const palco = $('#palco-btn');
-  let heroiPronto = Promise.resolve();
   if (h) {
     pi.alt = `${t.nome}, de ${t.anime}`;
     pi.width = h.w; pi.height = h.h;
-    heroiPronto = carregarImg(pi, srcHeroi(h), {
+    carregarImg(pi, srcHeroi(h), {
+      sumirJa: true,
       depois: () => { palco.classList.remove('entrando'); void palco.offsetWidth; palco.classList.add('entrando'); },
     });
   }
@@ -237,9 +240,6 @@ function pintar(id) {
   montarGaleria(id);
   $$('#roster-lista button').forEach(b => b.setAttribute('aria-current', b.dataset.id === id ? 'true' : 'false'));
   if (fx) fx.tema(t.fx);
-  // a transição só tira a "foto" do tema novo depois que o personagem novo já está na tela
-  // (senão a foto pega o personagem antigo ainda visível sobre o fundo novo = glitch)
-  return Promise.race([heroiPronto, new Promise(ok => setTimeout(ok, 1500))]);
 }
 
 let seqTroca = 0, transicao = null;
@@ -263,23 +263,25 @@ async function trocarTema(id, { origem, falar = true } = {}) {
   else {
     raiz.classList.add('preparando');
     await prepararTema(id);
-    raiz.classList.remove('preparando');
     if (meu !== seqTroca) return;              // outro personagem foi escolhido enquanto carregava
+    // troca rápida: se a revelação anterior ainda está rodando, deixa ela terminar em vez de cortá-la
+    // no meio (o corte mostrava o tema anterior inteiro por um instante antes da nova revelação)
+    if (transicao) { await transicao.finished.catch(() => {}); if (meu !== seqTroca) return; }
+    raiz.classList.remove('preparando');
     const reduz = matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (transicao) { try { transicao.skipTransition(); } catch {} }
     if (document.startViewTransition && !reduz && qual.nivel !== 'zero') {
       if (origem) {
         const r = origem.getBoundingClientRect();
         raiz.style.setProperty('--vt-x', `${r.left + r.width / 2}px`);
         raiz.style.setProperty('--vt-y', `${r.top + r.height / 2}px`);
       }
-      transicao = document.startViewTransition(() => pintar(id));
-      transicao.finished.finally(() => { transicao = null; });
+      const vt = transicao = document.startViewTransition(() => pintar(id));
+      vt.finished.finally(() => { if (transicao === vt) transicao = null; });
     } else {
       pintar(id);
     }
   }
-  if (falar && !primeira) { voz.prefetch(); setTimeout(() => voz.falar('ola', 2), 450); }
+  if (falar && !primeira) { voz.prefetch(); setTimeout(() => { if (meu === seqTroca) voz.falar('ola', 2); }, 450); }
 }
 
 /* ---------------- perfil + frases ---------------- */
