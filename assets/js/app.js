@@ -145,6 +145,7 @@ const tokensImg = new WeakMap();
 function carregarImg(el, src, { srcset = '', sizes = '', placeholder = '', depois } = {}) {
   const tok = {};
   tokensImg.set(el, tok);
+  let fim; const pronta = new Promise(ok => { fim = ok; });   // resolve quando a imagem nova estiver aplicada
   el.removeAttribute('srcset');
   if (placeholder) { el.src = placeholder; el.classList.remove('carregando'); }   // miniatura já em cache
   else { el.classList.add('carregando'); }
@@ -159,11 +160,13 @@ function carregarImg(el, src, { srcset = '', sizes = '', placeholder = '', depoi
     el.src = pre.currentSrc || src;
     el.classList.remove('carregando');
     if (depois) depois();
+    fim();
   };
-  if (pre.complete && pre.naturalWidth) return aplicar();
+  if (pre.complete && pre.naturalWidth) { aplicar(); return pronta; }
   pre.onload = aplicar;
   pre.onerror = aplicar;
   if (pre.decode) pre.decode().then(aplicar, () => {});
+  return pronta;
 }
 
 /* ---------------- aplicar tema ---------------- */
@@ -197,10 +200,11 @@ function pintar(id) {
   const h = img(id, 'heroi');
   const pi = $('#personagem-img');
   const palco = $('#palco-btn');
+  let heroiPronto = Promise.resolve();
   if (h) {
     pi.alt = `${t.nome}, de ${t.anime}`;
     pi.width = h.w; pi.height = h.h;
-    carregarImg(pi, srcHeroi(h), {
+    heroiPronto = carregarImg(pi, srcHeroi(h), {
       depois: () => { palco.classList.remove('entrando'); void palco.offsetWidth; palco.classList.add('entrando'); },
     });
   }
@@ -219,6 +223,9 @@ function pintar(id) {
   montarGaleria(id);
   $$('#roster-lista button').forEach(b => b.setAttribute('aria-current', b.dataset.id === id ? 'true' : 'false'));
   if (fx) fx.tema(t.fx);
+  // a transição só tira a "foto" do tema novo depois que o personagem novo já está na tela
+  // (senão a foto pega o personagem antigo ainda visível sobre o fundo novo = glitch)
+  return Promise.race([heroiPronto, new Promise(ok => setTimeout(ok, 1500))]);
 }
 
 let seqTroca = 0, transicao = null;
