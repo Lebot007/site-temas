@@ -241,6 +241,18 @@ function montarPerfil(id) {
 }
 
 /* ---------------- galeria + lightbox ---------------- */
+// crédito limpo: "Arte oficial" ou "Fanart · @artista" (sem links nem endereços estranhos)
+function credito(g) {
+  if (g.oficial) return 'Arte oficial';
+  const c = (g.credito || '').trim();
+  let arroba = /^@[\w.]{2,30}$/.test(c) ? c : '';
+  if (!arroba) {
+    const m = c.match(/(?:twitter|x)\.com\/([\w]{2,30})/i);
+    if (m && !/^(i|intent|home|search)$/i.test(m[1])) arroba = '@' + m[1];
+  }
+  return arroba ? `Fanart · ${arroba}` : 'Fanart';
+}
+
 let galeriaAtual = [];
 let idxLb = 0;
 function montarGaleria(id) {
@@ -249,7 +261,7 @@ function montarGaleria(id) {
   m.replaceChildren(...galeriaAtual.map((g, i) => {
     const b = document.createElement('button');
     b.type = 'button'; b.dataset.i = i;
-    b.setAttribute('aria-label', `Ampliar arte ${i + 1}${g.credito ? ', por ' + g.credito : ''}`);
+    b.setAttribute('aria-label', `Ampliar arte ${i + 1}, ${credito(g)}`);
     const im = new Image();
     im.loading = 'lazy'; im.decoding = 'async'; im.alt = '';
     im.width = g.w; im.height = g.h;
@@ -269,12 +281,7 @@ function abrirLightbox(i) {
   im.alt = `Arte de ${TEMAS[temaAtual].nome}`;
   carregarImg(im, url(g.f), { placeholder: url(g.t) });
   const cap = $('figcaption', lb);
-  cap.textContent = '';
-  cap.append(g.oficial ? 'Arte oficial' : 'Fanart', g.credito ? ` · ${g.credito}` : '');
-  if (g.origem && /^https?:/.test(g.origem)) {
-    cap.append(' · ');
-    cap.append(Object.assign(document.createElement('a'), { href: g.origem, target: '_blank', rel: 'noopener', textContent: 'ver original' }));
-  }
+  cap.textContent = credito(g);
   if (!aberto(lb)) lb.showModal();
 }
 
