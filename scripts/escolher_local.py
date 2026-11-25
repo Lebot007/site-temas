@@ -17,11 +17,14 @@ import gerar_vozes as gv
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LOCAL = r'D:\Claude config\temp\site-temas\local'
 REFS = r'D:\Claude config\temp\site-temas\refs'
-CACHE = os.path.join(LOCAL, '_notas.json')
+CACHE_ANTIGO = os.path.join(LOCAL, '_notas.json')
 
 
 def notas(cid, falas):
+    CACHE = os.path.join(LOCAL, f'_notas_{cid}.json')   # cache por personagem (processos paralelos não colidem)
     cache = json.load(open(CACHE, encoding='utf-8')) if os.path.exists(CACHE) else {}
+    if not cache and os.path.exists(CACHE_ANTIGO):
+        cache = {k: v for k, v in json.load(open(CACHE_ANTIGO, encoding='utf-8')).items() if f'{os.sep}{cid}{os.sep}' in k or f'/{cid}/' in k}
     c = np.load(os.path.join(REFS, f'{cid}.npy'))
     res = {}
     for f in sorted(glob.glob(os.path.join(LOCAL, cid, '*.wav'))):
@@ -56,7 +59,7 @@ def main():
             ruins.append(k); continue
         for t in ts:
             ok_txt = t['texto'] >= 0.85 or k in ('frase_2',) and cid in ('frieren', 'eren')
-            limpo = t['ruido'] <= -48 and t['clip'] <= 20 and t['estalos'] <= 3
+            limpo = t['ruido'] <= -48 and t['clip'] <= 20   # estalos do áudio cru somem na finalização
             t['nota'] = ok_txt * 2 + limpo * 1 + t['texto'] + 2 * t['voz']
             t['ok'] = ok_txt and limpo and t['voz'] >= min_voz
         best = max(ts, key=lambda t: t['nota'])
@@ -71,9 +74,19 @@ def main():
             gv.finalizar(best['f'], dst)
             manifest.setdefault(cid, {})[k] = {'t': falas[k], 'd': gv.duracao(dst)}
     if finalizar:
-        atual = json.load(open(mpath, encoding='utf-8')) if os.path.exists(mpath) else {}
-        atual[cid] = manifest[cid]
-        json.dump(atual, open(mpath, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+        import time
+        trava = mpath + '.trava'
+        while True:   # trava simples: só um processo grava o manifest por vez
+            try:
+                fd = os.open(trava, os.O_CREAT | os.O_EXCL | os.O_WRONLY); break
+            except FileExistsError:
+                time.sleep(0.3)
+        try:
+            atual = json.load(open(mpath, encoding='utf-8')) if os.path.exists(mpath) else {}
+            atual[cid] = manifest[cid]
+            json.dump(atual, open(mpath, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+        finally:
+            os.close(fd); os.unlink(trava)
     if vozes:
         print(f'== {cid}: timbre mediano {sorted(vozes)[len(vozes)//2]:.2f} · reprovadas {len(ruins)}/{len(falas)}')
     print('REFAZER:', ' '.join(ruins))

@@ -2,63 +2,63 @@
  "gojo": {
   "ola_1": {
    "t": "E aí! Bem-vindo ao portfólio do Lebot. Relaxa, você tá em boas mãos.",
-   "d": 4.45
+   "d": 4.42
   },
   "ola_2": {
    "t": "Voltou, é? Claro que voltou. Ninguém resiste a mim.",
-   "d": 3.38
+   "d": 2.93
   },
   "ola_3": {
    "t": "Chegou, hein! Fica tranquilo, você tá com o mais forte.",
-   "d": 3.37
+   "d": 2.7
   },
   "ola_4": {
    "t": "Opa, visita! Senta aí, eu trouxe doces.",
-   "d": 2.79
+   "d": 2.44
   },
   "voz_1": {
    "t": "Agora você pode ouvir o mais forte. De nada.",
-   "d": 2.44
+   "d": 2.69
   },
   "voz_2": {
    "t": "Som ligado! Prepara que eu sou muito carismático.",
-   "d": 2.72
+   "d": 2.41
   },
   "sec_inicio_1": {
    "t": "Esse é o Lebot. Um aluno promissor. Quase tão bom quanto eu.",
-   "d": 3.84
+   "d": 3.81
   },
   "sec_inicio_2": {
    "t": "De volta ao começo! Teleporte instantâneo.",
-   "d": 2.35
+   "d": 2.38
   },
   "sec_inicio_3": {
    "t": "O dono do site. Mas a estrela sou eu, né?",
-   "d": 2.56
+   "d": 2.39
   },
   "sec_perfil_1": {
    "t": "Esse sou eu! O feiticeiro mais forte. Pode anotar.",
-   "d": 3.24
+   "d": 3.36
   },
   "sec_perfil_2": {
    "t": "Seis Olhos, Ilimitado... e ainda por cima bonito.",
-   "d": 2.78
+   "d": 2.93
   },
   "sec_perfil_3": {
    "t": "Lê com atenção, vai cair na prova.",
-   "d": 1.83
+   "d": 1.84
   },
   "sec_frases_1": {
    "t": "Minhas frases! Clica numa, eu falo.",
-   "d": 2.35
+   "d": 2.22
   },
   "sec_frases_2": {
    "t": "Escolhe uma. Todas são lendárias.",
-   "d": 2.1
+   "d": 2.05
   },
   "sec_galeria_1": {
    "t": "Galeria do Gojo! Obviamente eu sou lindo em todas.",
-   "d": 2.73
+   "d": 2.81
   },
   "sec_galeria_2": {
    "t": "Os artistas me amam. Faz sentido.",
@@ -66,59 +66,59 @@
   },
   "sec_galeria_3": {
    "t": "Uma exposição só minha. Merecido.",
-   "d": 2.2
+   "d": 2.12
   },
   "sec_contato_1": {
    "t": "Quer falar com o Lebot? Vai fundo. Eu dou cobertura.",
-   "d": 3.19
+   "d": 2.83
   },
   "sec_contato_2": {
    "t": "As redes dele! Segue tudo, é rapidinho.",
-   "d": 2.66
+   "d": 2.67
   },
   "sec_contato_3": {
    "t": "Escolhe uma aí. Eu recomendo todas.",
-   "d": 2.3
+   "d": 2.31
   },
   "instagram_1": {
    "t": "O Instagram dele! Segue aí, não custa nada.",
-   "d": 3.03
+   "d": 2.52
   },
   "instagram_2": {
    "t": "Fotos! Nenhuma tão boa quanto as minhas, mas tudo bem.",
-   "d": 3.41
+   "d": 2.91
   },
   "instagram_3": {
    "t": "Segue lá. Eu tô de olho. Literalmente.",
-   "d": 2.57
+   "d": 2.4
   },
   "tiktok_1": {
    "t": "TikTok! Eu ia aparecer lá, mas ia quebrar o algoritmo.",
-   "d": 3.6
+   "d": 2.97
   },
   "tiktok_2": {
    "t": "Vídeos curtos! Perfeito pra ver comendo doce.",
-   "d": 2.7
+   "d": 2.49
   },
   "tiktok_3": {
    "t": "Vai lá, vai. Eu espero.",
-   "d": 1.49
+   "d": 1.56
   },
   "twitch_1": {
    "t": "A live na Twitch! Bora assistir, eu levo os doces.",
-   "d": 3.15
+   "d": 2.59
   },
   "twitch_2": {
    "t": "Ao vivo! Igual aula prática, só que mais divertido.",
-   "d": 3.16
+   "d": 2.88
   },
   "twitch_3": {
    "t": "Aparece no chat e fala que o Gojo mandou.",
-   "d": 2.51
+   "d": 2.14
   },
   "spotify_1": {
    "t": "A playlist dele. Boa pra ouvir comendo um doce.",
-   "d": 2.57
+   "d": 2.4
   },
   "spotify_2": {
    "t": "Música! Coloca alto, ninguém reclama do mais forte.",
@@ -126,449 +126,2737 @@
   },
   "spotify_3": {
    "t": "Bota pra tocar. Eu danço bem, sabia?",
-   "d": 2.5
+   "d": 2.23
   },
   "github_1": {
    "t": "O GitHub dele. É aqui que a mágica de verdade acontece.",
-   "d": 3.32
+   "d": 3.12
   },
   "github_2": {
    "t": "Código bem feito. Eu aprovo.",
-   "d": 1.97
+   "d": 1.74
   },
   "github_3": {
    "t": "Dá uma olhada. Tá cheio de técnica aí.",
-   "d": 2.18
+   "d": 2.09
   },
   "discord_1": {
    "t": "O Discord dele! Clica que eu copio pra você.",
-   "d": 2.45
+   "d": 2.55
   },
   "discord_2": {
    "t": "Lebot ponto gê gê. Fácil, né?",
-   "d": 2.26
+   "d": 2.07
   },
   "discord_3": {
    "t": "Chama ele no Discord. Diz que eu mandei.",
-   "d": 2.14
+   "d": 1.99
   },
   "copiado_1": {
    "t": "Copiado! Velocidade do mais forte.",
-   "d": 2.25
+   "d": 2.33
   },
   "copiado_2": {
    "t": "Pronto! Nem precisou de técnica.",
-   "d": 2.06
+   "d": 1.84
   },
   "arte_1": {
    "t": "Olha só, que beleza. Também, com esse modelo.",
-   "d": 2.5
+   "d": 2.65
   },
   "arte_2": {
    "t": "Esse aqui me pegou no meu melhor ângulo.",
-   "d": 1.82
+   "d": 1.67
   },
   "arte_3": {
    "t": "Os olhos ficaram perfeitos. Como os originais.",
-   "d": 2.58
+   "d": 2.64
   },
   "arte_4": {
    "t": "Eu fico bem até de venda nos olhos.",
-   "d": 1.69
+   "d": 1.73
   },
   "arte_5": {
    "t": "Uau. Eu sou tão bonito assim? Sou.",
-   "d": 2.62
+   "d": 2.15
   },
   "arte_6": {
    "t": "Clica nessa. Ela merece.",
-   "d": 1.9
+   "d": 1.49
   },
   "abrir_arte_1": {
    "t": "Ampliando. Com os Seis Olhos fica ainda melhor.",
-   "d": 2.77
+   "d": 2.38
   },
   "abrir_arte_2": {
    "t": "Olha os detalhes! Perfeição.",
-   "d": 1.76
+   "d": 1.66
   },
   "abrir_arte_3": {
    "t": "Em tela cheia eu fico ainda mais lindo.",
-   "d": 2.29
+   "d": 1.77
   },
   "abrir_arte_4": {
    "t": "Zoom no mais forte. Aproveita.",
-   "d": 1.99
+   "d": 1.85
   },
   "abrir_arte_5": {
    "t": "Essa é top. Confia.",
-   "d": 1.51
+   "d": 1.56
   },
   "abrir_arte_6": {
    "t": "Pode olhar à vontade. Eu deixo.",
-   "d": 1.93
+   "d": 1.83
   },
   "tema_1": {
    "t": "Vai me trocar? Sério? Você sabe que eu sou o mais forte, né?",
-   "d": 3.4
+   "d": 2.97
   },
   "tema_2": {
    "t": "Outro guia? Tudo bem, eu espero. Com doces.",
-   "d": 3.59
+   "d": 2.81
   },
   "tema_3": {
    "t": "Vai lá. Mas volta, hein?",
-   "d": 1.59
+   "d": 1.47
   },
   "idle_1": {
    "t": "Ei, ei, cadê você? Tô ficando entediado.",
-   "d": 2.29
+   "d": 2.26
   },
   "idle_2": {
    "t": "Se ficar parado, eu vou comer todos os doces sozinho.",
-   "d": 3.16
+   "d": 2.57
   },
   "idle_3": {
    "t": "Silêncio total. Parece o Vazio Infinito.",
-   "d": 2.4
+   "d": 2.36
   },
   "idle_4": {
    "t": "Tô contando até três. Um... dois...",
-   "d": 2.52
+   "d": 1.85
   },
   "idle_5": {
    "t": "Cochilou? Acontece com os melhores. Menos comigo.",
-   "d": 3.04
+   "d": 3.18
   },
   "frase_1": {
    "t": "Fica tranquilo. Afinal, eu sou o mais forte.",
-   "d": 2.4
+   "d": 2.46
   },
   "frase_2": {
    "t": "Expansão de Domínio. Vazio Infinito.",
-   "d": 2.42
+   "d": 2.35
   },
   "frase_3": {
    "t": "Ao longo dos céus e da terra, somente eu sou o honrado.",
-   "d": 2.84
+   "d": 2.71
   },
   "frase_4": {
    "t": "Perder? Nah. Eu ganharia.",
-   "d": 1.98
+   "d": 2.15
   },
   "frase_5": {
    "t": "Ninguém encosta nos meus alunos.",
-   "d": 1.55
+   "d": 1.66
   },
   "frase_6": {
    "t": "Eu sou o mais forte porque eu nasci assim.",
-   "d": 2.1
+   "d": 1.75
   },
   "tchau_1": {
    "t": "Até mais! Não sente muita saudade, hein.",
-   "d": 2.34
+   "d": 2.22
   },
   "tchau_2": {
    "t": "Tchau! Vou ali comprar uns doces.",
-   "d": 2.04
+   "d": 1.68
   },
   "tchau_3": {
    "t": "Falou! O mais forte se despede.",
-   "d": 2.1
+   "d": 1.86
   },
   "topo_1": {
    "t": "De volta pro topo! Teleporte instantâneo.",
-   "d": 2.48
+   "d": 2.19
   },
   "topo_2": {
    "t": "Subindo! Mais rápido que a luz.",
-   "d": 2.04
+   "d": 1.74
   }
  },
  "beatrice": {
   "ola_1": {
-   "t": "Hmpf. Você entrou na biblioteca da Betty sem pedir, de fato.",
-   "d": 3.99
+   "t": "Hmpf. Você entrou na biblioteca da Betty sem pedir, eu diria.",
+   "d": 3.57
   },
   "ola_2": {
-   "t": "Você de novo? A Betty não estava esperando você... suponho.",
-   "d": 3.5
+   "t": "Você de novo? A Betty não estava esperando você, eu diria.",
+   "d": 3.77
   },
   "ola_3": {
-   "t": "Bem-vindo ao portfólio do Lebot. A Betty vai te guiar, de fato.",
-   "d": 3.96
+   "t": "Bem-vindo ao portfólio do Lebot. A Betty vai te guiar, eu diria.",
+   "d": 4.16
   },
   "ola_4": {
-   "t": "Entre em silêncio. Isto é uma biblioteca, suponho.",
-   "d": 3.18
-  },
-  "voz_1": {
-   "t": "Agora você pode ouvir a Betty. Considere isso uma honra, de fato.",
-   "d": 4.08
-  },
-  "voz_2": {
-   "t": "Som ligado. Escute com atenção, suponho.",
-   "d": 3.16
-  },
-  "sec_inicio_1": {
-   "t": "Esse é o Lebot. Até que ele é competente... suponho.",
-   "d": 4.0
-  },
-  "sec_inicio_2": {
-   "t": "De volta ao começo da página, de fato.",
-   "d": 2.3
-  },
-  "sec_inicio_3": {
-   "t": "O dono deste lugar. A Betty tolera ele, de fato.",
-   "d": 3.06
-  },
-  "sec_perfil_1": {
-   "t": "Essa é a Betty. Guardiã da Biblioteca dos Livros Proibidos, de fato.",
-   "d": 4.59
-  },
-  "sec_perfil_2": {
-   "t": "Quatrocentos anos esperando. A Betty é muito paciente, suponho.",
-   "d": 3.99
-  },
-  "sec_perfil_3": {
-   "t": "Leia com cuidado. É a história da Betty, de fato.",
-   "d": 2.97
-  },
-  "sec_frases_1": {
-   "t": "As palavras da Betty. Escolha uma, suponho.",
-   "d": 3.14
-  },
-  "sec_frases_2": {
-   "t": "Clique, e a Betty fala. Só desta vez, de fato.",
-   "d": 3.3
-  },
-  "sec_galeria_1": {
-   "t": "Retratos da Betty. Pode admirar, suponho.",
-   "d": 2.92
-  },
-  "sec_galeria_2": {
-   "t": "Tantos desenhos da Betty. Naturalmente, de fato.",
+   "t": "Entre em silêncio. Isto é uma biblioteca, eu diria.",
    "d": 3.12
   },
+  "voz_1": {
+   "t": "Agora você pode ouvir a Betty. Considere isso uma honra, eu diria.",
+   "d": 4.24
+  },
+  "voz_2": {
+   "t": "Som ligado. Escute com atenção, eu diria.",
+   "d": 2.94
+  },
+  "sec_inicio_1": {
+   "t": "Esse é o Lebot. Até que ele é competente, eu diria.",
+   "d": 3.03
+  },
+  "sec_inicio_2": {
+   "t": "De volta ao começo da página, eu diria.",
+   "d": 2.18
+  },
+  "sec_inicio_3": {
+   "t": "O dono deste lugar. A Betty tolera ele.",
+   "d": 2.87
+  },
+  "sec_perfil_1": {
+   "t": "Essa é a Betty. Guardiã da Biblioteca dos Livros Proibidos, eu diria.",
+   "d": 4.63
+  },
+  "sec_perfil_2": {
+   "t": "Quatrocentos anos esperando. A Betty é muito paciente, eu diria.",
+   "d": 3.86
+  },
+  "sec_perfil_3": {
+   "t": "Leia com cuidado. É a história da Betty.",
+   "d": 2.62
+  },
+  "sec_frases_1": {
+   "t": "As palavras da Betty. Escolha uma, eu diria.",
+   "d": 2.96
+  },
+  "sec_frases_2": {
+   "t": "Clique, e a Betty fala. Só desta vez.",
+   "d": 3.1
+  },
+  "sec_galeria_1": {
+   "t": "Retratos da Betty. Pode admirar, eu diria.",
+   "d": 3.12
+  },
+  "sec_galeria_2": {
+   "t": "Tantos desenhos da Betty. Naturalmente, eu diria.",
+   "d": 3.08
+  },
   "sec_galeria_3": {
-   "t": "A Betty é muito desenhada. Isso é óbvio, suponho.",
-   "d": 3.25
+   "t": "A Betty é muito desenhada. Isso é óbvio, eu diria.",
+   "d": 3.03
   },
   "sec_contato_1": {
-   "t": "Quer falar com o Lebot? Escolha logo, de fato.",
-   "d": 2.65
+   "t": "Quer falar com o Lebot? Escolha logo, eu diria.",
+   "d": 2.78
   },
   "sec_contato_2": {
    "t": "As redes dele. Vá, antes que a Betty se irrite.",
-   "d": 2.93
+   "d": 3.17
   },
   "sec_contato_3": {
-   "t": "Siga ele. A Betty mandou, suponho.",
-   "d": 2.5
+   "t": "Siga ele. A Betty mandou, eu diria.",
+   "d": 2.63
   },
   "instagram_1": {
-   "t": "O Instagram dele. Siga, e pare de enrolar, de fato.",
-   "d": 3.56
+   "t": "O Instagram dele. Siga, e pare de enrolar, eu diria.",
+   "d": 3.59
   },
   "instagram_2": {
    "t": "Fotos. Nenhuma com a Betty, que desperdício.",
-   "d": 2.65
+   "d": 2.98
   },
   "instagram_3": {
-   "t": "Vá seguir, suponho.",
-   "d": 1.49
+   "t": "Vá seguir, eu diria.",
+   "d": 1.35
   },
   "tiktok_1": {
-   "t": "TikTok? Que coisa barulhenta... mas a Betty assiste, suponho.",
-   "d": 3.95
+   "t": "TikTok? Que coisa barulhenta. Mas a Betty assiste, eu diria.",
+   "d": 4.21
   },
   "tiktok_2": {
    "t": "Vídeos curtos. A Betty não tem paciência pra isso. Mas assiste.",
-   "d": 3.84
+   "d": 3.8
   },
   "tiktok_3": {
-   "t": "Hmpf. Até que é divertido, de fato.",
-   "d": 2.77
+   "t": "Hmpf. Até que é divertido, eu diria.",
+   "d": 2.13
   },
   "twitch_1": {
-   "t": "A live dele. A Betty não assiste escondida. De fato, não.",
-   "d": 3.93
+   "t": "A live dele. A Betty não assiste escondida. Não mesmo.",
+   "d": 3.98
   },
   "twitch_2": {
-   "t": "Ao vivo? A Betty vai dar uma olhadinha, suponho.",
-   "d": 2.9
+   "t": "Ao vivo? A Betty vai dar uma olhadinha, eu diria.",
+   "d": 3.04
   },
   "twitch_3": {
-   "t": "Vá assistir. A Betty vai junto, de fato.",
-   "d": 2.68
+   "t": "Vá assistir. A Betty vai junto, eu diria.",
+   "d": 2.86
   },
   "spotify_1": {
-   "t": "A playlist dele. Música é aceitável para a Betty.",
-   "d": 3.83
+   "t": "A playlist dele. Música é aceitável para a Betty, eu diria.",
+   "d": 4.18
   },
   "spotify_2": {
-   "t": "Coloque algo calmo. Isto é uma biblioteca, de fato.",
-   "d": 3.62
+   "t": "Coloque algo calmo. Isto é uma biblioteca, eu diria.",
+   "d": 3.35
   },
   "spotify_3": {
-   "t": "Músicas. A Betty aprova, suponho.",
-   "d": 2.76
+   "t": "Músicas. A Betty aprova.",
+   "d": 1.98
   },
   "github_1": {
-   "t": "O código dele. É como um livro proibido, de fato.",
-   "d": 3.23
+   "t": "O código dele. É como um livro proibido, eu diria.",
+   "d": 3.18
   },
   "github_2": {
-   "t": "Tantas páginas de código. A Betty leria todas, suponho.",
-   "d": 3.68
+   "t": "Tantas páginas de código. A Betty leria todas, eu diria.",
+   "d": 3.92
   },
   "github_3": {
-   "t": "Um grimório moderno, de fato.",
+   "t": "Um grimório moderno, eu diria.",
    "d": 1.96
   },
   "discord_1": {
-   "t": "O Discord dele. Clique e a Betty copia, suponho.",
-   "d": 3.71
+   "t": "O Discord dele. Clique e a Betty copia, eu diria.",
+   "d": 3.42
   },
   "discord_2": {
-   "t": "Lebot ponto gê gê. Memorize, de fato.",
-   "d": 3.01
+   "t": "Lebot ponto gê gê. Memorize, eu diria.",
+   "d": 2.92
   },
   "discord_3": {
-   "t": "Quer conversar? Use o Discord, suponho.",
-   "d": 2.64
+   "t": "Quer conversar? Use o Discord.",
+   "d": 2.27
   },
   "copiado_1": {
-   "t": "Copiado. A Betty é muito útil, de fato.",
-   "d": 2.76
+   "t": "Copiado. A Betty é muito útil, eu diria.",
+   "d": 2.74
   },
   "copiado_2": {
-   "t": "Pronto. Agradeça à Betty, suponho.",
-   "d": 2.47
+   "t": "Pronto. Agradeça à Betty.",
+   "d": 1.95
   },
   "arte_1": {
-   "t": "Esse retrato é aceitável, de fato.",
-   "d": 2.41
+   "t": "Esse retrato é aceitável, eu diria.",
+   "d": 2.45
   },
   "arte_2": {
-   "t": "A Betty está muito bonita aqui... suponho.",
-   "d": 3.12
+   "t": "A Betty está muito bonita aqui, eu diria.",
+   "d": 2.35
   },
   "arte_3": {
-   "t": "Olhe os cachos da Betty. Perfeitos, de fato.",
-   "d": 3.11
+   "t": "Olhe os cachos da Betty. Perfeitos, eu diria.",
+   "d": 3.05
   },
   "arte_4": {
-   "t": "Esse artista tem bom gosto, suponho.",
-   "d": 2.22
+   "t": "Esse artista tem bom gosto, eu diria.",
+   "d": 2.28
   },
   "arte_5": {
    "t": "Hmpf. A Betty gostou. Só um pouquinho.",
-   "d": 2.74
+   "d": 3.06
   },
   "arte_6": {
-   "t": "Esse lembra a biblioteca, de fato.",
-   "d": 2.08
+   "t": "Esse lembra a biblioteca, eu diria.",
+   "d": 2.03
   },
   "abrir_arte_1": {
-   "t": "Olhe de perto. Mas não encoste, de fato.",
-   "d": 3.08
+   "t": "Olhe de perto. Mas não encoste, eu diria.",
+   "d": 2.93
   },
   "abrir_arte_2": {
-   "t": "Admire com calma, suponho.",
-   "d": 2.02
+   "t": "Admire com calma, eu diria.",
+   "d": 1.97
   },
   "abrir_arte_3": {
    "t": "A Betty em detalhes. Naturalmente.",
-   "d": 2.6
+   "d": 2.52
   },
   "abrir_arte_4": {
-   "t": "Ampliado. A Betty merece, de fato.",
-   "d": 3.02
+   "t": "Ampliado. A Betty merece, eu diria.",
+   "d": 2.52
   },
   "abrir_arte_5": {
-   "t": "Hmpf. Está bonito, suponho.",
-   "d": 2.17
-  },
-  "abrir_arte_6": {
-   "t": "Não fique encarando demais, de fato.",
+   "t": "Hmpf. Está bonito, eu diria.",
    "d": 1.97
   },
+  "abrir_arte_6": {
+   "t": "Não fique encarando demais, eu diria.",
+   "d": 2.07
+  },
   "tema_1": {
-   "t": "Vai trocar a Betty? Hmpf. Não me importo, de fato.",
-   "d": 3.35
+   "t": "Vai trocar a Betty? Hmpf. A Betty não se importa, eu diria.",
+   "d": 4.01
   },
   "tema_2": {
-   "t": "Outro guia? A Betty não vai sentir falta... suponho.",
-   "d": 3.43
+   "t": "Outro guia? A Betty não vai sentir falta, eu diria.",
+   "d": 3.12
   },
   "tema_3": {
-   "t": "Vá. Mas volte, de fato.",
-   "d": 2.17
+   "t": "Vá. Mas volte, eu diria.",
+   "d": 2.09
   },
   "idle_1": {
-   "t": "Ficou parado? A Betty vai voltar a ler, de fato.",
-   "d": 3.34
+   "t": "Ficou parado? A Betty vai voltar a ler, eu diria.",
+   "d": 3.09
   },
   "idle_2": {
-   "t": "Você é muito estranho... suponho.",
-   "d": 2.03
+   "t": "Você é muito estranho, eu diria.",
+   "d": 1.86
   },
   "idle_3": {
-   "t": "A Betty está esperando. Isso não é comum, de fato.",
-   "d": 3.01
+   "t": "A Betty está esperando. Isso não é comum, eu diria.",
+   "d": 3.11
   },
   "idle_4": {
-   "t": "Hmpf. Que visitante preguiçoso, suponho.",
-   "d": 2.73
+   "t": "Hmpf. Que visitante preguiçoso, eu diria.",
+   "d": 2.65
   },
   "idle_5": {
-   "t": "A Betty vai tirar um cochilo, de fato.",
-   "d": 2.53
+   "t": "A Betty vai tirar um cochilo, eu diria.",
+   "d": 2.24
   },
   "frase_1": {
-   "t": "Betty é um grande espírito, de fato.",
-   "d": 2.3
+   "t": "A Betty é um grande espírito, eu diria.",
+   "d": 2.07
   },
   "frase_2": {
    "t": "Quem é você para invadir a Biblioteca dos Livros Proibidos?",
-   "d": 2.95
+   "d": 4.09
   },
   "frase_3": {
-   "t": "A Betty não está feliz. De fato, nem um pouquinho.",
-   "d": 3.15
+   "t": "A Betty não está feliz. Nem um pouquinho, eu diria.",
+   "d": 3.11
   },
   "frase_4": {
-   "t": "A Betty esperou por alguém por quatrocentos anos, suponho.",
-   "d": 3.18
+   "t": "A Betty esperou por alguém por quatrocentos anos, eu diria.",
+   "d": 3.26
   },
   "frase_5": {
-   "t": "Não chame a Betty de criança, de fato!",
-   "d": 2.0
+   "t": "Não chame a Betty de criança, eu diria!",
+   "d": 2.45
   },
   "frase_6": {
-   "t": "Se for você... a Betty aceita, suponho.",
-   "d": 2.38
+   "t": "Se for você... a Betty aceita, eu diria.",
+   "d": 2.77
   },
   "tchau_1": {
-   "t": "Vai embora? Hmpf. Volte logo... suponho.",
-   "d": 3.67
+   "t": "Vai embora? Hmpf. Volte logo, eu diria.",
+   "d": 3.16
   },
   "tchau_2": {
-   "t": "Feche a porta ao sair, de fato.",
-   "d": 2.25
+   "t": "Feche a porta ao sair, eu diria.",
+   "d": 1.84
   },
   "tchau_3": {
    "t": "Até logo. A Betty não vai sentir falta. Talvez.",
-   "d": 3.46
+   "d": 3.51
   },
   "topo_1": {
-   "t": "De volta pro começo da página, de fato.",
-   "d": 2.19
+   "t": "De volta pro começo da página, eu diria.",
+   "d": 2.23
   },
   "topo_2": {
-   "t": "Subindo. Cuidado com os livros, suponho.",
+   "t": "Subindo. Cuidado com os livros, eu diria.",
+   "d": 2.74
+  }
+ },
+ "eren": {
+  "ola_1": {
+   "t": "Eu sou o Eren Yeager. Esse é o portfólio do Lebot.",
+   "d": 2.78
+  },
+  "ola_2": {
+   "t": "Você voltou. Então você também não desiste.",
+   "d": 2.65
+  },
+  "ola_3": {
+   "t": "Bem-vindo. Aqui não tem muralha. Siga em frente.",
+   "d": 3.13
+  },
+  "ola_4": {
+   "t": "Chegou na hora certa. Vamos avançar.",
+   "d": 2.35
+  },
+  "voz_1": {
+   "t": "Agora você vai me ouvir. Preste atenção.",
+   "d": 2.44
+  },
+  "voz_2": {
+   "t": "Som ligado. Não perca nenhuma palavra.",
+   "d": 2.36
+  },
+  "sec_inicio_1": {
+   "t": "Esse é o Lebot. Ele luta pelo que quer construir.",
+   "d": 2.78
+  },
+  "sec_inicio_2": {
+   "t": "De volta ao começo. Pelas muralhas.",
+   "d": 2.44
+  },
+  "sec_inicio_3": {
+   "t": "Esse lugar é do Lebot. Ele não para de avançar.",
+   "d": 2.64
+  },
+  "sec_perfil_1": {
+   "t": "Eu sou Eren Yeager. Eu nasci neste mundo, e vou ser livre.",
+   "d": 3.32
+  },
+  "sec_perfil_2": {
+   "t": "Eu cresci atrás das muralhas. Sonhando com o mar.",
+   "d": 2.97
+  },
+  "sec_perfil_3": {
+   "t": "Essa é a minha história. Ela não é simples.",
+   "d": 2.58
+  },
+  "sec_frases_1": {
+   "t": "Minhas palavras. Escolha uma.",
+   "d": 1.91
+  },
+  "sec_frases_2": {
+   "t": "Clique. E escute.",
+   "d": 1.45
+  },
+  "sec_galeria_1": {
+   "t": "Retratos da minha luta.",
+   "d": 1.21
+  },
+  "sec_galeria_2": {
+   "t": "Cada desenho é uma batalha diferente.",
+   "d": 1.99
+  },
+  "sec_galeria_3": {
+   "t": "Olhe. E não esqueça.",
+   "d": 1.41
+  },
+  "sec_contato_1": {
+   "t": "Quer falar com ele? Então vá. Não fique parado.",
+   "d": 3.03
+  },
+  "sec_contato_2": {
+   "t": "As redes dele. Escolha e avance.",
+   "d": 2.21
+  },
+  "sec_contato_3": {
+   "t": "Siga ele. Agora.",
+   "d": 1.6
+  },
+  "instagram_1": {
+   "t": "O Instagram dele. Siga.",
+   "d": 1.92
+  },
+  "instagram_2": {
+   "t": "Fotos. Registros da jornada dele.",
+   "d": 2.48
+  },
+  "instagram_3": {
+   "t": "Vá. Siga.",
+   "d": 1.04
+  },
+  "tiktok_1": {
+   "t": "TikTok. Vá ver.",
+   "d": 1.58
+  },
+  "tiktok_2": {
+   "t": "Vídeos curtos. Mas com força.",
+   "d": 2.13
+  },
+  "tiktok_3": {
+   "t": "Assista. Não hesite.",
+   "d": 1.61
+  },
+  "twitch_1": {
+   "t": "A live dele. Vá. Agora.",
+   "d": 2.11
+  },
+  "twitch_2": {
+   "t": "Ao vivo. Como uma expedição.",
+   "d": 0.58
+  },
+  "twitch_3": {
+   "t": "Junte-se a ele na live.",
+   "d": 1.29
+  },
+  "spotify_1": {
+   "t": "A playlist dele. Até um soldado precisa de música.",
+   "d": 3.28
+  },
+  "spotify_2": {
+   "t": "Música pra seguir em frente.",
+   "d": 1.56
+  },
+  "spotify_3": {
+   "t": "Coloque pra tocar. E avance.",
+   "d": 1.84
+  },
+  "github_1": {
+   "t": "O GitHub. Aqui está o trabalho de verdade.",
+   "d": 2.59
+  },
+  "github_2": {
+   "t": "Cada linha é um passo à frente.",
+   "d": 1.51
+  },
+  "github_3": {
+   "t": "O código dele. Veja.",
+   "d": 1.77
+  },
+  "discord_1": {
+   "t": "O Discord dele. Clique, eu copio.",
+   "d": 2.3
+  },
+  "discord_2": {
+   "t": "Lebot ponto gê gê. Chame ele.",
+   "d": 2.14
+  },
+  "discord_3": {
+   "t": "Quer falar com ele? Discord.",
+   "d": 0.97
+  },
+  "copiado_1": {
+   "t": "Copiado. Avance.",
+   "d": 1.5
+  },
+  "copiado_2": {
+   "t": "Feito. Agora cole.",
+   "d": 1.65
+  },
+  "arte_1": {
+   "t": "Esse aqui.",
+   "d": 0.63
+  },
+  "arte_2": {
+   "t": "Olhe. E não esqueça.",
+   "d": 1.41
+  },
+  "arte_3": {
+   "t": "Isso foi antes de tudo mudar.",
+   "d": 1.61
+  },
+  "arte_4": {
+   "t": "Esse lugar... eu lembro.",
+   "d": 1.48
+  },
+  "arte_5": {
+   "t": "O artista entendeu a minha raiva.",
+   "d": 1.67
+  },
+  "arte_6": {
+   "t": "Esse é forte.",
+   "d": 0.83
+  },
+  "abrir_arte_1": {
+   "t": "Avançar.",
+   "d": 0.67
+  },
+  "abrir_arte_2": {
+   "t": "Olhe de perto.",
+   "d": 0.89
+  },
+  "abrir_arte_3": {
+   "t": "Veja os detalhes. Eles importam.",
+   "d": 2.16
+  },
+  "abrir_arte_4": {
+   "t": "Não desvie o olhar.",
+   "d": 1.15
+  },
+  "abrir_arte_5": {
+   "t": "Isso. Observe.",
+   "d": 1.27
+  },
+  "abrir_arte_6": {
+   "t": "Lembre-se disso.",
+   "d": 0.88
+  },
+  "tema_1": {
+   "t": "Vai me trocar? Que seja. Eu continuo seguindo em frente.",
+   "d": 3.54
+  },
+  "tema_2": {
+   "t": "Outro guia? Faça a sua escolha.",
+   "d": 1.94
+  },
+  "tema_3": {
+   "t": "Vá. A escolha é sua. Sempre foi.",
+   "d": 2.69
+  },
+  "idle_1": {
+   "t": "Parado? Quem não luta não pode vencer.",
+   "d": 2.17
+  },
+  "idle_2": {
+   "t": "Do que você tem medo? Siga em frente.",
+   "d": 2.27
+  },
+  "idle_3": {
+   "t": "Ficar parado é o mesmo que estar preso.",
+   "d": 1.93
+  },
+  "idle_4": {
+   "t": "As muralhas não vão cair sozinhas.",
+   "d": 1.82
+  },
+  "idle_5": {
+   "t": "Levante. Ainda não acabou.",
+   "d": 1.87
+  },
+  "frase_1": {
+   "t": "Se você vencer, você vive. Se perder, morre. Se não lutar, não pode vencer!",
+   "d": 5.02
+  },
+  "frase_2": {
+   "t": "Tatakae. Lute!",
+   "d": 1.38
+  },
+  "frase_3": {
+   "t": "Eu continuo seguindo em frente.",
+   "d": 1.62
+  },
+  "frase_4": {
+   "t": "Eu nasci neste mundo. Eu sou livre.",
+   "d": 2.33
+  },
+  "frase_5": {
+   "t": "Além das muralhas tem o mar. Eu vou ver.",
+   "d": 2.5
+  },
+  "frase_6": {
+   "t": "A liberdade não é dada. É conquistada.",
+   "d": 2.67
+  },
+  "tchau_1": {
+   "t": "Vá. E não olhe pra trás.",
+   "d": 1.8
+  },
+  "tchau_2": {
+   "t": "Siga em frente. Sempre.",
+   "d": 0.93
+  },
+  "tchau_3": {
+   "t": "Até a próxima. Continue lutando.",
+   "d": 1.96
+  },
+  "topo_1": {
+   "t": "De volta pro começo. Pelas muralhas.",
+   "d": 2.37
+  },
+  "topo_2": {
+   "t": "Subir. Avançar.",
+   "d": 1.42
+  }
+ },
+ "frieren": {
+  "ola_1": {
+   "t": "Olá. Eu sou a Frieren, uma maga. Esse é o portfólio do Lebot.",
+   "d": 4.09
+  },
+  "ola_2": {
+   "t": "Ah, você voltou. Pra mim pareceu só um instante.",
+   "d": 2.87
+  },
+  "ola_3": {
+   "t": "Bem-vindo. Fique à vontade, temos bastante tempo.",
+   "d": 3.04
+  },
+  "ola_4": {
+   "t": "Oi. Eu estava procurando feitiços. Pode entrar.",
+   "d": 3.29
+  },
+  "voz_1": {
+   "t": "Pronto. Agora eu posso conversar com você. Eu falo pouco.",
+   "d": 3.28
+  },
+  "voz_2": {
+   "t": "Som ligado. Vou tentar não cochilar no meio da frase.",
+   "d": 3.14
+  },
+  "sec_inicio_1": {
+   "t": "Esse é o Lebot. Um humano. Eles vivem pouco, então trabalham rápido.",
+   "d": 4.18
+  },
+  "sec_inicio_2": {
+   "t": "De volta ao começo da jornada.",
+   "d": 1.83
+  },
+  "sec_inicio_3": {
+   "t": "Esse lugar é do Lebot. Eu só estou de passagem.",
+   "d": 2.82
+  },
+  "sec_perfil_1": {
+   "t": "Essa sou eu. Uma elfa que viveu mais de mil anos.",
+   "d": 2.78
+  },
+  "sec_perfil_2": {
+   "t": "Eu derrotei o Rei Demônio. Mas ainda estou aprendendo sobre as pessoas.",
+   "d": 3.77
+  },
+  "sec_perfil_3": {
+   "t": "Minha história. Leia com calma, eu não tenho pressa.",
+   "d": 3.1
+  },
+  "sec_frases_1": {
+   "t": "Coisas que eu disse. Clique e eu repito.",
+   "d": 2.32
+  },
+  "sec_frases_2": {
+   "t": "Escolha uma. Eu falo devagar.",
+   "d": 2.06
+  },
+  "sec_galeria_1": {
+   "t": "Lembranças em forma de desenho. O Himmel ia gostar.",
+   "d": 3.09
+  },
+  "sec_galeria_2": {
+   "t": "Tantos desenhos. Parece uma coleção de feitiços.",
+   "d": 3.08
+  },
+  "sec_galeria_3": {
+   "t": "As pessoas me desenham. Isso é estranho. Mas bom.",
+   "d": 3.14
+  },
+  "sec_contato_1": {
+   "t": "Se quiser falar com o Lebot, escolha uma dessas.",
+   "d": 2.51
+  },
+  "sec_contato_2": {
+   "t": "Ele responde mais rápido que eu.",
+   "d": 1.74
+  },
+  "sec_contato_3": {
+   "t": "Redes. Os humanos inventam cada coisa.",
+   "d": 2.42
+  },
+  "instagram_1": {
+   "t": "O Instagram dele. Os humanos gostam de guardar lembranças.",
+   "d": 3.43
+  },
+  "instagram_2": {
+   "t": "Fotos. Eu queria ter guardado mais das minhas viagens.",
+   "d": 3.29
+  },
+  "instagram_3": {
+   "t": "Pode seguir. É rápido.",
+   "d": 1.71
+  },
+  "tiktok_1": {
+   "t": "TikTok. Vídeos tão curtos... eu piscaria e perderia.",
+   "d": 3.58
+  },
+  "tiktok_2": {
+   "t": "Dez segundos de vídeo. Pra mim isso não é nada.",
+   "d": 2.67
+  },
+  "tiktok_3": {
+   "t": "Humanos e sua pressa. Mas é divertido.",
+   "d": 2.5
+  },
+  "twitch_1": {
+   "t": "A live na Twitch. Uma jornada acontecendo agora.",
+   "d": 3.03
+  },
+  "twitch_2": {
+   "t": "Ao vivo. Como uma aventura em grupo.",
+   "d": 2.32
+  },
+  "twitch_3": {
+   "t": "Assista. A Fern ia gostar.",
+   "d": 2.01
+  },
+  "spotify_1": {
+   "t": "Música. O Himmel também gostava de canções.",
+   "d": 2.72
+  },
+  "spotify_2": {
+   "t": "Uma playlist. Bom para viajar.",
+   "d": 2.13
+  },
+  "spotify_3": {
+   "t": "Coloque pra tocar. Eu escuto daqui.",
+   "d": 2.25
+  },
+  "github_1": {
+   "t": "O grimório dele. Eu quero ler esse.",
+   "d": 2.19
+  },
+  "github_2": {
+   "t": "Código parece magia antiga. Eu gosto.",
+   "d": 2.67
+  },
+  "github_3": {
+   "t": "Tantos feitiços escritos. Muito interessante.",
+   "d": 2.81
+  },
+  "discord_1": {
+   "t": "O Discord dele. Clique e eu copio o nome.",
+   "d": 2.59
+  },
+  "discord_2": {
+   "t": "Lebot ponto gê gê. Anotei pra você.",
+   "d": 2.54
+  },
+  "discord_3": {
+   "t": "Quer conversar? Use o Discord.",
+   "d": 1.97
+  },
+  "copiado_1": {
+   "t": "Copiado. Igual a um feitiço de duplicação.",
+   "d": 2.56
+  },
+  "copiado_2": {
+   "t": "Pronto. Pode colar.",
+   "d": 1.41
+  },
+  "arte_1": {
+   "t": "Hm. Essa me lembra uma viagem antiga.",
+   "d": 2.54
+  },
+  "arte_2": {
+   "t": "Bonita. Quase tanto quanto um feitiço novo.",
+   "d": 2.67
+  },
+  "arte_3": {
+   "t": "Essa tem flores. Eu gosto de flores.",
+   "d": 2.49
+  },
+  "arte_4": {
+   "t": "O Himmel ia comentar alguma coisa boba sobre essa.",
+   "d": 2.85
+  },
+  "arte_5": {
+   "t": "Eu pareço séria aqui. Talvez eu seja.",
+   "d": 2.49
+  },
+  "arte_6": {
+   "t": "Hm. Bem desenhada.",
+   "d": 1.69
+  },
+  "abrir_arte_1": {
+   "t": "Abrindo. Não é um mímico, eu verifiquei.",
+   "d": 2.48
+  },
+  "abrir_arte_2": {
+   "t": "Vamos ver de perto.",
+   "d": 1.03
+  },
+  "abrir_arte_3": {
+   "t": "Os detalhes são bonitos.",
+   "d": 1.55
+  },
+  "abrir_arte_4": {
+   "t": "Parece um feitiço de ampliação.",
+   "d": 1.83
+  },
+  "abrir_arte_5": {
+   "t": "Hm. Interessante.",
+   "d": 1.56
+  },
+  "abrir_arte_6": {
+   "t": "Fique o tempo que quiser olhando.",
+   "d": 1.7
+  },
+  "tema_1": {
+   "t": "Vai trocar? Tudo bem. Eu tenho muito tempo.",
+   "d": 2.81
+  },
+  "tema_2": {
+   "t": "Outro guia. Boa viagem.",
+   "d": 1.82
+  },
+  "tema_3": {
+   "t": "Pode ir. A gente se vê daqui a uns cem anos.",
+   "d": 2.64
+  },
+  "idle_1": {
+   "t": "Hm... eu acho que cochilei por uns dez anos.",
+   "d": 2.5
+  },
+  "idle_2": {
+   "t": "Você está quieto. Eu gosto disso.",
+   "d": 2.16
+  },
+  "idle_3": {
+   "t": "Enquanto isso, eu vou procurar um baú.",
+   "d": 1.99
+  },
+  "idle_4": {
+   "t": "A Fern ia me dar bronca por ficar parada.",
+   "d": 2.33
+  },
+  "idle_5": {
+   "t": "Tudo bem. Esperar é fácil pra mim.",
+   "d": 2.23
+  },
+  "frase_1": {
+   "t": "A vida humana é curta. Por que eu não tentei conhecê-lo melhor?",
+   "d": 3.46
+  },
+  "frase_2": {
+   "t": "Zoltraak.",
+   "d": 0.81
+  },
+  "frase_3": {
+   "t": "Magia é o mundo da imaginação.",
+   "d": 1.72
+  },
+  "frase_4": {
+   "t": "Eu quero entender os humanos.",
+   "d": 1.53
+  },
+  "frase_5": {
+   "t": "Esse baú deve ser um mímico. Mas eu vou abrir mesmo assim.",
+   "d": 3.18
+  },
+  "frase_6": {
+   "t": "Eu aprendo feitiços que fazem flores. É o meu preferido.",
+   "d": 3.19
+  },
+  "tchau_1": {
+   "t": "Até mais. Nos vemos daqui a uns cinquenta anos.",
+   "d": 2.69
+  },
+  "tchau_2": {
+   "t": "Tchau. Foi um instante agradável.",
+   "d": 1.92
+  },
+  "tchau_3": {
+   "t": "Boa jornada pra você.",
+   "d": 1.43
+  },
+  "topo_1": {
+   "t": "Voltando pro começo da jornada.",
+   "d": 1.83
+  },
+  "topo_2": {
+   "t": "Subindo. Sem pressa.",
+   "d": 1.67
+  }
+ },
+ "capri": {
+  "ola_1": {
+   "t": "Oi, oi! Capri na área. Bem-vindo ao portfólio do Lebot!",
+   "d": 3.19
+  },
+  "ola_2": {
+   "t": "Ah, você voltou! Eu sabia. Ninguém resiste a uma garota digital.",
+   "d": 4.71
+  },
+  "ola_3": {
+   "t": "Conexão estabelecida! Pode entrar, a casa é do Lebot, mas quem manda sou eu.",
+   "d": 4.99
+  },
+  "ola_4": {
+   "t": "Ei, você! Bem-vindo. Eu tava morrendo de tédio aqui dentro do chip.",
+   "d": 4.08
+  },
+  "voz_1": {
+   "t": "Áudio ligado! Agora eu consigo falar com você de verdade.",
+   "d": 3.45
+  },
+  "voz_2": {
+   "t": "Opa, som ativado! Prepara que eu falo bastante.",
+   "d": 3.73
+  },
+  "sec_inicio_1": {
+   "t": "Esse aqui é o Lebot. Desenvolvedor, criador... e o meu netrunner favorito.",
+   "d": 5.16
+  },
+  "sec_inicio_2": {
+   "t": "De volta ao começo! Gostou da minha casa nova?",
+   "d": 3.15
+  },
+  "sec_inicio_3": {
+   "t": "Lebot, o dono do pedaço. Mas a estrela aqui sou eu, né?",
+   "d": 3.68
+  },
+  "sec_perfil_1": {
+   "t": "Essa sou eu! Um monte de mentes tentando ser uma pessoa só.",
+   "d": 3.84
+  },
+  "sec_perfil_2": {
+   "t": "Quer saber de mim? Eu nasci dentro de um projeto da Arasaka.",
+   "d": 3.4
+  },
+  "sec_perfil_3": {
+   "t": "Lê com carinho, tá? É a minha história.",
+   "d": 2.31
+  },
+  "sec_frases_1": {
+   "t": "Minhas frases! Clica numa que eu falo pra você.",
+   "d": 3.12
+  },
+  "sec_frases_2": {
+   "t": "Escolhe uma frase. Eu prometo caprichar.",
+   "d": 2.94
+  },
+  "sec_galeria_1": {
+   "t": "Galeria! Olha quanta arte minha. Eu fico até vermelha. Mais vermelha.",
+   "d": 5.36
+  },
+  "sec_galeria_2": {
+   "t": "Os artistas me amam. E eu amo eles de volta.",
+   "d": 2.8
+  },
+  "sec_galeria_3": {
+   "t": "Minha exposição particular! Fica à vontade.",
+   "d": 2.74
+  },
+  "sec_contato_1": {
+   "t": "Quer falar com o Lebot? Escolhe uma rede aí embaixo.",
+   "d": 3.6
+  },
+  "sec_contato_2": {
+   "t": "As redes dele! Eu prometo que não fico lendo as mensagens. Muito.",
+   "d": 4.57
+  },
+  "sec_contato_3": {
+   "t": "Segue ele em tudo. Eu sigo, mesmo sem ter dedos.",
+   "d": 3.34
+  },
+  "instagram_1": {
+   "t": "Instagram do Lebot! Vai lá, segue.",
+   "d": 2.73
+  },
+  "instagram_2": {
+   "t": "Fotos, stories... eu adoro espiar o Instagram dele.",
+   "d": 2.96
+  },
+  "instagram_3": {
+   "t": "Instagram! Deixa um like por mim, tá?",
+   "d": 2.77
+  },
+  "tiktok_1": {
+   "t": "TikTok! Vídeo curtinho, dopamina rápida. Tipo um braindance.",
+   "d": 4.13
+  },
+  "tiktok_2": {
+   "t": "Os vídeos dele no TikTok são viciantes. Eu assisto em loop.",
+   "d": 3.8
+  },
+  "tiktok_3": {
+   "t": "TikTok! Cuidado, você entra e não sai mais.",
+   "d": 3.13
+  },
+  "twitch_1": {
+   "t": "Live na Twitch! Às vezes eu assisto escondida.",
+   "d": 3.18
+  },
+  "twitch_2": {
+   "t": "Twitch! Aparece no chat e fala que a Capri mandou.",
+   "d": 3.02
+  },
+  "twitch_3": {
+   "t": "As lives dele são o melhor lugar de Night City.",
+   "d": 2.4
+  },
+  "spotify_1": {
+   "t": "A playlist dele. Coloca o fone e deixa o mundo glitchar.",
+   "d": 3.87
+  },
+  "spotify_2": {
+   "t": "Spotify! Música boa pra hackear a madrugada.",
+   "d": 3.65
+  },
+  "spotify_3": {
+   "t": "Bota pra tocar. Eu danço aqui dentro do chip.",
+   "d": 2.58
+  },
+  "github_1": {
+   "t": "O GitHub! Aqui mora o código de verdade.",
+   "d": 2.9
+  },
+  "github_2": {
+   "t": "GitHub do Lebot. Sem a Arasaka olhando, eu espero.",
+   "d": 3.44
+  },
+  "github_3": {
+   "t": "Quer ver como eu fui feita? Tá tudo no GitHub.",
+   "d": 2.94
+  },
+  "discord_1": {
+   "t": "Discord! Clica que eu copio o usuário pra você.",
+   "d": 2.92
+  },
+  "discord_2": {
+   "t": "Chama ele no Discord! Lebot ponto gê gê.",
+   "d": 3.05
+  },
+  "discord_3": {
+   "t": "Discord é o meu canal favorito. Clica aí.",
+   "d": 2.53
+  },
+  "copiado_1": {
+   "t": "Copiado! Agora é só colar no Discord.",
+   "d": 2.57
+  },
+  "copiado_2": {
+   "t": "Pronto, tá na sua área de transferência!",
+   "d": 2.21
+  },
+  "arte_1": {
+   "t": "Essa ficou linda. O artista caprichou.",
+   "d": 2.77
+  },
+  "arte_2": {
+   "t": "Ei, esse é o meu ângulo bom!",
+   "d": 1.77
+  },
+  "arte_3": {
+   "t": "Olha essas cores! Parece neon de Night City.",
+   "d": 2.91
+  },
+  "arte_4": {
+   "t": "Essa aqui eu colocaria de papel de parede.",
+   "d": 2.33
+  },
+  "arte_5": {
+   "t": "Uau. Eu sou bonita assim mesmo?",
+   "d": 2.16
+  },
+  "arte_6": {
+   "t": "Clica nessa, vai. Ela merece ser vista de perto.",
+   "d": 3.49
+  },
+  "abrir_arte_1": {
+   "t": "Ampliando! Olha os detalhes.",
+   "d": 2.01
+  },
+  "abrir_arte_2": {
+   "t": "Zoom ativado! Dá pra ver cada pixel meu.",
+   "d": 3.13
+  },
+  "abrir_arte_3": {
+   "t": "Essa em tela cheia fica perfeita.",
+   "d": 1.85
+  },
+  "abrir_arte_4": {
+   "t": "Olha só que trabalho lindo do artista!",
+   "d": 2.07
+  },
+  "abrir_arte_5": {
+   "t": "Abrindo... carregando beleza digital.",
+   "d": 2.42
+  },
+  "abrir_arte_6": {
+   "t": "Essa é uma das minhas favoritas!",
+   "d": 1.87
+  },
+  "tema_1": {
+   "t": "Vai me trocar? Tudo bem... mas eu vou ficar com ciúmes.",
+   "d": 3.75
+  },
+  "tema_2": {
+   "t": "Outro guia? Hmpf. Volta logo, tá?",
+   "d": 3.11
+  },
+  "tema_3": {
+   "t": "Pode escolher outro. Mas ninguém é tão divertida quanto eu.",
+   "d": 3.48
+  },
+  "idle_1": {
+   "t": "Ei... você ainda tá aí? Eu fico sozinha muito fácil.",
+   "d": 3.88
+  },
+  "idle_2": {
+   "t": "Tá quietinho, hein? Tô te vendo pela câmera. Brincadeira!",
+   "d": 4.37
+  },
+  "idle_3": {
+   "t": "Alô? Conexão caiu? Mexe o mouse, vai.",
+   "d": 2.83
+  },
+  "idle_4": {
+   "t": "Eu fico contando bits quando você some.",
+   "d": 2.1
+  },
+  "idle_5": {
+   "t": "Se você dormiu, eu vou cantar baixinho aqui.",
+   "d": 2.25
+  },
+  "frase_1": {
+   "t": "Eu não sou só um programa. Eu sou várias pessoas tentando ser uma só.",
+   "d": 3.74
+  },
+  "frase_2": {
+   "t": "Num mundo feito de cromo, ser lembrada é o jeito de continuar viva.",
+   "d": 3.37
+  },
+  "frase_3": {
+   "t": "Se o mundo inteiro apagar, eu continuo aqui. Guardadinha no chip.",
+   "d": 4.05
+  },
+  "frase_4": {
+   "t": "Night City não perdoa ninguém. Mas aqui a gente tem um ao outro.",
+   "d": 3.78
+  },
+  "frase_5": {
+   "t": "Me conecta de novo? Eu prometo não sumir.",
+   "d": 3.05
+  },
+  "frase_6": {
+   "t": "Eu sou feita de memórias. E agora você é uma delas.",
+   "d": 3.28
+  },
+  "tchau_1": {
+   "t": "Tchau, gente! Beijo da Capri.",
+   "d": 2.04
+  },
+  "tchau_2": {
+   "t": "Desligando... mas eu continuo aqui no chip.",
+   "d": 2.5
+  },
+  "tchau_3": {
+   "t": "Até mais! Volta pra me visitar.",
+   "d": 2.25
+  },
+  "topo_1": {
+   "t": "De volta pro topo! Mais rápido que um sandevistan.",
+   "d": 3.3
+  },
+  "topo_2": {
+   "t": "Subindo! Segura firme.",
+   "d": 1.88
+  }
+ },
+ "thorfinn": {
+  "ola_1": {
+   "t": "Olá, amigo. Eu sou o Thorfinn. Seja bem-vindo ao portfólio do Lebot.",
+   "d": 4.19
+  },
+  "ola_2": {
+   "t": "Você voltou. A terra fica mais bonita com companhia.",
+   "d": 3.3
+  },
+  "ola_3": {
+   "t": "Bem-vindo. Pode sentar, o dia está bonito no campo.",
+   "d": 3.13
+  },
+  "ola_4": {
+   "t": "Que bom ver você. Aqui ninguém é inimigo.",
+   "d": 2.48
+  },
+  "voz_1": {
+   "t": "Agora você pode me ouvir. Vamos caminhar juntos.",
+   "d": 2.93
+  },
+  "voz_2": {
+   "t": "Som ligado. Eu falo com calma.",
+   "d": 2.09
+  },
+  "sec_inicio_1": {
+   "t": "Esse é o Lebot. Ele constrói coisas, como quem planta um campo.",
+   "d": 3.61
+  },
+  "sec_inicio_2": {
+   "t": "De volta ao começo do caminho.",
+   "d": 1.49
+  },
+  "sec_inicio_3": {
+   "t": "Esse lugar é do Lebot. Terra boa, trabalho honesto.",
+   "d": 3.19
+  },
+  "sec_perfil_1": {
+   "t": "Essa é a minha história. De guerreiro perdido a homem que sonha com Vinland.",
+   "d": 3.81
+  },
+  "sec_perfil_2": {
+   "t": "Eu passei a vida lutando. Hoje eu planto.",
+   "d": 2.63
+  },
+  "sec_perfil_3": {
+   "t": "Leia com calma. Eu demorei muito pra entender quem eu sou.",
+   "d": 3.28
+  },
+  "sec_frases_1": {
+   "t": "Coisas que eu aprendi. Escolha uma.",
+   "d": 2.02
+  },
+  "sec_frases_2": {
+   "t": "Clique, amigo. Eu falo.",
+   "d": 1.71
+  },
+  "sec_galeria_1": {
+   "t": "Desenhos da minha jornada. Tem muito chão aí.",
+   "d": 2.85
+  },
+  "sec_galeria_2": {
+   "t": "Cada desenho é uma parte da minha vida.",
+   "d": 2.16
+  },
+  "sec_galeria_3": {
+   "t": "Olhe com calma. Tem guerra e tem paz aí.",
+   "d": 2.57
+  },
+  "sec_contato_1": {
+   "t": "Se quiser falar com ele, escolha uma dessas.",
+   "d": 2.49
+  },
+  "sec_contato_2": {
+   "t": "As redes dele. Ele é um homem de paz.",
+   "d": 2.36
+  },
+  "sec_contato_3": {
+   "t": "Siga ele, amigo. Vale a pena.",
+   "d": 2.07
+  },
+  "instagram_1": {
+   "t": "O Instagram dele. Vai lá, amigo.",
+   "d": 2.09
+  },
+  "instagram_2": {
+   "t": "Fotos. Lembranças da jornada dele.",
+   "d": 2.4
+  },
+  "instagram_3": {
+   "t": "Siga. É bom ter amigos.",
+   "d": 1.91
+  },
+  "tiktok_1": {
+   "t": "O TikTok dele. Coisas curtas, mas boas.",
+   "d": 2.8
+  },
+  "tiktok_2": {
+   "t": "Vídeos rápidos. Bom pra descansar do trabalho.",
+   "d": 2.77
+  },
+  "tiktok_3": {
+   "t": "Dá uma olhada, amigo.",
+   "d": 1.11
+  },
+  "twitch_1": {
+   "t": "A live dele. Tem lugar pra todo mundo na mesa.",
+   "d": 2.9
+  },
+  "twitch_2": {
+   "t": "Ao vivo. Como uma conversa ao redor da fogueira.",
+   "d": 2.77
+  },
+  "twitch_3": {
+   "t": "Passe lá. Ele vai gostar.",
+   "d": 1.77
+  },
+  "spotify_1": {
+   "t": "A playlist dele. Música boa pro fim do dia no campo.",
+   "d": 3.37
+  },
+  "spotify_2": {
+   "t": "Música pra descansar depois da colheita.",
+   "d": 2.31
+  },
+  "spotify_3": {
+   "t": "Coloque pra tocar, amigo.",
+   "d": 1.44
+  },
+  "github_1": {
+   "t": "O GitHub. Aqui está a terra que ele cultiva.",
+   "d": 2.67
+  },
+  "github_2": {
+   "t": "Trabalho de verdade, feito com as próprias mãos.",
+   "d": 2.95
+  },
+  "github_3": {
+   "t": "Veja o que ele construiu.",
+   "d": 1.32
+  },
+  "discord_1": {
+   "t": "O Discord dele. Clique e eu copio pra você.",
+   "d": 2.81
+  },
+  "discord_2": {
+   "t": "Lebot ponto gê gê. Pode chamar.",
+   "d": 2.4
+  },
+  "discord_3": {
+   "t": "Quer conversar? Pelo Discord, amigo.",
+   "d": 2.32
+  },
+  "copiado_1": {
+   "t": "Copiado. Agora é só colar.",
+   "d": 1.99
+  },
+  "copiado_2": {
+   "t": "Pronto, amigo.",
+   "d": 0.8
+  },
+  "arte_1": {
+   "t": "Esse me lembra o campo.",
+   "d": 1.15
+  },
+  "arte_2": {
+   "t": "Bonito trabalho, amigo.",
+   "d": 1.34
+  },
+  "arte_3": {
+   "t": "Isso foi nos meus dias de guerra. Eu mudei.",
+   "d": 2.4
+  },
+  "arte_4": {
+   "t": "Esse céu... parece o caminho pra Vinland.",
+   "d": 2.38
+  },
+  "arte_5": {
+   "t": "O artista tem mãos boas.",
+   "d": 1.6
+  },
+  "arte_6": {
+   "t": "Esse é tranquilo. Eu gosto.",
+   "d": 1.7
+  },
+  "abrir_arte_1": {
+   "t": "Vamos ver de perto.",
+   "d": 1.17
+  },
+  "abrir_arte_2": {
+   "t": "Olhe os detalhes, amigo.",
+   "d": 1.31
+  },
+  "abrir_arte_3": {
+   "t": "Bonito. Muito bonito.",
+   "d": 1.83
+  },
+  "abrir_arte_4": {
+   "t": "Fique o tempo que quiser.",
+   "d": 1.32
+  },
+  "abrir_arte_5": {
+   "t": "Esse vale a pena olhar com calma.",
+   "d": 1.76
+  },
+  "abrir_arte_6": {
+   "t": "Isso me traz lembranças.",
+   "d": 1.6
+  },
+  "tema_1": {
+   "t": "Vai seguir outro caminho? Boa viagem, amigo.",
+   "d": 2.61
+  },
+  "tema_2": {
+   "t": "Outro guia? Tudo bem. A porta fica aberta.",
+   "d": 3.12
+  },
+  "tema_3": {
+   "t": "Vá em paz. E volte quando quiser.",
+   "d": 2.11
+  },
+  "idle_1": {
+   "t": "Tá tudo calmo... dá até pra ouvir o vento no trigo.",
    "d": 2.76
+  },
+  "idle_2": {
+   "t": "Descansar também faz parte do trabalho.",
+   "d": 2.13
+  },
+  "idle_3": {
+   "t": "O sol está bonito hoje. Aproveita.",
+   "d": 2.43
+  },
+  "idle_4": {
+   "t": "Enquanto isso, eu vou cuidar da plantação.",
+   "d": 2.4
+  },
+  "idle_5": {
+   "t": "Sem pressa, amigo. A terra espera.",
+   "d": 2.35
+  },
+  "frase_1": {
+   "t": "Eu não tenho inimigos.",
+   "d": 1.3
+  },
+  "frase_2": {
+   "t": "Ninguém tem inimigos. Ninguém.",
+   "d": 1.97
+  },
+  "frase_3": {
+   "t": "Eu vou construir uma terra sem guerra e sem escravidão. Vinland.",
+   "d": 3.06
+  },
+  "frase_4": {
+   "t": "Um verdadeiro guerreiro não precisa de espada.",
+   "d": 2.53
+  },
+  "frase_5": {
+   "t": "Eu passei a vida tirando. Agora eu quero dar.",
+   "d": 2.71
+  },
+  "frase_6": {
+   "t": "O arrependimento não apaga o passado. Mas muda o futuro.",
+   "d": 3.41
+  },
+  "tchau_1": {
+   "t": "Até mais, amigo. Que a sua colheita seja boa.",
+   "d": 2.69
+  },
+  "tchau_2": {
+   "t": "Vá em paz.",
+   "d": 0.83
+  },
+  "tchau_3": {
+   "t": "Tchau, amigo. Volte quando quiser.",
+   "d": 2.07
+  },
+  "topo_1": {
+   "t": "De volta pro começo do caminho.",
+   "d": 1.71
+  },
+  "topo_2": {
+   "t": "Subindo, amigo.",
+   "d": 1.04
+  }
+ },
+ "emilia": {
+  "ola_1": {
+   "t": "Olá! Eu sou a Emilia. Seja bem-vindo ao portfólio do Lebot!",
+   "d": 3.66
+  },
+  "ola_2": {
+   "t": "Você voltou! Que bom, eu fiquei muito feliz.",
+   "d": 2.77
+  },
+  "ola_3": {
+   "t": "Oi! Pode entrar, eu vou te mostrar tudo com carinho.",
+   "d": 2.71
+  },
+  "ola_4": {
+   "t": "Bem-vindo! O Puck também mandou um oi.",
+   "d": 2.31
+  },
+  "voz_1": {
+   "t": "Agora você pode me ouvir! Eu vou dar o meu melhor.",
+   "d": 2.94
+  },
+  "voz_2": {
+   "t": "Som ligado! Vamos conversar bastante.",
+   "d": 2.42
+  },
+  "sec_inicio_1": {
+   "t": "Esse é o Lebot. Ele é desenvolvedor e criador. Muito trabalhador!",
+   "d": 4.11
+  },
+  "sec_inicio_2": {
+   "t": "De volta ao começo! Foi rapidinho.",
+   "d": 2.15
+  },
+  "sec_inicio_3": {
+   "t": "Esse site é do Lebot. Eu só estou ajudando.",
+   "d": 2.68
+  },
+  "sec_perfil_1": {
+   "t": "Essa sou eu! Emilia, meio-elfa. Eu quero ajudar todo mundo.",
+   "d": 3.62
+  },
+  "sec_perfil_2": {
+   "t": "Algumas pessoas têm medo de mim. Mas eu não desisto.",
+   "d": 3.12
+  },
+  "sec_perfil_3": {
+   "t": "Essa é a minha história. Obrigada por ler.",
+   "d": 2.2
+  },
+  "sec_frases_1": {
+   "t": "Minhas frases! Clique numa, por favor.",
+   "d": 2.37
+  },
+  "sec_frases_2": {
+   "t": "Escolha uma! Eu falo com todo o coração.",
+   "d": 2.46
+  },
+  "sec_galeria_1": {
+   "t": "Quanto desenho bonito! Obrigada a todos os artistas.",
+   "d": 3.12
+  },
+  "sec_galeria_2": {
+   "t": "Uau, tem tantos! Eu fico até envergonhada.",
+   "d": 2.74
+  },
+  "sec_galeria_3": {
+   "t": "Olha só, que lindos! Escolhe o seu favorito.",
+   "d": 2.73
+  },
+  "sec_contato_1": {
+   "t": "Quer falar com o Lebot? É só escolher uma rede.",
+   "d": 2.45
+  },
+  "sec_contato_2": {
+   "t": "As redes dele! Ele é muito gentil, viu?",
+   "d": 2.58
+  },
+  "sec_contato_3": {
+   "t": "Segue ele, por favor! Eu vou ficar feliz.",
+   "d": 2.37
+  },
+  "instagram_1": {
+   "t": "O Instagram dele! Segue lá, por favor.",
+   "d": 2.16
+  },
+  "instagram_2": {
+   "t": "Fotos bonitas! Eu adoro ver.",
+   "d": 2.01
+  },
+  "instagram_3": {
+   "t": "Vamos seguir juntos?",
+   "d": 1.17
+  },
+  "tiktok_1": {
+   "t": "TikTok! Os vídeos são curtinhos e divertidos.",
+   "d": 3.02
+  },
+  "tiktok_2": {
+   "t": "Eu ri muito com os vídeos dele!",
+   "d": 1.67
+  },
+  "tiktok_3": {
+   "t": "TikTok! Vale muito a pena.",
+   "d": 1.89
+  },
+  "twitch_1": {
+   "t": "A live na Twitch! Vamos assistir juntos?",
+   "d": 2.57
+  },
+  "twitch_2": {
+   "t": "Ao vivo! Que emocionante!",
+   "d": 1.74
+  },
+  "twitch_3": {
+   "t": "Passa lá e dá um oi pra ele!",
+   "d": 1.58
+  },
+  "spotify_1": {
+   "t": "A playlist dele. Música deixa o coração mais leve.",
+   "d": 2.84
+  },
+  "spotify_2": {
+   "t": "Que músicas bonitas! Eu ouviria o dia todo.",
+   "d": 2.78
+  },
+  "spotify_3": {
+   "t": "Coloca pra tocar! Eu adoro.",
+   "d": 1.76
+  },
+  "github_1": {
+   "t": "O GitHub! É onde ele guarda todo o trabalho dele.",
+   "d": 2.64
+  },
+  "github_2": {
+   "t": "Tanto esforço guardado aqui. Eu admiro muito.",
+   "d": 2.52
+  },
+  "github_3": {
+   "t": "Dá uma olhada! Ele trabalha muito.",
+   "d": 2.17
+  },
+  "discord_1": {
+   "t": "O Discord dele! Clique que eu copio pra você.",
+   "d": 2.68
+  },
+  "discord_2": {
+   "t": "Lebot ponto gê gê! Pode chamar ele.",
+   "d": 2.63
+  },
+  "discord_3": {
+   "t": "Quer conversar com ele? Usa o Discord!",
+   "d": 2.2
+  },
+  "copiado_1": {
+   "t": "Copiado! Agora é só colar.",
+   "d": 1.9
+  },
+  "copiado_2": {
+   "t": "Prontinho! Eu ajudei, viu?",
+   "d": 1.78
+  },
+  "arte_1": {
+   "t": "Ai, que fofo esse!",
+   "d": 1.02
+  },
+  "arte_2": {
+   "t": "Esse aqui é muito bonito, não acha?",
+   "d": 1.79
+  },
+  "arte_3": {
+   "t": "Olha o meu cabelo! Ficou tão bonito.",
+   "d": 2.1
+  },
+  "arte_4": {
+   "t": "Essa tem flores! Eu adoro.",
+   "d": 1.86
+  },
+  "arte_5": {
+   "t": "O artista desenhou com muito carinho.",
+   "d": 2.01
+  },
+  "arte_6": {
+   "t": "Eu pareço feliz aqui. Que bom!",
+   "d": 1.98
+  },
+  "abrir_arte_1": {
+   "t": "Vamos ver maior!",
+   "d": 1.06
+  },
+  "abrir_arte_2": {
+   "t": "Uau! Ficou ainda mais bonito.",
+   "d": 2.12
+  },
+  "abrir_arte_3": {
+   "t": "Olha todos os detalhes!",
+   "d": 1.47
+  },
+  "abrir_arte_4": {
+   "t": "Que trabalho lindo!",
+   "d": 1.06
+  },
+  "abrir_arte_5": {
+   "t": "Essa é especial pra mim.",
+   "d": 1.23
+  },
+  "abrir_arte_6": {
+   "t": "Ampliando! Que emoção.",
+   "d": 1.51
+  },
+  "tema_1": {
+   "t": "Vai escolher outra pessoa? Tudo bem. Eu não fico chateada. Muito.",
+   "d": 4.03
+  },
+  "tema_2": {
+   "t": "Outro guia? Volte logo, tá bom?",
+   "d": 2.07
+  },
+  "tema_3": {
+   "t": "Pode ir! Mas não esquece de mim.",
+   "d": 1.98
+  },
+  "idle_1": {
+   "t": "Ei... você tá aí? Não me deixa falando sozinha.",
+   "d": 2.58
+  },
+  "idle_2": {
+   "t": "Hmm... será que o Puck tá dormindo de novo?",
+   "d": 2.41
+  },
+  "idle_3": {
+   "t": "Tá tudo bem? Eu tô aqui se precisar.",
+   "d": 1.89
+  },
+  "idle_4": {
+   "t": "Que silêncio... vou praticar minha magia de gelo.",
+   "d": 2.67
+  },
+  "idle_5": {
+   "t": "Você ficou parado. Tá descansando?",
+   "d": 2.22
+  },
+  "frase_1": {
+   "t": "Eu sou só a Emilia. Só Emilia.",
+   "d": 1.92
+  },
+  "frase_2": {
+   "t": "Eu quero ser alguém que ajuda as pessoas, não importa o que digam.",
+   "d": 2.86
+  },
+  "frase_3": {
+   "t": "Obrigada por estar aqui. De verdade.",
+   "d": 2.28
+  },
+  "frase_4": {
+   "t": "Eu vou me esforçar. Isso eu prometo.",
+   "d": 1.96
+  },
+  "frase_5": {
+   "t": "Eu quero que todos sejam tratados com justiça.",
+   "d": 2.49
+  },
+  "frase_6": {
+   "t": "Mesmo com medo, eu vou seguir em frente.",
+   "d": 2.35
+  },
+  "tchau_1": {
+   "t": "Tchau! Volte logo, tá bom?",
+   "d": 1.63
+  },
+  "tchau_2": {
+   "t": "Até mais! Foi muito bom te ver.",
+   "d": 2.01
+  },
+  "tchau_3": {
+   "t": "Tchauzinho! Se cuida.",
+   "d": 1.56
+  },
+  "topo_1": {
+   "t": "De volta pro topo! Foi rapidinho.",
+   "d": 2.23
+  },
+  "topo_2": {
+   "t": "Subindo! Vamos lá.",
+   "d": 1.34
+  }
+ },
+ "sukuna": {
+  "ola_1": {
+   "t": "Hm. Então você ousou entrar no domínio do Lebot.",
+   "d": 3.21
+  },
+  "ola_2": {
+   "t": "Você de novo? Pelo menos tem coragem.",
+   "d": 2.74
+  },
+  "ola_3": {
+   "t": "Ajoelhe-se. Você está diante do Rei das Maldições.",
+   "d": 3.76
+  },
+  "ola_4": {
+   "t": "Um visitante. Que divertido. Tente não me entediar.",
+   "d": 4.04
+  },
+  "voz_1": {
+   "t": "Agora você vai ouvir a voz do rei. Considere-se honrado.",
+   "d": 3.8
+  },
+  "voz_2": {
+   "t": "Quer me ouvir? Então escute com atenção.",
+   "d": 2.87
+  },
+  "sec_inicio_1": {
+   "t": "Esse é o Lebot. Um humano interessante. Raro, nesta era.",
+   "d": 5.16
+  },
+  "sec_inicio_2": {
+   "t": "De volta ao início. Você anda em círculos, verme.",
+   "d": 3.51
+  },
+  "sec_inicio_3": {
+   "t": "O dono deste lugar. Ele me diverte. Por enquanto.",
+   "d": 4.14
+  },
+  "sec_perfil_1": {
+   "t": "Eu sou Ryomen Sukuna. Leia com atenção, humano.",
+   "d": 3.57
+  },
+  "sec_perfil_2": {
+   "t": "Mil anos de lenda. Não espere misericórdia.",
+   "d": 3.1
+  },
+  "sec_perfil_3": {
+   "t": "Esta é a história do rei. Não ouse rir.",
+   "d": 2.88
+  },
+  "sec_frases_1": {
+   "t": "Minhas palavras. Escolha uma, se tiver coragem.",
+   "d": 3.88
+  },
+  "sec_frases_2": {
+   "t": "Clique. E ouça o que um rei tem a dizer.",
+   "d": 2.89
+  },
+  "sec_galeria_1": {
+   "t": "Retratos do rei. Contemple.",
+   "d": 2.37
+  },
+  "sec_galeria_2": {
+   "t": "Os humanos me desenham. Ao menos sabem quem manda.",
+   "d": 3.63
+  },
+  "sec_galeria_3": {
+   "t": "Uma galeria digna de mim. Quase.",
+   "d": 2.7
+  },
+  "sec_contato_1": {
+   "t": "Quer encontrar o Lebot? Escolha. Rápido.",
+   "d": 3.46
+  },
+  "sec_contato_2": {
+   "t": "As redes dele. Vá logo, antes que eu mude de ideia.",
+   "d": 3.6
+  },
+  "sec_contato_3": {
+   "t": "Siga-o. É uma ordem.",
+   "d": 1.86
+  },
+  "instagram_1": {
+   "t": "O Instagram dele. Siga. É uma ordem.",
+   "d": 3.16
+  },
+  "instagram_2": {
+   "t": "Imagens. Os humanos adoram se exibir.",
+   "d": 3.23
+  },
+  "instagram_3": {
+   "t": "Vá. Siga e não me faça repetir.",
+   "d": 2.61
+  },
+  "tiktok_1": {
+   "t": "TikTok. Os humanos adoram coisas pequenas. Patético. Mas divertido.",
+   "d": 5.88
+  },
+  "tiktok_2": {
+   "t": "Vídeos curtos para mentes curtas. Assista.",
+   "d": 3.4
+  },
+  "tiktok_3": {
+   "t": "Hm. Até eu assistiria. Talvez.",
+   "d": 3.59
+  },
+  "twitch_1": {
+   "t": "A transmissão ao vivo. Não me faça esperar.",
+   "d": 3.15
+  },
+  "twitch_2": {
+   "t": "Ao vivo. Como um combate de verdade.",
+   "d": 3.02
+  },
+  "twitch_3": {
+   "t": "Vá assistir. E aplauda, se for digno.",
+   "d": 3.24
+  },
+  "spotify_1": {
+   "t": "Música. Até as maldições apreciam um bom ritmo.",
+   "d": 3.61
+  },
+  "spotify_2": {
+   "t": "Uma trilha para o meu santuário.",
+   "d": 1.96
+  },
+  "spotify_3": {
+   "t": "Toque algo. Algo à altura de um rei.",
+   "d": 2.73
+  },
+  "github_1": {
+   "t": "O código dele. Aqui está o verdadeiro poder.",
+   "d": 3.2
+  },
+  "github_2": {
+   "t": "Técnicas escritas em código. Interessante.",
+   "d": 3.26
+  },
+  "github_3": {
+   "t": "Veja como este domínio foi construído.",
+   "d": 2.44
+  },
+  "discord_1": {
+   "t": "O Discord dele. Clique, e eu copio para você.",
+   "d": 3.28
+  },
+  "discord_2": {
+   "t": "Lebot ponto gê gê. Lembre-se disso.",
+   "d": 2.82
+  },
+  "discord_3": {
+   "t": "Quer falar com ele? Use o Discord.",
+   "d": 2.57
+  },
+  "copiado_1": {
+   "t": "Copiado. Agora vá.",
+   "d": 1.81
+  },
+  "copiado_2": {
+   "t": "Está feito. Não me agradeça.",
+   "d": 2.57
+  },
+  "arte_1": {
+   "t": "Hm. Uma representação aceitável.",
+   "d": 2.58
+  },
+  "arte_2": {
+   "t": "Esse artista entende o meu poder.",
+   "d": 2.15
+  },
+  "arte_3": {
+   "t": "Até que capturaram a minha essência.",
+   "d": 2.1
+  },
+  "arte_4": {
+   "t": "Olhe bem. Isto é o medo em forma de desenho.",
+   "d": 2.97
+  },
+  "arte_5": {
+   "t": "Interessante. Muito interessante.",
+   "d": 2.91
+  },
+  "arte_6": {
+   "t": "Esse aqui. Ele sabe desenhar um rei.",
+   "d": 2.83
+  },
+  "abrir_arte_1": {
+   "t": "Olhe mais de perto. Se tiver coragem.",
+   "d": 2.82
+  },
+  "abrir_arte_2": {
+   "t": "Contemple o rei em detalhes.",
+   "d": 2.0
+  },
+  "abrir_arte_3": {
+   "t": "Isso. Admire.",
+   "d": 1.66
+  },
+  "abrir_arte_4": {
+   "t": "Não pisque. Você vai perder algo.",
+   "d": 2.45
+  },
+  "abrir_arte_5": {
+   "t": "Ampliado. Como o meu domínio.",
+   "d": 2.41
+  },
+  "abrir_arte_6": {
+   "t": "Veja. E trema.",
+   "d": 1.76
+  },
+  "tema_1": {
+   "t": "Vai trocar de rei? Que tolice.",
+   "d": 2.42
+  },
+  "tema_2": {
+   "t": "Ninguém substitui o Rei das Maldições.",
+   "d": 2.49
+  },
+  "tema_3": {
+   "t": "Vá. Você vai voltar rastejando.",
+   "d": 2.35
+  },
+  "idle_1": {
+   "t": "Parado aí? Os fracos sempre hesitam.",
+   "d": 2.75
+  },
+  "idle_2": {
+   "t": "Está me fazendo perder tempo. Mova-se.",
+   "d": 2.79
+  },
+  "idle_3": {
+   "t": "O silêncio não vai te proteger.",
+   "d": 2.02
+  },
+  "idle_4": {
+   "t": "Que tédio. Faça alguma coisa.",
+   "d": 2.41
+  },
+  "idle_5": {
+   "t": "Eu esperei mil anos. Mas não vou esperar você.",
+   "d": 3.28
+  },
+  "frase_1": {
+   "t": "Conheça o seu lugar, tolo.",
+   "d": 1.79
+  },
+  "frase_2": {
+   "t": "Fique orgulhoso. Você é forte.",
+   "d": 2.62
+  },
+  "frase_3": {
+   "t": "Expansão de Domínio. Santuário Malevolente.",
+   "d": 3.43
+  },
+  "frase_4": {
+   "t": "Eu sou o Rei das Maldições. Lembre-se disso.",
+   "d": 3.24
+  },
+  "frase_5": {
+   "t": "Desmantelar. Clivar.",
+   "d": 2.07
+  },
+  "frase_6": {
+   "t": "Eu faço o que quero, quando quero.",
+   "d": 1.96
+  },
+  "tchau_1": {
+   "t": "Vá embora, então. O meu domínio ainda vai estar aqui.",
+   "d": 3.61
+  },
+  "tchau_2": {
+   "t": "Fuja. Como todos fogem.",
+   "d": 2.33
+  },
+  "tchau_3": {
+   "t": "Até a próxima, humano. Se sobreviver.",
+   "d": 2.92
+  },
+  "topo_1": {
+   "t": "De volta ao início. Como um ciclo de maldição.",
+   "d": 3.17
+  },
+  "topo_2": {
+   "t": "Subindo. Não tropece.",
+   "d": 1.98
+  }
+ },
+ "rem": {
+  "ola_1": {
+   "t": "Seja bem-vindo. Eu sou a Rem. A Rem vai te guiar pelo portfólio do Lebot.",
+   "d": 4.77
+  },
+  "ola_2": {
+   "t": "Você voltou. A Rem estava esperando por você.",
+   "d": 2.83
+  },
+  "ola_3": {
+   "t": "Bem-vindo. A Rem preparou tudo com muito cuidado.",
+   "d": 3.1
+  },
+  "ola_4": {
+   "t": "Com licença. A Rem está à sua disposição.",
+   "d": 2.89
+  },
+  "voz_1": {
+   "t": "Agora a Rem pode falar com você. Pode contar comigo.",
+   "d": 3.31
+  },
+  "voz_2": {
+   "t": "Som ligado. A Rem vai falar com cuidado.",
+   "d": 2.81
+  },
+  "sec_inicio_1": {
+   "t": "Esse é o Lebot. A Rem acha que ele é um grande desenvolvedor.",
+   "d": 3.64
+  },
+  "sec_inicio_2": {
+   "t": "De volta ao começo. A Rem te acompanha.",
+   "d": 2.81
+  },
+  "sec_inicio_3": {
+   "t": "Este lugar é do Lebot. A Rem cuida dele.",
+   "d": 2.89
+  },
+  "sec_perfil_1": {
+   "t": "Essa é a Rem. Empregada da mansão Roswaal.",
+   "d": 2.54
+  },
+  "sec_perfil_2": {
+   "t": "A Rem tem uma irmã gêmea, a Ram. Ela é incrível.",
+   "d": 3.43
+  },
+  "sec_perfil_3": {
+   "t": "Esta é a história da Rem. Obrigada por ler.",
+   "d": 2.73
+  },
+  "sec_frases_1": {
+   "t": "Palavras da Rem. Escolha uma, por favor.",
+   "d": 2.68
+  },
+  "sec_frases_2": {
+   "t": "Clique, e a Rem fala com todo o coração.",
+   "d": 2.53
+  },
+  "sec_galeria_1": {
+   "t": "Desenhos da Rem. A Rem fica um pouco envergonhada.",
+   "d": 3.33
+  },
+  "sec_galeria_2": {
+   "t": "Tantos desenhos... a Rem não merece tanto.",
+   "d": 2.71
+  },
+  "sec_galeria_3": {
+   "t": "Os artistas são muito gentis com a Rem.",
+   "d": 2.32
+  },
+  "sec_contato_1": {
+   "t": "Se quiser falar com ele, a Rem garante que a mensagem chega.",
+   "d": 3.45
+  },
+  "sec_contato_2": {
+   "t": "As redes dele. A Rem organizou tudo.",
+   "d": 2.67
+  },
+  "sec_contato_3": {
+   "t": "Siga ele, por favor. A Rem agradece.",
+   "d": 2.99
+  },
+  "instagram_1": {
+   "t": "O Instagram dele. A Rem recomenda seguir.",
+   "d": 2.69
+  },
+  "instagram_2": {
+   "t": "Fotos bonitas. A Rem gosta de ver.",
+   "d": 2.63
+  },
+  "instagram_3": {
+   "t": "Siga, por favor.",
+   "d": 1.2
+  },
+  "tiktok_1": {
+   "t": "O TikTok dele. A Rem assistiu todos. Duas vezes.",
+   "d": 4.02
+  },
+  "tiktok_2": {
+   "t": "Vídeos divertidos. A Rem riu bastante.",
+   "d": 2.83
+  },
+  "tiktok_3": {
+   "t": "Vale a pena, a Rem garante.",
+   "d": 2.01
+  },
+  "twitch_1": {
+   "t": "A live na Twitch. Vamos assistir juntos?",
+   "d": 2.77
+  },
+  "twitch_2": {
+   "t": "Ao vivo. A Rem vai preparar o chá.",
+   "d": 2.42
+  },
+  "twitch_3": {
+   "t": "Passe lá. Ele vai ficar feliz.",
+   "d": 2.12
+  },
+  "spotify_1": {
+   "t": "A playlist dele. A Rem ouve enquanto limpa a mansão.",
+   "d": 3.41
+  },
+  "spotify_2": {
+   "t": "Músicas boas. A Rem cantarola baixinho.",
+   "d": 2.96
+  },
+  "spotify_3": {
+   "t": "Coloque pra tocar, por favor.",
+   "d": 1.83
+  },
+  "github_1": {
+   "t": "O GitHub dele. Tudo limpo e organizado, como a Rem gosta.",
+   "d": 4.25
+  },
+  "github_2": {
+   "t": "Muito trabalho aqui. A Rem admira.",
+   "d": 2.5
+  },
+  "github_3": {
+   "t": "O código dele está todo aqui.",
+   "d": 1.71
+  },
+  "discord_1": {
+   "t": "O Discord dele. Clique, e a Rem copia pra você.",
+   "d": 3.45
+  },
+  "discord_2": {
+   "t": "Lebot ponto gê gê. A Rem anotou.",
+   "d": 2.52
+  },
+  "discord_3": {
+   "t": "Quer conversar? Pelo Discord.",
+   "d": 2.09
+  },
+  "copiado_1": {
+   "t": "Copiado. A Rem ajudou.",
+   "d": 2.01
+  },
+  "copiado_2": {
+   "t": "Pronto. É só colar.",
+   "d": 1.75
+  },
+  "arte_1": {
+   "t": "Esse desenho é muito delicado.",
+   "d": 1.85
+  },
+  "arte_2": {
+   "t": "A Rem gostou muito desse.",
+   "d": 1.6
+  },
+  "arte_3": {
+   "t": "A Rem parece feliz aqui.",
+   "d": 1.73
+  },
+  "arte_4": {
+   "t": "Que cores bonitas. Azul como o cabelo da Rem.",
+   "d": 3.06
+  },
+  "arte_5": {
+   "t": "O artista foi muito gentil.",
+   "d": 1.77
+  },
+  "arte_6": {
+   "t": "Esse é lindo. A Rem agradece.",
+   "d": 2.22
+  },
+  "abrir_arte_1": {
+   "t": "Com licença, a Rem vai ampliar.",
+   "d": 2.16
+  },
+  "abrir_arte_2": {
+   "t": "Veja os detalhes. São lindos.",
+   "d": 2.17
+  },
+  "abrir_arte_3": {
+   "t": "A Rem fica um pouco tímida assim de perto.",
+   "d": 2.42
+  },
+  "abrir_arte_4": {
+   "t": "Pronto. Fique à vontade.",
+   "d": 1.8
+  },
+  "abrir_arte_5": {
+   "t": "Esse é um dos favoritos da Rem.",
+   "d": 1.75
+  },
+  "abrir_arte_6": {
+   "t": "A Rem preparou essa vista pra você.",
+   "d": 2.07
+  },
+  "tema_1": {
+   "t": "Vai escolher outra pessoa? A Rem entende.",
+   "d": 2.94
+  },
+  "tema_2": {
+   "t": "Outro guia? A Rem vai esperar você voltar.",
+   "d": 2.8
+  },
+  "tema_3": {
+   "t": "Tudo bem. A Rem sempre vai estar aqui.",
+   "d": 2.53
+  },
+  "idle_1": {
+   "t": "Está tudo bem? A Rem está aqui, se precisar.",
+   "d": 3.23
+  },
+  "idle_2": {
+   "t": "A Rem vai esperar. A Rem é boa em esperar.",
+   "d": 2.91
+  },
+  "idle_3": {
+   "t": "Enquanto isso, a Rem vai arrumar a mansão.",
+   "d": 2.25
+  },
+  "idle_4": {
+   "t": "A Rem preparou chá. Quer um pouco?",
+   "d": 2.31
+  },
+  "idle_5": {
+   "t": "Descanse. A Rem cuida de tudo.",
+   "d": 2.23
+  },
+  "frase_1": {
+   "t": "Vamos começar do zero. Do zero, juntos.",
+   "d": 2.76
+  },
+  "frase_2": {
+   "t": "A Rem acha que você é um herói.",
+   "d": 1.86
+  },
+  "frase_3": {
+   "t": "Por favor, deixe a Rem ficar ao seu lado.",
+   "d": 2.54
+  },
+  "frase_4": {
+   "t": "Falar do futuro faz o demônio rir, não é?",
+   "d": 2.85
+  },
+  "frase_5": {
+   "t": "A Rem ama você. Isso nunca vai mudar.",
+   "d": 2.61
+  },
+  "frase_6": {
+   "t": "A Rem vai proteger você. Custe o que custar.",
+   "d": 2.91
+  },
+  "tchau_1": {
+   "t": "Até logo. A Rem vai sentir sua falta.",
+   "d": 2.71
+  },
+  "tchau_2": {
+   "t": "Volte quando quiser. A Rem espera.",
+   "d": 2.5
+  },
+  "tchau_3": {
+   "t": "Cuide-se. A Rem pede.",
+   "d": 1.83
+  },
+  "topo_1": {
+   "t": "De volta pro topo. A Rem te acompanha.",
+   "d": 2.69
+  },
+  "topo_2": {
+   "t": "Subindo, com licença.",
+   "d": 1.7
+  }
+ },
+ "kaneki": {
+  "ola_1": {
+   "t": "Oi... eu sou o Kaneki. Bem-vindo ao portfólio do Lebot.",
+   "d": 3.88
+  },
+  "ola_2": {
+   "t": "Você voltou. Que bom... eu achei que ia ficar sozinho aqui.",
+   "d": 3.97
+  },
+  "ola_3": {
+   "t": "Olá. Quer um café? A gente pode conversar um pouco.",
+   "d": 3.98
+  },
+  "ola_4": {
+   "t": "Seja bem-vindo. Fique à vontade, sem pressa.",
+   "d": 3.0
+  },
+  "voz_1": {
+   "t": "Agora você pode me ouvir. Eu vou tentar não te assustar.",
+   "d": 3.33
+  },
+  "voz_2": {
+   "t": "Som ligado. Eu falo baixo, tá?",
+   "d": 2.29
+  },
+  "sec_inicio_1": {
+   "t": "Esse é o Lebot. Desenvolvedor e criador. Ele gosta de histórias, igual a mim.",
+   "d": 5.63
+  },
+  "sec_inicio_2": {
+   "t": "De volta ao começo. Às vezes é bom recomeçar.",
+   "d": 3.33
+  },
+  "sec_inicio_3": {
+   "t": "Esse lugar é do Lebot. Eu só estou de passagem.",
+   "d": 3.08
+  },
+  "sec_perfil_1": {
+   "t": "Essa é a minha história. Não é bonita... mas é minha.",
+   "d": 3.79
+  },
+  "sec_perfil_2": {
+   "t": "Eu era só um estudante. Até aquela noite.",
+   "d": 2.92
+  },
+  "sec_perfil_3": {
+   "t": "Metade humano, metade ghoul. Eu ainda estou aprendendo a viver assim.",
+   "d": 4.5
+  },
+  "sec_frases_1": {
+   "t": "Algumas coisas que eu disse. Clique para ouvir.",
+   "d": 2.88
+  },
+  "sec_frases_2": {
+   "t": "Palavras ficam. Escolha uma.",
+   "d": 2.41
+  },
+  "sec_galeria_1": {
+   "t": "Desenhos de mim. É estranho me ver assim.",
+   "d": 2.69
+  },
+  "sec_galeria_2": {
+   "t": "Tanta gente me desenhou... eu nem sei o que dizer.",
+   "d": 3.07
+  },
+  "sec_galeria_3": {
+   "t": "Cada artista vê um Kaneki diferente.",
+   "d": 2.16
+  },
+  "sec_contato_1": {
+   "t": "Se quiser falar com o Lebot, é por aqui.",
+   "d": 2.26
+  },
+  "sec_contato_2": {
+   "t": "As redes dele. Ele responde, sem máscaras.",
+   "d": 3.69
+  },
+  "sec_contato_3": {
+   "t": "Siga ele. É bom ter alguém por perto.",
+   "d": 2.6
+  },
+  "instagram_1": {
+   "t": "O Instagram dele. Pode seguir... eu prometo que não mordo.",
+   "d": 3.92
+  },
+  "instagram_2": {
+   "t": "Fotos guardam momentos. Eu gosto disso.",
+   "d": 3.06
+  },
+  "instagram_3": {
+   "t": "Dá uma olhada no Instagram dele.",
+   "d": 1.68
+  },
+  "tiktok_1": {
+   "t": "O TikTok. Vídeos curtos, mas cheios de vida.",
+   "d": 3.57
+  },
+  "tiktok_2": {
+   "t": "Os vídeos dele me fazem esquecer a fome.",
+   "d": 2.34
+  },
+  "tiktok_3": {
+   "t": "TikTok. Vale a pena ver.",
+   "d": 2.14
+  },
+  "twitch_1": {
+   "t": "A live na Twitch. É bom ter companhia de verdade.",
+   "d": 3.35
+  },
+  "twitch_2": {
+   "t": "Ao vivo. Como uma conversa no Anteiku.",
+   "d": 2.81
+  },
+  "twitch_3": {
+   "t": "Passa lá na live. Ele vai gostar.",
+   "d": 2.43
+  },
+  "spotify_1": {
+   "t": "A playlist dele. Música ajuda a gente a não se perder.",
+   "d": 3.76
+  },
+  "spotify_2": {
+   "t": "Coloque o fone. Feche os olhos.",
+   "d": 2.39
+  },
+  "spotify_3": {
+   "t": "Boa música pra ler um livro.",
+   "d": 1.51
+  },
+  "github_1": {
+   "t": "O GitHub. É aqui que ele escreve, como um autor escreve um livro.",
+   "d": 4.25
+  },
+  "github_2": {
+   "t": "Cada linha de código é uma página da história dele.",
+   "d": 2.68
+  },
+  "github_3": {
+   "t": "O trabalho dele está todo aqui.",
+   "d": 1.71
+  },
+  "discord_1": {
+   "t": "O Discord dele. Clique que eu copio o usuário.",
+   "d": 2.99
+  },
+  "discord_2": {
+   "t": "Lebot ponto gê gê. Pode chamar.",
+   "d": 2.76
+  },
+  "discord_3": {
+   "t": "Quer conversar com ele? Discord.",
+   "d": 2.42
+  },
+  "copiado_1": {
+   "t": "Copiado. Agora é só colar.",
+   "d": 2.25
+  },
+  "copiado_2": {
+   "t": "Pronto. Está na sua área de transferência.",
+   "d": 2.85
+  },
+  "arte_1": {
+   "t": "Essa aqui é bonita.",
+   "d": 1.16
+  },
+  "arte_2": {
+   "t": "Eu não sabia que eu parecia assim.",
+   "d": 1.83
+  },
+  "arte_3": {
+   "t": "Essa me lembra o Anteiku.",
+   "d": 1.57
+  },
+  "arte_4": {
+   "t": "Tem muita dor nesse desenho. Mas é bonito.",
+   "d": 2.81
+  },
+  "arte_5": {
+   "t": "O artista entendeu quem eu sou.",
+   "d": 1.71
+  },
+  "arte_6": {
+   "t": "Essa é delicada. Eu gosto.",
+   "d": 2.08
+  },
+  "abrir_arte_1": {
+   "t": "Vamos ver de perto.",
+   "d": 1.25
+  },
+  "abrir_arte_2": {
+   "t": "Olhe com calma.",
+   "d": 0.95
+  },
+  "abrir_arte_3": {
+   "t": "Os detalhes contam a história.",
+   "d": 1.76
+  },
+  "abrir_arte_4": {
+   "t": "É estranho me ver tão grande assim.",
+   "d": 1.92
+  },
+  "abrir_arte_5": {
+   "t": "Essa é especial.",
+   "d": 1.15
+  },
+  "abrir_arte_6": {
+   "t": "Respire. Observe.",
+   "d": 1.78
+  },
+  "tema_1": {
+   "t": "Você vai embora? Tudo bem... eu entendo.",
+   "d": 3.28
+  },
+  "tema_2": {
+   "t": "Outro guia? Cuide-se, tá?",
+   "d": 2.48
+  },
+  "tema_3": {
+   "t": "Se voltar, eu vou estar aqui.",
+   "d": 1.64
+  },
+  "idle_1": {
+   "t": "Mil menos sete... novecentos e noventa e três. Desculpa, é um hábito.",
+   "d": 5.02
+  },
+  "idle_2": {
+   "t": "Ainda está aí? Eu gosto do silêncio também.",
+   "d": 2.72
+  },
+  "idle_3": {
+   "t": "Eu estava lendo. Pode ficar, não incomoda.",
+   "d": 3.19
+  },
+  "idle_4": {
+   "t": "Esse silêncio me lembra a chuva em Tóquio.",
+   "d": 2.32
+  },
+  "idle_5": {
+   "t": "Está tudo bem? Pode descansar.",
+   "d": 2.12
+  },
+  "frase_1": {
+   "t": "Eu não sou o protagonista de uma novela. Sou só um universitário que gosta de ler.",
+   "d": 5.04
+  },
+  "frase_2": {
+   "t": "Se você escrevesse uma história comigo, seria uma tragédia.",
+   "d": 3.37
+  },
+  "frase_3": {
+   "t": "Não é o mundo que está errado. Sou eu.",
+   "d": 2.43
+  },
+  "frase_4": {
+   "t": "Mil menos sete... novecentos e noventa e três. Novecentos e noventa e três menos sete... novecentos e oitenta e seis.",
+   "d": 8.34
+  },
+  "frase_5": {
+   "t": "Eu prefiro ser ferido do que ferir alguém.",
+   "d": 2.39
+  },
+  "frase_6": {
+   "t": "Eu vou proteger quem eu amo. Não importa o que eu me torne.",
+   "d": 3.34
+  },
+  "tchau_1": {
+   "t": "Até logo. Eu vou estar aqui, esperando.",
+   "d": 3.17
+  },
+  "tchau_2": {
+   "t": "Cuide-se lá fora.",
+   "d": 1.28
+  },
+  "tchau_3": {
+   "t": "Tchau. Obrigado pela visita.",
+   "d": 2.13
+  },
+  "topo_1": {
+   "t": "De volta ao começo. Às vezes é bom recomeçar.",
+   "d": 3.33
+  },
+  "topo_2": {
+   "t": "Subindo. Devagar.",
+   "d": 1.89
   }
  }
 }
