@@ -58,7 +58,7 @@ function iniciarQualidade() {
     if (i >= NIVEIS.length - 2) return false;
     aplicarQualidade(NIVEIS[i + 1]);
     return true;
-  });
+  }, () => trocando || performance.now() < calmaAte);
 }
 
 /* ---------------- fontes do tema ---------------- */
@@ -243,6 +243,8 @@ function pintar(id) {
 }
 
 let seqTroca = 0, transicao = null;
+// troca em andamento (+ 2,5 s depois, enquanto imagens/fontes assentam): o vigia de FPS não mede nesse período
+let trocando = false, calmaAte = 0;
 async function trocarTema(id, { origem, falar = true } = {}) {
   if (!TEMAS[id]) id = 'gojo';
   const primeira = temaAtual === null;
@@ -258,6 +260,7 @@ async function trocarTema(id, { origem, falar = true } = {}) {
   voz.calar();
   voz.setTema(id);
   const meu = ++seqTroca;
+  trocando = true;
 
   if (primeira) { carregarFonte(TEMAS[id]); pintar(id); }
   else {
@@ -280,6 +283,10 @@ async function trocarTema(id, { origem, falar = true } = {}) {
     } else {
       pintar(id);
     }
+  }
+  if (meu === seqTroca) {
+    const fim = () => { if (meu === seqTroca) { trocando = false; calmaAte = performance.now() + 2500; } };
+    if (transicao) transicao.finished.then(fim, fim); else fim();
   }
   if (falar && !primeira) { voz.prefetch(); setTimeout(() => { if (meu === seqTroca) voz.falar('ola', 2); }, 450); }
 }

@@ -46,10 +46,13 @@ export const PRESETS = {
 };
 
 // Mede FPS real por alguns segundos; se estiver travando, chama rebaixar().
-export function vigiarFps(rebaixar) {
+// ocupado(): enquanto devolver true (ex.: troca de personagem), a medição é descartada — a queda de quadros
+// natural da troca não pode ser confundida com aparelho fraco e rebaixar os efeitos no meio do uso.
+export function vigiarFps(rebaixar, ocupado = () => false) {
   let quadros = 0, inicio = performance.now(), ruins = 0, ativo = true;
   function tick(t) {
     if (!ativo) return;
+    if (ocupado()) { quadros = 0; inicio = t; requestAnimationFrame(tick); return; }
     quadros++;
     const dt = t - inicio;
     if (dt > 2000) {
