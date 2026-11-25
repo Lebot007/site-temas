@@ -152,8 +152,11 @@ export class Voz {
       return false;
     }
     if (prioridade < 3) {
-      const u = this.usos.get(chave) || 0;
-      if (agora - u < limite) return false;                 // não fala do mesmo assunto toda hora
+      // não fala do mesmo assunto toda hora. (Antes, "nunca falou" contava como "falou no instante 0":
+      // nos primeiros 2 min da visita nenhuma seção falava e nos primeiros 45 s nenhum hover —
+      // por isso uns personagens pareciam falar ao rolar e outros não, dependendo de quanto tempo a pessoa demorava.)
+      const u = this.usos.get(chave);
+      if (u !== undefined && agora - u < limite) return false;
     }
     const k = this.escolher(chave);
     const info = k && (this.manifest[this.tema] || {})[k];

@@ -248,8 +248,8 @@
   ]
  },
  "eren": {
-  "heroi": "oficial/zx4_eren_novo_7",
-  "alt": "oficial/eren_novo_6",
+  "heroi": "fanart/eren_s4_heroi",
+  "alt": "fanart/eren_s4_alt",
   "fundo": "oficial/eren_arte_03",
   "galeria": [
    "oficial/eren_novo_3",
@@ -278,9 +278,9 @@
    "recorte/eren_rec_21"
   ],
   "rosto": [
-   0.44,
-   0.2,
-   0.3
+   0.53,
+   0.17,
+   0.42
   ]
  },
  "thorfinn": {

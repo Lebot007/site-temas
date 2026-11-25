@@ -118,7 +118,7 @@ def heroi(cid, ref, nome, fontes):
         rel = os.path.relpath(path, ACERVO).replace(os.sep, '/')
         return im.convert('RGBA'), {'src': salvar(g, os.path.join(OUT, cid, f'{nome}.webp'), 84),
                     'm': salvar(m, os.path.join(OUT, cid, f'{nome}-m.webp'), 80), 'w': g.width, 'h': g.height,
-                    'metodo': 'foto', 'foto': True, 'credito': fontes.get(rel, {}).get('credito', ''), 'origem': ''}
+                    'metodo': 'foto', 'foto': True, 'credito': fontes.get(rel, {}).get('credito', '')}
     path = achar(cid, ref)
     cache = os.path.join(ACERVO, cid, f'_corte_{nome}_{os.path.basename(path)}.png')
     if os.path.exists(cache):
@@ -136,7 +136,7 @@ def heroi(cid, ref, nome, fontes):
         'src': salvar(g, os.path.join(OUT, cid, f'{nome}.webp'), 88),
         'm': salvar(m, os.path.join(OUT, cid, f'{nome}-m.webp'), 84),
         'w': g.width, 'h': g.height, 'metodo': metodo,
-        'credito': info.get('credito', ''), 'origem': info.get('origem', ''),
+        'credito': info.get('credito', ''),
     }
 
 
@@ -182,7 +182,6 @@ def main(ids):
                 'w': t.width, 'h': t.height,
                 'oficial': bool(info.get('oficial', ref.startswith('oficial/'))),
                 'credito': info.get('credito', ''),
-                'origem': info.get('fonte_original') or info.get('origem', ''),
             })
         d['galeria'] = gal
         dados[cid] = d

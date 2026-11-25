@@ -249,6 +249,7 @@ function pintar(id) {
 }
 
 let seqTroca = 0, transicao = null;
+let secaoAtual = null;   // seção que está no meio da tela (ver iniciarReacoes)
 // troca em andamento (+ 2,5 s depois, enquanto imagens/fontes assentam): o vigia de FPS não mede nesse período
 let trocando = false, calmaAte = 0;
 async function trocarTema(id, { origem, falar = true } = {}) {
@@ -265,6 +266,8 @@ async function trocarTema(id, { origem, falar = true } = {}) {
   history.replaceState(null, '', u);
   voz.calar();
   voz.setTema(id);
+  // o personagem novo cumprimenta ("ola"); não emenda logo em seguida a fala da seção onde a pessoa já está
+  if (secaoAtual) voz.usos.set(secaoAtual, performance.now());
   const meu = ++seqTroca;
   trocando = true;
 
@@ -614,16 +617,30 @@ function iniciarReacoes() {
     else if (v && v.closest('.redes') && ehMouse.matches) voz.falar(v.dataset.voz, 3);
   });
 
-  // ao chegar em cada seção rolando a página
+  // ao chegar em cada seção rolando a página — igual para todos os personagens.
+  // Antes: "45% da seção visível". No celular a galeria (2–3,7 mil px) nunca chegava a 45% de uma tela,
+  // e o perfil ficava no limite (dependia do tamanho do texto de cada personagem): uns falavam, outros não.
+  // Agora a seção "ativa" é a que cobre o meio da tela (não depende da altura), e se o personagem estiver
+  // falando outra coisa nessa hora a fala da seção fica pendente e sai assim que ele terminar.
+  let timerSecao = null, saiuDoInicio = false;
+  const tentarSecao = (espera = 350) => {
+    clearTimeout(timerSecao);
+    timerSecao = setTimeout(() => {   // pequena espera: passar rápido por uma seção não a faz falar
+      const k = secaoAtual;
+      if (!k || (k === 'sec_inicio' && !saiuDoInicio)) return;   // no início quem fala é a saudação ("ola")
+      voz.falar(k, 1, { limite: 120000 });
+    }, espera);
+  };
   const io = new IntersectionObserver(ents => {
     for (const en of ents) {
-      if (!en.isIntersecting) continue;
       const k = en.target.dataset.secao;
-      if (k === 'sec_inicio' && performance.now() < 8000) continue;
-      voz.falar(k, 1, { limite: 120000 });
+      if (en.isIntersecting) { secaoAtual = k; if (k !== 'sec_inicio') saiuDoInicio = true; }
+      else if (secaoAtual === k) secaoAtual = null;
     }
-  }, { threshold: 0.45 });
+    tentarSecao();
+  }, { rootMargin: '-45% 0px -45% 0px', threshold: 0 });
   $$('[data-secao]').forEach(s => io.observe(s));
+  voz.on('fim', () => tentarSecao(1200));   // fala pendente da seção onde a pessoa está
 
   // ficou parado
   let ultimo = performance.now(), ultimoIdle = 0;
@@ -721,7 +738,8 @@ async function iniciar() {
   if (voz.ligada) voz.prefetch();
   // link direto para uma seção (#contato etc.): reposiciona depois que o conteúdo foi montado
   if (location.hash.length > 1) {
-    const alvo = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    let alvo = null;
+    try { alvo = document.getElementById(decodeURIComponent(location.hash.slice(1))); } catch {}   // "#%E0" quebrava o início
     if (alvo) requestAnimationFrame(() => alvo.scrollIntoView({ behavior: 'instant', block: 'start' }));
   }
   const intro = $('#intro');

@@ -11,7 +11,7 @@
   --pad: clamp(1.1rem, 4vw, 3.5rem);
   --larg: 1240px;
   --topo-h: 72px;
-  --amp: 0;              /* volume da voz, 0..1 */
+  --amp: 0; --fala: 0;   /* volume da voz (0..1) e balanço da cabeça enquanto fala */
   --rx: 0deg; --ry: 0deg; /* inclinação 3D do personagem */
   --sombra: 0 30px 80px -30px color-mix(in srgb, var(--acc) 45%, transparent);
   color-scheme: dark;
@@ -376,7 +376,6 @@ dialog { color: var(--ink); }
 .lightbox figure { margin: 0; display: grid; gap: .8rem; justify-items: center; padding: 4rem 1rem 1.5rem; max-height: 100%; }
 .lightbox img { max-height: calc(100dvh - 9rem); max-width: min(100%, 1400px); object-fit: contain; border-radius: 12px; }
 .lightbox figcaption { color: #ddd; font-size: .9rem; text-align: center; max-width: 70ch; }
-.lightbox figcaption a { color: var(--acc); }
 .lightbox-fechar { position: fixed; top: 1rem; right: 1rem; color: #fff; z-index: 2; }
 .lightbox-nav { position: fixed; top: 50%; translate: 0 -50%; width: 52px; height: 52px; border-radius: 50%; border: 1px solid rgba(255,255,255,.25); background: rgba(0,0,0,.4); color: #fff; font-size: 2rem; cursor: pointer; z-index: 2; }
 .lightbox-nav.ant { left: 1rem; } .lightbox-nav.prox { right: 1rem; }
@@ -546,7 +545,7 @@ html[data-claro] .palco-kanji { -webkit-text-stroke-color: color-mix(in srgb, va
 }
 html[data-leve] *, html[data-leve] *::before { -webkit-backdrop-filter: none !important; backdrop-filter: none !important; }
 html[data-leve] .palco-anel, html[data-leve] .hero-letras { animation: none; }
-html[data-leve] .frase, html[data-leve] .ficha, html[data-leve] .redes a, html[data-leve] .palco-legenda { background: var(--bg2); }
+html[data-leve] .frase, html[data-leve] .ficha, html[data-leve] .redes a, html[data-leve] .redes button, html[data-leve] .palco-legenda { background: var(--bg2); }
 
 /* imagem trocando: some até a nova estar pronta (evita mostrar a do personagem anterior) */
 #personagem-img, .lightbox img, .ficha-retrato img, .btn-tema-rosto, .dialogo-rosto { transition: opacity .25s ease; }

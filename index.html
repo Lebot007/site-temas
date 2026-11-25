@@ -2,6 +2,8 @@
 <html lang="pt-BR" data-theme="gojo">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Lebot · Portfólio</title>
 <meta name="description" content="Portfólio de Lebot, desenvolvedor e criador. Escolha um personagem de anime para guiar a visita, com voz e temas interativos.">
@@ -19,15 +21,8 @@
 <!-- só os 10 kanjis dos emblemas (arquivo minúsculo) -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700;900&text=%E9%9B%BB%E5%91%AA%E5%96%B0%E9%AD%94%E6%B0%B7%E6%9B%B8%E9%AC%BC%E9%80%B2%E9%BA%A6%E7%84%A1&display=swap">
 <link rel="stylesheet" href="assets/css/main.css">
-<script>
-  // aplica o tema salvo antes de pintar (evita piscar o tema errado)
-  (function () {
-    try {
-      var p = new URLSearchParams(location.search).get('p') || localStorage.getItem('lebot:tema');
-      if (p) document.documentElement.setAttribute('data-theme', p);
-    } catch (e) {}
-  })();
-</script>
+<!-- aplica o tema salvo antes de pintar (evita piscar o tema errado) -->
+<script src="assets/js/tema-inicial.js"></script>
 <script type="module" src="assets/js/app.js"></script>
 </head>
 <body>
@@ -79,7 +74,7 @@
       </button>
       <figcaption class="palco-legenda"><b class="tema-nome"></b><span class="tema-anime"></span></figcaption>
     </figure>
-    <a class="rolar" href="#sobre" aria-label="Rolar para a próxima seção"><span></span></a>
+    <a class="rolar" href="#personagem" aria-label="Rolar para a próxima seção"><span></span></a>
   </section>
 
   <section id="personagem" class="secao perfil" data-secao="sec_perfil">
